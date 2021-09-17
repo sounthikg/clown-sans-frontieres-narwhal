@@ -6,7 +6,9 @@ body {
     height: 100vh;
     color: white;
     font-size: 20px;
-    background-color: orange;
+    background-image: url('images/clowns.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .temp {
@@ -23,4 +25,10 @@ body {
 a {
     color: white;
     font-size: 30px;
+}
+
+.tiny, .tiny a {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 20%;
 }
