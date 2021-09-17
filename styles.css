@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+    background-color: orange;
+}
+
+.temp {
+    font-family: 'Gill Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    background-color: orangered;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+}
