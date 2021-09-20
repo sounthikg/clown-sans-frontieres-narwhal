@@ -18,6 +18,11 @@
     font-size: 18px;   
 }
 
+$min-mobile : 375px; 
+$min-tablet:768px;
+$min-computer: 1200px;
+
+
 body {
     margin: 0px;
     display: flex;
@@ -38,7 +43,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: variables.$third-alt;
+    color: variables.$primary;
 }
 
 .menu {
@@ -129,11 +134,28 @@ a:hover {
         color: variables.$primary;
         text-align: center;
     }
+
+    // MEDIA QUERY DU HEROS 
+    @media screen and(min-width: $min-mobile) {
+        background-color: red;
+    }
+    @media screen and(min-width: $min-tablet) {
+        background-color: orange;        
+    }
+    @media screen and(min-width: $min-computer) {
+        background-color: black;        
+    }
+
 }
+
+
+
+
 
 .heros {
     @include heros.heros_generique;
     position: relative;
-    background-image: url('images/clowns.jpg');
+    background-image: url('images/degrade.png');
+    background-size: cover;
 }
 
