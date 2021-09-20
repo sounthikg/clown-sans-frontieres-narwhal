@@ -137,13 +137,13 @@ a:hover {
 
     // MEDIA QUERY DU HEROS 
     @media screen and(min-width: $min-mobile) {
-        background-color: red;
+        
     }
     @media screen and(min-width: $min-tablet) {
-        background-color: orange;        
+               
     }
     @media screen and(min-width: $min-computer) {
-        background-color: black;        
+               
     }
 
 }
