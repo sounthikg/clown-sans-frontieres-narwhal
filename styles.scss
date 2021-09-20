@@ -1,4 +1,21 @@
 @use "partials/heros";
+@use "partials/variables";
+
+@mixin h1 {
+    font-family: variables.$title-font;
+    font-weight: 900;
+    font-size: 42px;
+}
+@mixin h2 {
+    font-family: variables.$title-font;  
+    font-weight: 700;  
+    font-size: 30px;
+}
+@mixin h3 {
+    font-family: variables.$title-font; 
+    font-weight: 400;
+    font-size: 18px;   
+}
 
 body {
     margin: 0px;
@@ -14,40 +31,71 @@ body {
     background-size: cover;
 }
 
-/* .temp {
-    font-family: 'Gill Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 600px;
-    height: 600px;
-    background-color: orangered;
-} 
-
-a {
-    color: white;
-    font-size: 30px;
-}
-
-.tiny, .tiny a {
-    font-size: 12px;
-    text-align: left;
-    margin-top: 20%;
-}*/
-
 .menu {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: yellow;
+    background-color: white;
     width: 100%;
     height: 200px;
     z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: variables.$text-font;
 
+    &__logo {
+        position: relative;
+        display: flex;
+        height: 65%;
+        z-index: 3;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__options {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 150px;
+        z-index: 3;        
+    }
+
+    &__don {
+
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        margin: 0 2%;
+
+        button {
+            @include h3;
+            padding: 10px 70px;
+            font-size: 20px;
+            border-radius: 50px;
+            border-style: none;
+            background-color: variables.$primary;
+            color: white;
+            box-shadow: -2px 5px 10px #afafaf ;
+        }
+    }
+
+    &__lang {
+        @include h2;
+        width: 50px;
+        margin: 0px 5%;
+        color: variables.$primary;
+        text-align: center;
+    }
 }
 
-.accueil__heros {
+.heros {
     @include heros.heros_generique;
     position: relative;
 }
+
