@@ -10,6 +10,7 @@
     "vite": "^2.5.10"
   },
   "dependencies": {
+    "bootstrap": "^5.1.1",
     "sass": "^1.41.1"
   }
 }

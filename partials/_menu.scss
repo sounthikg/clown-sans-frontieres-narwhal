@@ -3,6 +3,8 @@
 @mixin options {
     display: inline-block;
     position: relative;
+    width: fit-content;
+    margin: 0% 0%;
     
     &:after {
         content: '';
@@ -20,5 +22,92 @@
 
     &:hover:after {            
         width: 60%;
+    }
+}
+
+@mixin options-lg {
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin: 5% 0%;
+    font-size: 20px;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 0%;
+        border-radius: 50px;            
+        background-color: variables.$primary;
+        transition: width 0.25s ease;
+    }
+
+    &:hover:after {            
+        width: 60%;
+    }
+}
+
+@mixin menu-hamburger {
+    .menu {
+        justify-content: space-between;
+        display: flex;
+
+        &__icon {
+            display:flex!important;
+            right: 0;
+            display: block!important;
+            margin: 0 5%;    
+
+            .navicon {
+                right: 0;
+                display: block!important;
+            }
+        }
+
+        &__wrapper {
+            display: none;
+            transform: scale(1.1);
+            padding: 10%;
+            flex-direction: column;
+            top: 0;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            justify-content: center;
+        }
+
+        &__options {
+            flex-direction:column;
+            margin-top:5%;
+            margin-right: 0;
+
+            &__nouvelles {
+                @include options-lg;
+            }
+            &__services {
+                @include options-lg;
+            }
+        
+            &__equipe {
+                @include options-lg;
+            }
+        
+            &__a_propos {
+                @include options-lg;
+            }
+                
+            &__histoire {
+                @include options-lg;
+            }
+        }
+
+        &__don {
+            margin: 5% 0%;
+        }
     }
 }
