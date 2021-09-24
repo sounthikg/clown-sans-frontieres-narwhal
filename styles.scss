@@ -70,6 +70,12 @@ a:hover {
     font-size: 19px;
 
     &__wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 2100px;
+    }
+
+    &__hamburger {
         width: 80%;
         display: flex;
         flex-direction: row;
@@ -296,6 +302,7 @@ a:hover {
         display: flex;
         justify-content:center;
         align-items: center;
+        max-width: 800px;
 
         img {
             position: relative;
