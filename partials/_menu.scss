@@ -75,16 +75,17 @@
         }
 
         &__hamburger {
-           display: none; //ICICICICICICICICICICICICICICICICI
+            display: none; //ICICICICICICICICICICICICICICICICI
             transform: scale(1.1);
             padding: 10%;
             flex-direction: column;
             top: 0;
             position: absolute;
-            height: 100vh;
+            height: 0vh;
             width: 100%;
             background-color: rgba(255, 255, 255, 0.9);
             justify-content: center;
+   
         }
 
         &__options {
