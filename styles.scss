@@ -72,7 +72,7 @@ a:hover {
     &__wrapper {
         display: flex;
         flex-direction: row;
-        max-width: 2100px;
+        max-width: 2000px;
     }
 
     &__hamburger {
@@ -95,7 +95,7 @@ a:hover {
         justify-content: center;
         height: 100%;
         z-index: 6;
-        margin: 0 4%;
+        margin: 0 5%;
 
         picture img {
             position: relative;
@@ -223,7 +223,7 @@ a:hover {
 
         .menu {
             &__logo {
-                width: 50%;
+                height: 100%;
             }
         }
         
