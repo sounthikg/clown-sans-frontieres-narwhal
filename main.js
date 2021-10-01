@@ -8,15 +8,16 @@ hamburgerBtn.addEventListener('click', function() {
 
     var hamDisplay = hamburgerMenu.style.display;
 
-    if (hamDisplay == 'none') {
+    if (hamDisplay !== 'flex') {
 
         hamburgerMenu.style.display = 'flex';
         hamburgerMenu.style.height = '100vh';
     }
 
     else {
+
         hamburgerMenu.style.display = 'none';
-        hamburgerMenu.style.height = '0vh';
+        hamburgerMenu.style.height = '';
     }
     
 })
