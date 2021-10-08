@@ -241,6 +241,7 @@ a:hover {
     @media screen and(max-width: $max-mobile) {
 
         @include menu.menu-hamburger;
+        @include footer.footer-sm;
 
         .menu {
             &__logo {
