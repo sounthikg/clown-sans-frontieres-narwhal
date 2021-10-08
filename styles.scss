@@ -1,5 +1,6 @@
 @use "partials/heros";
 @use "partials/variables";
+@use 'partials/footer';
 @use 'partials/menu';
 
 
@@ -233,7 +234,10 @@ a:hover {
 }
 
 
-// MEDIA QUERY DU HEROS 
+// MEDIA QUERIES
+
+
+    //---CELLULAIRE
     @media screen and(max-width: $max-mobile) {
 
         @include menu.menu-hamburger;
@@ -246,9 +250,12 @@ a:hover {
         }
         
     }
+
+    //---TABLETTE
     @media screen and(min-width: $min-tablet) and (max-width: $min-computer) {
 
         @include menu.menu-hamburger;
+        @include footer.footer-md;
 
         .menu {           
             &__logo {
@@ -256,10 +263,9 @@ a:hover {
                 min-width: 220px;
             }
         }
+
+        
     }
-   // @media screen and(min-width: $min-computer) {
-    
-   // }
 
 
 // HEROS
@@ -374,7 +380,7 @@ a:hover {
 .pied-page {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
@@ -390,12 +396,11 @@ a:hover {
         display: flex;
         flex-direction: row;
         width: 100%;
-        max-width: 2000px;
+        max-width: 1900px;
         height: 100%;
     }
 
     &__gauche {
-        padding: 20px;
         align-items: flex-start;
         justify-content: center;
         position: relative;
@@ -419,9 +424,12 @@ a:hover {
     }
 
     &__coordonnes {
-
+        display: flex;
+        flex-direction: column;
+        //background-color: purple;
         font-family: variables.$text-font;
         font-size: 18px;
+        width: 400px;
 
         img {
             position: relative;
@@ -442,20 +450,55 @@ a:hover {
         }
     }
 
-    &__reseaux {
-        margin-top: 30px;
+    &__partenaires {
         position: relative;
         width: 100%;
+    }
+
+    &__swiper {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        position: relative;
+        width: 95%;
+        height: 170px;
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+            -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+        }
+
+        img {
+            margin: 0;
+            height: 100px;
+        }
+          
+    }
+
+    &__reseaux {
+        //background-color: black;
+        margin-top: 30px;
+        position: relative;
+        width: 95%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         justify-self: center;
         align-self: center;
 
         img {
             position: relative;
             height: 45px;
+            width: auto;
             display: flex;
+            margin-right: 0;
         }
     }
 
@@ -470,7 +513,8 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 4%;
+        margin-bottom: 1%;
+        margin-top: 4%;
     }
 
     &__logo {

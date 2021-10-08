@@ -1,0 +1,52 @@
+@mixin footer-md {
+    .pied-page {
+        height: auto!important;
+        background-size: 100% 120%!important;
+
+        &__wrapper {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column!important;
+        }
+        &__gauche {
+            justify-content: center!important;
+            align-items: center!important;
+            width: 100%!important;
+            text-align: center;
+        }
+    
+        &__droit {
+            justify-content: center!important;
+            align-items: center!important;
+            width: 100%!important;
+            text-align: center!important;
+
+            a:nth-child(5) {
+                margin: 0px;
+            }
+        }
+
+        &__coordonnes {
+            margin-top: 10%;
+            justify-content: center!important;
+            align-items: center!important;
+        }
+
+        &__reseaux {
+            margin-top: 10%!important;
+            justify-self: center!important;
+            justify-content: space-between!important;
+            align-items: center!important;
+            margin-right: 0;
+            order: 3;
+        }
+
+        &__partenaires {
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        
+    }
+}
