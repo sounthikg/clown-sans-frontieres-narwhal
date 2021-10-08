@@ -249,6 +249,34 @@ a:hover {
                 min-width: 100px;
             }
         }
+
+        .acc__heros {
+            justify-content: center!important;
+            flex-direction: column!important;
+
+
+            &__description {
+                justify-content: center!important;
+                display: flex;
+                margin-top: 10%;
+                width:100%!important;
+                text-align:center;
+                align-items: center!important;
+
+                &__button {
+                    justify-content:center!important;
+                    display: flex!important;
+                }
+            }
+            &__image {
+                order: -1;
+                width: 100%!important;
+                
+                img {
+                    width: 300px!important;
+                }
+            }
+        }
         
     }
 
