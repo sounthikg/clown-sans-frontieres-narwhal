@@ -29,7 +29,8 @@
     font-size: 20px;
     border-radius: 50px;
     border-style: none;
-    box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4) ;
+    box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4);
+    white-space: nowrap;
     
     &:hover {
         transform: scale(1.1);
@@ -253,6 +254,8 @@ a:hover {
         .acc__heros {
             justify-content: center!important;
             flex-direction: column!important;
+            margin-top: 0!important;
+            padding-top: 250px;
 
 
             &__description {
@@ -262,10 +265,16 @@ a:hover {
                 width:100%!important;
                 text-align:center;
                 align-items: center!important;
+                
+                
+                &__title {
+                    font-size: 20px!important;
+                }
 
                 &__button {
                     justify-content:center!important;
                     display: flex!important;
+
                 }
             }
             &__image {
@@ -273,7 +282,7 @@ a:hover {
                 width: 100%!important;
                 
                 img {
-                    width: 300px!important;
+                    width: 250px!important;
                 }
             }
         }
@@ -317,7 +326,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 0% 7%;     
         
         &__title {
@@ -328,7 +337,7 @@ a:hover {
         &__button {
             position: relative;
             width: 100%;
-            margin: 10%;
+            margin: 5% 0%;
             display: flex;
             justify-content: flex-start;
 
@@ -362,6 +371,7 @@ a:hover {
             display: flex;
             justify-self: center;
             width: 90%;
+            max-width: 550px;
         }        
     }
 }
