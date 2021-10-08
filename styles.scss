@@ -2,6 +2,9 @@
 @use "partials/variables";
 @use 'partials/menu';
 
+
+//MIXINS 
+
 @mixin h1 {
     font-family: variables.$title-font;
     font-weight: 900;
@@ -21,9 +24,19 @@
 @mixin buttons {
     border-radius: 50px;
     border-style: none;
-    background-color: variables.$primary;
-    color: white;
+    padding: 10px 70px;
+    font-size: 20px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4) ;
+    
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.25s ease;
+    }
 }
+
+//VARIABLES
 
 $max-mobile : 767px; 
 $min-tablet:768px;
@@ -53,6 +66,9 @@ a:hover {
     text-decoration: none;
     color: variables.$primary;
 }
+
+
+// MENU
 
 .menu {
     position: fixed;
@@ -146,6 +162,7 @@ a:hover {
         margin: 0px 50px;
 
         button {
+            white-space: nowrap;
             @include h3;
             padding: 10px 70px;
             font-size: 20px;
@@ -153,7 +170,7 @@ a:hover {
             border-style: none;
             background-color: variables.$primary;
             color: white;
-            box-shadow: -2px 5px 10px #afafaf ;
+            box-shadow: -2px 5px 9px rgba(50, 50, 50, 0.4) ;
         }
 
         &:hover {
@@ -170,6 +187,8 @@ a:hover {
         text-align: center;
         font-size: 25px;
     }
+
+    
 
     &__icon {
         display: none!important;
@@ -222,6 +241,7 @@ a:hover {
         .menu {
             &__logo {
                 height: 100%;
+                min-width: 100px;
             }
         }
         
@@ -233,6 +253,7 @@ a:hover {
         .menu {           
             &__logo {
                 width: 20%;
+                min-width: 220px;
             }
         }
     }
@@ -241,7 +262,7 @@ a:hover {
    // }
 
 
-
+// HEROS
 
 .acc__heros {
     @include heros.heros_generique;
@@ -277,9 +298,11 @@ a:hover {
             justify-content: flex-start;
 
             button {
-                @include h2;
-                font-size: 25px;
-                @include buttons;                
+                @include h2;                
+                @include buttons;
+                font-size: 25px;   
+                background-color: variables.$primary;
+                color: white;             
                 padding: 30px 60px;
                 box-shadow: -2px 10px 30px rgba(50, 50, 50, 0.3) ;
 
@@ -344,41 +367,49 @@ a:hover {
     color: black;
 }
 
+
+
+// FOOTER 
+
 .pied-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 1000px;//////
+    height: 800px;//////
     z-index: 3;
     background-image: url('images/degrade-footer.png');
-    background-size: cover;
-    padding: 10%;
+    background-size: 100% 140%;  //media QUERY
+    background-position: 50% 100%; //media QUERY
+    padding: 0% 8%;
 
     &__wrapper {
         position: relative;
         display: flex;
+        flex-direction: row;
         width: 100%;
         max-width: 2000px;
         height: 100%;
     }
 
     &__gauche {
-        align-items: center;
+        padding: 20px;
+        align-items: flex-start;
         justify-content: center;
         position: relative;
         display: flex;
         width: 50%;
         height: 100%;
         flex-direction: column;
-        font-size: 35px;
+        font-size: 25px;
         font-family: variables.$text-font;
     }
 
     &__droit {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         position: relative;
         justify-self: flex-end;
@@ -387,13 +418,68 @@ a:hover {
         flex-direction: column;
     }
 
+    &__coordonnes {
+
+        font-family: variables.$text-font;
+        font-size: 18px;
+
+        img {
+            position: relative;
+            height: 45px;
+            margin-right: 20px;
+        }
+        
+        p {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        a:hover {
+            color: inherit;
+            transform: scale(0.95);
+            transition: 0.3s;
+        }
+    }
+
+    &__reseaux {
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-self: center;
+        align-self: center;
+
+        img {
+            position: relative;
+            height: 45px;
+            display: flex;
+        }
+    }
+
+    &__milieu {
+        position: relative;
+        width: 100%;
+        height: 5%;
+        display: flex;
+        color: white;
+        font-size: 15px;
+        font-family: variables.$text-font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
     &__logo {
+        margin-bottom: 30px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         position: relative;
-        height: 30%;
-        padding:20px;
+        height: 300px;
 
         img {
             position: relative;
@@ -404,5 +490,15 @@ a:hover {
     &__desc {
         position: relative;
         height: 10%;
+    }
+
+    &__btnDon {
+        margin-top: 30px;
+        @include buttons;
+        @include h2;
+        padding: 15px 70px;
+        background-color: white;
+        color: variables.$primary;
+        
     }
 }
