@@ -44,7 +44,7 @@ const swiperHeros = new Swiper('.acc__heros', {
   },
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.pagination-heros',
   },
 
   navigation: {
@@ -63,10 +63,6 @@ const swiperFooter = new Swiper('.pied-page__swiper', {
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
   },
 
   navigation: {

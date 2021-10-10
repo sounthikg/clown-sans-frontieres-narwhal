@@ -3,6 +3,14 @@
 @use 'partials/footer';
 @use 'partials/menu';
 
+.test {
+    fill: url(#img);
+}
+
+.test1 {
+    margin-top: -8%;
+    width: 100%;
+}
 
 //MIXINS 
 
@@ -355,7 +363,6 @@ a:hover {
     display: flex;
     flex-direction: row!important;
     justify-content: center;
-    background-color: red;
     margin: 0;
 
     .swiper-pagination-bullet {
@@ -372,6 +379,10 @@ a:hover {
         color:white;
         opacity: 60%;
         padding: 2%;
+    }
+
+    &__swiper {
+        height: 100vh;
     }
 
     &__slide {
@@ -444,6 +455,11 @@ a:hover {
     background-color: white;
     z-index: 3;
     color: black;
+
+    &__contenu {
+        background-image: url(images/texture-grain.png);
+        background-size: 100% 100%;
+    }
 }
 
 .temoignages {
