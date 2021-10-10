@@ -57,6 +57,7 @@ body {
     font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 a {
@@ -257,11 +258,18 @@ a:hover {
             margin-top: 0!important;
             padding-top: 250px;
 
+            &__slide {
+                flex-direction: column!important;
+                align-items: center!important;
+                justify-content: center!important;
+            }
+
 
             &__description {
+                max-width: 500px!important;
                 justify-content: center!important;
                 display: flex;
-                margin-top: 10%;
+                margin-top: 5%;
                 width:100%!important;
                 text-align:center;
                 align-items: center!important;
@@ -274,6 +282,10 @@ a:hover {
                 &__button {
                     justify-content:center!important;
                     display: flex!important;
+
+                    button {
+                        font-size: 20px!important;
+                    }
 
                 }
             }
@@ -302,6 +314,31 @@ a:hover {
             }
         }
 
+        .acc__heros {
+
+            &__description {
+                padding-left: 15%!important;
+                padding-right: 2%!important;
+                
+                &__title {
+                font-size: 25px!important;
+                }             
+
+                button {
+                    font-size: 20px!important;
+                }
+                    
+            }
+
+            
+
+            &__image {
+                padding-right: 10%!important;
+                padding-left: 2%!important;
+
+            }
+        }
+
         
     }
 
@@ -316,13 +353,37 @@ a:hover {
     background-position: 0% 40%;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row!important;
     justify-content: center;
+    background-color: red;
+    margin: 0;
 
+    .swiper-pagination-bullet {
+        background:white;
+        opacity: 50%;
+
+        &-active {
+            background: white;
+            opacity: 100%;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        color:white;
+        opacity: 60%;
+        padding: 2%;
+    }
+
+    &__slide {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0;
+    }
 
     &__description {
-
         width: 50%;
+        max-width: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;

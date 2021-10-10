@@ -33,8 +33,29 @@ hamburgerBtn.addEventListener('click', function() {
     
 })
 
-const swiper = new Swiper('.pied-page__swiper', {
-  // Optional parameters
+const swiperHeros = new Swiper('.acc__heros', {
+  direction: 'horizontal',
+  loop: true,
+  speed: 600,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+
+const swiperFooter = new Swiper('.pied-page__swiper', {
   direction: 'horizontal',
   loop: true,
   speed: 600,
@@ -44,18 +65,15 @@ const swiper = new Swiper('.pied-page__swiper', {
     disableOnInteraction: false,
   },
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
