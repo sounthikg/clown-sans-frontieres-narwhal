@@ -301,6 +301,10 @@ a:hover {
                 }
             }
         }
+
+        .services {
+            margin-top:-65%!important;
+        }
         
     }
 
@@ -340,6 +344,10 @@ a:hover {
                 padding-left: 2%!important;
 
             }
+        }
+
+        .services {
+            margin-top:-40%!important;
         }
 
         
@@ -461,7 +469,7 @@ a:hover {
 .services {
     position: relative;
     width: 100%;
-    height: 900px;//////
+    height: 900px;//////////// une fois le contenu ajouté au html, vous pouvez enlever ça
     z-index: 3;
     color: black;
     margin-top: -27%;
@@ -477,6 +485,7 @@ a:hover {
     }
 
     &__contenu {
+        margin-top: -1px;
         background-image: url(images/texture-grain.png);
         background-size: 100% 100%;
         width: 100%;
@@ -488,20 +497,40 @@ a:hover {
 .temoignages {
     position: relative;
     width: 100%;
-    height: 900px;//////
-    background-color: white;
+    height: 900px;////// une fois le contenu ajouté au html, vous pouvez enlever ça
     z-index: 3;
     color: black;
     text-align: center;
+
+    &__contenu {
+        margin-top: -1px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+    }
 }
 
 .nouvelles {
     position: relative;
     width: 100%;
     height: 900px;//////
-    background-color: white;
     z-index: 3;
     color: black;
+    text-align: center;
+    //margin-top: -10%;
+
+    &__path {
+        fill: #fef1e2;
+    }
+
+    &__contenu {
+        margin-top: -1px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #fef1e2;
+    }
 }
 
 .donation {
