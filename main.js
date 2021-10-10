@@ -33,7 +33,7 @@ hamburgerBtn.addEventListener('click', function() {
     
 })
 
-const swiperHeros = new Swiper('.acc__heros', {
+const swiperHeros = new Swiper('.acc__heros__swiper', {
   direction: 'horizontal',
   loop: true,
   speed: 600,

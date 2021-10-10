@@ -3,14 +3,9 @@
 @use 'partials/footer';
 @use 'partials/menu';
 
-.test {
-    fill: url(#img);
-}
 
-.test1 {
-    margin-top: -8%;
-    width: 100%;
-}
+
+
 
 //MIXINS 
 
@@ -354,7 +349,9 @@ a:hover {
 // HEROS
 
 .acc__heros {
-    @include heros.heros_generique;
+    display: block;
+    height: 150vh;
+    padding-top:100px;
     position: relative;
     background-image: url('images/degrade.png');
     background-size: cover;
@@ -363,6 +360,7 @@ a:hover {
     display: flex;
     flex-direction: row!important;
     justify-content: center;
+    align-items: flex-start;
     margin: 0;
 
     .swiper-pagination-bullet {
@@ -375,6 +373,12 @@ a:hover {
         }
     }
 
+    .pagination-heros {
+        position: absolute;
+        top: 85%;
+    }
+
+
     .swiper-button-next, .swiper-button-prev {
         color:white;
         opacity: 60%;
@@ -382,7 +386,13 @@ a:hover {
     }
 
     &__swiper {
+        position: relative;
         height: 100vh;
+        width: 100%;
+
+        &--wrapper {
+            height: 100%;
+        }
     }
 
     &__slide {
@@ -452,13 +462,26 @@ a:hover {
     position: relative;
     width: 100%;
     height: 900px;//////
-    background-color: white;
     z-index: 3;
     color: black;
+    margin-top: -27%;
+    text-align: center;
+
+    &__vague {
+
+        width: 100%;
+    
+        &__path {
+            fill: url(#img);
+        }
+    }
 
     &__contenu {
         background-image: url(images/texture-grain.png);
         background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 }
 
@@ -466,9 +489,10 @@ a:hover {
     position: relative;
     width: 100%;
     height: 900px;//////
-    background-color: blue;
+    background-color: white;
     z-index: 3;
     color: black;
+    text-align: center;
 }
 
 .nouvelles {
