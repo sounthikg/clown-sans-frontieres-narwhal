@@ -740,16 +740,17 @@ h2{
         width:80vw;
         padding:40px;
         margin:auto;
+
         .swiper-button-prev{
         font-weight: 900;
-        margin-top: 20px; 
+        margin-top: 150px; 
         padding-left:75px;
         color: variables.$third;
         }
         
         .swiper-button-next{
         font-weight: 900;
-        margin-top: 20px;
+        margin-top: 150px;
         padding-right:75px;
         }
       }
@@ -841,7 +842,7 @@ h2{
         }
             
         .swiper-button-next{
-        padding-right:400px;
+        padding-right:380px;
          }
     }
 
