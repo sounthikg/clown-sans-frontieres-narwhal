@@ -8,306 +8,490 @@
           ET FAIRE TERMINAL >>> NPM I, NPM I SASS, NPM I BOOTSTRAP, NPM I SWIPER -->
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clowns Sans Frontières</title>
   </head>
   <body>
-            
-      <!---------------------- MENU À COPIER/COLLER ------------------->        
+    <!---------------------- MENU À COPIER/COLLER ------------------->
 
-      <nav class='menu'>
-        <div class='menu__wrapper'>
-        
-            <div class='menu__logo'>
-              <a href='index.html'>
-                <picture>
-                  <source srcset="images/logo_horizontalcsf.png" media="(min-width: 768px)">
-                  <img src="images/logo_verticalcsf.png">
-                </picture>
-              </a>
+    <nav class="menu">
+      <div class="menu__wrapper">
+        <div class="menu__logo">
+          <a href="index.html">
+            <picture>
+              <source
+                srcset="images/logo_horizontalcsf.png"
+                media="(min-width: 768px)"
+              />
+              <img src="images/logo_verticalcsf.png" />
+            </picture>
+          </a>
+        </div>
+
+        <!-- MENU HAMBURGER -->
+        <label class="menu__icon" for="menu__btn"
+          ><span class="navicon"></span
+        ></label>
+        <div class="menu__hamburger">
+          <ul class="menu__options">
+            <li class="menu__options__nouvelles">
+              <a href="nouvelles.html">Nouvelles</a>
+            </li>
+            <li class="menu__options__services">
+              <a href="services.html">Services</a>
+            </li>
+            <li class="menu__options__equipe">
+              <a href="equipe.html">Équipe</a>
+            </li>
+            <li class="menu__options__a_propos nav-item">
+              <a href="a_propos.html">À propos</a>
+            </li>
+            <li class="menu__options__histoire">
+              <a href="histoire.html">Histoire</a>
+            </li>
+          </ul>
+          <div class="menu__don">
+            <a href="don.html"><button type="button">Donnez !</button></a>
+          </div>
+          <div class="menu__lang">EN</div>
+        </div>
+      </div>
+    </nav>
+
+    <!---------------------- FIN DU MENU À COPIER/COLLER ------------------->
+
+    <div class="acc__heros">
+      <div class="acc__heros__swiper">
+        <div class="swiper-wrapper acc__heros__swiper--wrapper">
+          <!-- Slide 01 -->
+          <div class="swiper-slide acc__heros__slide">
+            <div class="acc__heros__description">
+              <div class="acc__heros__description__title">
+                Ce que les médecins font pour le corps, les clowns le font pour
+                l'âme.
+              </div>
+              <div class="acc__heros__description__button">
+                <button type="button">Faites un don !</button>
+              </div>
+            </div>
+            <div class="acc__heros__image">
+              <img src="images/dessin.png" />
+            </div>
+          </div>
+          <!-- Slide 02 -->
+          <div class="swiper-slide acc__heros__slide">
+            <div class="acc__heros__description">
+              <div class="acc__heros__description__title">
+                Pour que le bonheur soit partout, pour que le rire soit partout,
+                pour que l'espoir soit partout.
+              </div>
+              <div class="acc__heros__description__button">
+                <button type="button">Faites un don !</button>
+              </div>
+            </div>
+            <div class="acc__heros__image">
+              <img src="images/clown2_cropped.png" />
+            </div>
+          </div>
+          <!-- Slide 03 -->
+          <div class="swiper-slide acc__heros__slide">
+            <div class="acc__heros__description">
+              <div class="acc__heros__description__title">
+                Plus jamais d'enfants sans sourire. Aidez-nous à accomplir notre
+                mission.
+              </div>
+              <div class="acc__heros__description__button">
+                <button type="button">Faites un don !</button>
+              </div>
+            </div>
+            <div class="acc__heros__image">
+              <img src="images/clown3_cropped.png" />
+            </div>
+          </div>
+          <!-- Slide 04 -->
+          <div class="swiper-slide acc__heros__slide">
+            <div class="acc__heros__description">
+              <div class="acc__heros__description__title">
+                La magie du spectacle et du rire sont un soutien psychologique
+                pour les populations fragilisés victimes de la guerre, de la
+                misère ou de l’exclusion.
+              </div>
+              <div class="acc__heros__description__button">
+                <button type="button">Faites un don !</button>
+              </div>
+            </div>
+            <div class="acc__heros__image">
+              <img src="images/clown4_cropped.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination pagination-heros"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!---- BLOC SERVICES ---->
+
+    <div class="services">
+      <svg
+        class="grain"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <defs>
+          <pattern id="img" x="0" y="0" width="1" height="1">
+            <image
+              width="100%"
+              height="297.5%"
+              xlink:href="images/texture-grain.png"
+            />
+          </pattern>
+        </defs>
+
+        <path
+          class="grain__path"
+          fill-opacity="1"
+          d="M0,192L80,202.7C160,213,320,235,480,213.3C640,192,800,128,960,112C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+
+      <div class="services__contenu">
+        <h1 class="services-title">Aperçu de nos services</h1>
+
+        <div class="container">
+          <div class="row justify-content-evenly">
+
+
+            <div class="col-xl-6 col-md-6">
+              <div
+                class="card border border-2 mb-3 p-3"
+                style="max-width: 600px"
+              >
+                <div class="row align-items-center">
+                  <div class="col-xl-3">
+                    <img class="card-img" src="https://zupimages.net/up/21/40/psod.png" alt=""/>
+                  </div>
+                  <div class="col-xl-9">
+                    <div class="card-body">
+                      <h4 class="card-title">Spectacles, animations et ateliers</h4>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info border-2"
+                      >
+                        En savoir plus
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- MENU HAMBURGER -->
-              <label class="menu__icon" for="menu__btn"><span class="navicon"></span></label>
-            <div class='menu__hamburger'>
-              <ul class='menu__options'>
-                <li class='menu__options__nouvelles'>
-                  <a href='nouvelles.html'>Nouvelles</a>
-                </li>
-                <li class='menu__options__services'>
-                  <a href='services.html'>Services</a>
-                </li>
-                <li class='menu__options__equipe'>
-                  <a href='equipe.html'>Équipe</a>
-                </li>
-                <li class='menu__options__a_propos nav-item'>
-                  <a href='a_propos.html'>À propos</a>
-                </li>
-                <li class='menu__options__histoire'>
-                  <a href='histoire.html'>Histoire</a>
-                </li>
-              </ul>
-              <div class='menu__don'>
-                <a href='don.html'><button type='button'>Donnez !</button></a>
-              </div>
-              <div class='menu__lang'>EN</div>
-            </div>
-         </div>
-      </nav>
 
-      <!---------------------- FIN DU MENU À COPIER/COLLER ------------------->
-        
-      <div class='acc__heros'>
-        <div class="acc__heros__swiper">
-          <div class="swiper-wrapper acc__heros__swiper--wrapper">
-            <!-- Slide 01 -->
-            <div class="swiper-slide acc__heros__slide">
-              <div class='acc__heros__description'>
-                <div class='acc__heros__description__title'>Ce que les médecins font pour le corps, les clowns le font pour l'âme.</div>     
-                <div class='acc__heros__description__button'>
-                  <button type='button'>Faites un don !</button>
+            <div class="col-xl-6 col-md-6">
+              <div
+                class="card border border-2 mb-3 p-3"
+                style="max-width: 600px"
+              >
+                <div class="row align-items-center">
+                  <div class="col-xl-3">
+                    <img class="card-img" src="https://zupimages.net/up/21/40/78h6.png" alt=""/>
+                  </div>
+                  <div class="col-xl-9">
+                    <div class="card-body">
+                      <h4 class="card-title">Exposition de photographies</h4>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info border-2"
+                      >
+                        En savoir plus
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class='acc__heros__image'>
-                <img src='images/dessin.png'>
               </div>
             </div>
-            <!-- Slide 02 -->
-            <div class="swiper-slide acc__heros__slide">
-              <div class='acc__heros__description'>
-                <div class='acc__heros__description__title'>Pour que le bonheur soit partout, pour que le rire soit partout, pour que l'espoir soit partout.</div>     
-                <div class='acc__heros__description__button'>
-                  <button type='button'>Faites un don !</button>
-                </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---- BLOC TÉMOIGNAGES ---->
+
+    <div class="temoignages">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,224L48,202.7C96,181,192,139,288,133.3C384,128,480,160,576,181.3C672,203,768,213,864,197.3C960,181,1056,139,1152,112C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+      <div class="temoignages__contenu">
+        <h2>Nos témoignages</h2>
+        <!-- Slider main container -->
+        <div class="swiper02">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                class="guillemets guillemets--up"
+                src="images/guillemetsvf.png"
+              />
+              <div class="bloc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
               </div>
-              <div class='acc__heros__image'>
-                <img src='images/clown2_cropped.png'>
+              <img
+                class="guillemets guillemets--down"
+                src="images/guillemetsvf.png"
+              />
+              <div class="temoin">
+                <img class="temoin--img" src="images/personne.jpg" />
               </div>
+              <span class="personne">Une personne</span>
             </div>
-            <!-- Slide 03 -->
-            <div class="swiper-slide acc__heros__slide">
-              <div class='acc__heros__description'>
-                <div class='acc__heros__description__title'>Plus jamais d'enfants sans sourire. Aidez-nous à accomplir notre mission.</div>     
-                <div class='acc__heros__description__button'>
-                  <button type='button'>Faites un don !</button>
-                </div>
+            <div class="swiper-slide">
+              <img
+                class="guillemets guillemets--up"
+                src="images/guillemetsvf.png"
+              />
+              <div class="bloc">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et eos qui ratione voluptatem
+                sequi nesciunt.
               </div>
-              <div class='acc__heros__image'>
-                <img src='images/clown3_cropped.png'>
+              <img
+                class="guillemets guillemets--down"
+                src="images/guillemetsvf.png"
+              />
+              <div class="temoin">
+                <img class="temoin--img" src="images/personne2.jpg" />
               </div>
+              <span class="personne">Une autre personne</span>
             </div>
-            <!-- Slide 04 -->
-            <div class="swiper-slide acc__heros__slide">
-              <div class='acc__heros__description'>
-                <div class='acc__heros__description__title'>La magie du spectacle et du rire sont un soutien psychologique pour les populations fragilisés victimes de la guerre, de la misère ou de l’exclusion.</div>     
-                <div class='acc__heros__description__button'>
-                  <button type='button'>Faites un don !</button>
-                </div>
+            <div class="swiper-slide">
+              <img
+                class="guillemets guillemets--up"
+                src="images/guillemetsvf.png"
+              />
+              <div class="bloc">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi.
               </div>
-              <div class='acc__heros__image'>
-                <img src='images/clown4_cropped.png'>
+              <img
+                class="guillemets guillemets--down"
+                src="images/guillemetsvf.png"
+              />
+              <div class="temoin">
+                <img class="temoin--img" src="images/personne3.jpg" />
               </div>
+              <span class="personne">Encore une personne</span>
             </div>
           </div>
 
-          <div class="swiper-pagination pagination-heros"></div>
-    
+          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          
         </div>
       </div>
+    </div>
 
-      <!---- BLOC SERVICES ---->
+    <!---- BLOC NOUVELLES ---->
 
-      <div class='services'>
+    <div class="nouvelles">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          class="nouvelles__path"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,229.3C672,224,768,224,864,208C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
 
-        <svg class='grain' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <div class="nouvelles__contenu">ouiouiouiiioui</div>
+    </div>
 
-          <defs>
-            <pattern id="img" x="0" y="0" width="1" height="1">
-              <image width="100%" height="297.5%"
-                     xlink:href="images/texture-grain.png"/>
-            </pattern>
-          </defs>
+    <!---- BLOC DONATIONS ---->
 
-          <path class='grain__path' fill-opacity="1" d="M0,192L80,202.7C160,213,320,235,480,213.3C640,192,800,128,960,112C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-          </path>     
-        </svg>
+    <div class="donation">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <defs>
+          <pattern id="img" x="0" y="0" width="1" height="1">
+            <image
+              width="100%"
+              height="297.5%"
+              xlink:href="images/texture-grain.png"
+            />
+          </pattern>
+        </defs>
 
-        <div class="services__contenu">
-          AJOUTER LE HTML BLOC DE MALONEY ICI
-        </div>
-      
-        
-      </div>   
+        <path
+          class="grain__path"
+          fill-opacity="1"
+          d="M0,192L60,170.7C120,149,240,107,360,112C480,117,600,171,720,176C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
 
-      <!---- BLOC TÉMOIGNAGES ---->
-
-      <div class='temoignages'>
-       
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#fff" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,133.3C384,128,480,160,576,181.3C672,203,768,213,864,197.3C960,181,1056,139,1152,112C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-
-        <div class='temoignages__contenu'>
-          <h2> Nos témoignages </h2>
-          <!-- Slider main container -->
-<div class="swiper02">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-<div class="swiper-slide">   
-  <img class="guillemets guillemets--up" src="images/guillemetsvf.png">
-  <div class="bloc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-  <img class="guillemets guillemets--down" src="images/guillemetsvf.png">
-  <div class="temoin"> <img class="temoin--img" src="images/personne.jpg"> </div>
-  <span class="personne">Une personne</span>
-</div> 
-<div class="swiper-slide">
-  <img class="guillemets guillemets--up" src="images/guillemetsvf.png">
-  <div class="bloc"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et eos qui ratione voluptatem sequi nesciunt.</div>
-  <img class="guillemets guillemets--down" src="images/guillemetsvf.png">
-  <div class="temoin"> <img class="temoin--img" src="images/personne2.jpg"> </div>
-  <span class="personne">Une autre personne</span>
-</div> 
-<div class="swiper-slide">    
-  <img class="guillemets guillemets--up" src="images/guillemetsvf.png">
-  <div class="bloc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.  </div>
-  <img class="guillemets guillemets--down" src="images/guillemetsvf.png">
-  <div class="temoin"> <img class="temoin--img" src="images/personne3.jpg"> </div>
-  <span class="personne">Encore une personne</span>
-</div> 
-
-  </div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-</div>
-
+      <div class="donation__contenu">
+        <p>Bloc dons</p>
+        <p>Bloc dons</p>
+        <p>Bloc dons</p>
+        <p>Bloc dons</p>
+        <p>Bloc dons</p>
       </div>
 
-      <!---- BLOC NOUVELLES ---->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <defs>
+          <pattern id="img" x="0" y="0" width="1" height="1">
+            <image
+              width="100%"
+              height="297.5%"
+              xlink:href="images/texture-grain.png"
+            />
+          </pattern>
+        </defs>
 
-      <div class='nouvelles'>
+        <path
+          class="grain__path"
+          fill-opacity="1"
+          d="M0,192L60,208C120,224,240,256,360,256C480,256,600,224,720,192C840,160,960,128,1080,138.7C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path class='nouvelles__path' fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,229.3C672,224,768,224,864,208C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+    <!---------------------------- FOOTER À COPIER/COLLER ---------------------------->
 
-        <div class='nouvelles__contenu'>
-          ouiouiouiiioui
-        </div>
-
-      </div>
-
-      <!---- BLOC DONATIONS ---->
-
-      <div class='donation'>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-
-          <defs>
-            <pattern id="img" x="0" y="0" width="1" height="1">
-              <image width="100%" height="297.5%"
-                     xlink:href="images/texture-grain.png"/>
-            </pattern>
-          </defs>
-
-          <path class="grain__path" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,112C480,117,600,171,720,176C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
-
-        <div class='donation__contenu'>
-          <p>Bloc dons</p>
-          <p>Bloc dons</p>
-          <p>Bloc dons</p>
-          <p>Bloc dons</p>
-          <p>Bloc dons</p>
-        </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-
-          <defs>
-            <pattern id="img" x="0" y="0" width="1" height="1">
-              <image width="100%" height="297.5%"
-                     xlink:href="images/texture-grain.png"/>
-            </pattern>
-          </defs>
-
-          <path class='grain__path' fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,256C480,256,600,224,720,192C840,160,960,128,1080,138.7C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-        </svg>        
-
-
-      </div>
-
-      <!---------------------------- FOOTER À COPIER/COLLER ---------------------------->
-
-      <div class='pied-page'>
-        <div class='pied-page__wrapper'>
-          <div class='pied-page__gauche'>
-            <a href='index.html'><div class='pied-page__logo'>
-              <img src='images/logo_verticalcsf.png'>
-            </div></a>
-            <div class='pied-page__description'>
-              <p>Ce que les médecins font pour le corps, <br>les clowns le font pour l'âme.</p>
-            </div>            
-            <a href='don.html'><button class='pied-page__btnDon'>Donnez !</button></a>
+    <div class="pied-page">
+      <div class="pied-page__wrapper">
+        <div class="pied-page__gauche">
+          <a href="index.html"
+            ><div class="pied-page__logo">
+              <img src="images/logo_verticalcsf.png" /></div
+          ></a>
+          <div class="pied-page__description">
+            <p>
+              Ce que les médecins font pour le corps, <br />les clowns le font
+              pour l'âme.
+            </p>
           </div>
-          <div class='pied-page__droit'>
-            <div class='pied-page__coordonnes'>
-              <p><img src='images/address.png'><a href='https://goo.gl/maps/JbPGfpbce26Mf4Zs8'>105 rue Ontario Est, bureau 203 <br> Montréal, Québec, H2X 1G9</a></p>
-              <p><img src='images/email.png'>contact@clownssansfrontieres.ca</p>
-              <p><img src='images/phone.png'>(514) 450-1287</p>
+          <a href="don.html"
+            ><button class="pied-page__btnDon">Donnez !</button></a
+          >
+        </div>
+        <div class="pied-page__droit">
+          <div class="pied-page__coordonnes">
+            <p>
+              <img src="images/address.png" /><a
+                href="https://goo.gl/maps/JbPGfpbce26Mf4Zs8"
+                >105 rue Ontario Est, bureau 203 <br />
+                Montréal, Québec, H2X 1G9</a
+              >
+            </p>
+            <p><img src="images/email.png" />contact@clownssansfrontieres.ca</p>
+            <p><img src="images/phone.png" />(514) 450-1287</p>
 
-              <div class='pied-page__reseaux'>
-                <a href='https://www.facebook.com/Clowns-Sans-Fronti%C3%A8res-Canada-174316817738/'><img src='images/facebook.png'></a>
-                <a href='https://twitter.com/csf_canada'><img src='images/twitter.png'></a>
-                <a href='https://www.instagram.com/clownssansfrontieres/?hl=fr-ca'><img src='images/instagram.png'></a>
-                <a href='https://www.youtube.com/channel/UCQWUO8JZx69GPWRInazRPMw'><img src='images/youtube.png'></a>
-                <a href='https://vimeo.com/user2650793'><img src='images/vimeo.png'></a>
-              </div>
+            <div class="pied-page__reseaux">
+              <a
+                href="https://www.facebook.com/Clowns-Sans-Fronti%C3%A8res-Canada-174316817738/"
+                ><img src="images/facebook.png"
+              /></a>
+              <a href="https://twitter.com/csf_canada"
+                ><img src="images/twitter.png"
+              /></a>
+              <a href="https://www.instagram.com/clownssansfrontieres/?hl=fr-ca"
+                ><img src="images/instagram.png"
+              /></a>
+              <a href="https://www.youtube.com/channel/UCQWUO8JZx69GPWRInazRPMw"
+                ><img src="images/youtube.png"
+              /></a>
+              <a href="https://vimeo.com/user2650793"
+                ><img src="images/vimeo.png"
+              /></a>
+            </div>
 
-              <div class='pied-page__partenaires'>
-                <div class="pied-page__swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src='images/desjardins.png' class='img-horizontal'></div>
-                    <div class="swiper-slide"><img src='images/Relations-internationales-et-francophonie.png'></div>
-                    <div class="swiper-slide"><img src='images/tohu.png'></div>
-                    <div class="swiper-slide"><img src='images/telus.png'></div>
+            <div class="pied-page__partenaires">
+              <div class="pied-page__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="images/desjardins.png" class="img-horizontal" />
                   </div>
-                 
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                
-                  <!-- If we need scrollbar 
-                  <div class="swiper-scrollbar"></div>-->
+                  <div class="swiper-slide">
+                    <img
+                      src="images/Relations-internationales-et-francophonie.png"
+                    />
+                  </div>
+                  <div class="swiper-slide"><img src="images/tohu.png" /></div>
+                  <div class="swiper-slide"><img src="images/telus.png" /></div>
                 </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar 
+                  <div class="swiper-scrollbar"></div>-->
               </div>
-            </div>           
-            
+            </div>
           </div>
         </div>
-        <div class='pied-page__milieu'>
-          <p>©2021, Clowns Sans Frontières, Narwhals Web</p>
-        </div>
       </div>
+      <div class="pied-page__milieu">
+        <p>©2021, Clowns Sans Frontières, Narwhals Web</p>
+      </div>
+    </div>
 
-      <!--------------------- FIN DU FOOTER À COPIER/COLLER ---------------------------->
-      
+    <!--------------------- FIN DU FOOTER À COPIER/COLLER ---------------------------->
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
