@@ -73,7 +73,15 @@ a:hover {
     color: variables.$primary;
 }
 
+h1{
+  @include h1;
+  color: variables.$primary;   
+}
 
+h2{
+    @include h2;
+    color: variables.$primary;   
+  }
 // MENU
 
 .menu {
@@ -734,24 +742,33 @@ a:hover {
         margin:auto;
         .swiper-button-prev{
         font-weight: 900;
-        margin-top: 150px; 
+        margin-top: 20px; 
+        padding-left:75px;
+        color: variables.$third;
         }
         
         .swiper-button-next{
         font-weight: 900;
-        margin-top: 150px; 
+        margin-top: 20px;
+        padding-right:75px;
         }
       }
       
+      .personne{
+       color: variables.$third;
+       font-family: variables.$title-font;
+       font-size:15px;
+      }
       
       .bloc{
       width:350px;
       height: 300px;
-      background-color:red;
+      background-color: variables.$fourth;
       border-radius: 15px;
       padding:2vw;
       margin:auto;
       text-align: center;
+      font-family: variables.$text-font;
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
       }
       
@@ -764,8 +781,8 @@ a:hover {
       height: 120px;
       border-radius: 100%;
       margin:auto;
-      border: 5px solid blue;
-      background-color:blue;
+      border: 5px solid variables.$third;
+      background-color: variables.$third;
       margin-top: 20px;
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
         .temoin--img{
@@ -777,6 +794,17 @@ a:hover {
       
       
       @media screen and (min-width: 768px) { 
+      
+    .swiper02 {
+        .swiper-button-prev{
+        padding-left:100px;
+        }
+        
+        .swiper-button-next{
+        padding-right:100px;
+        }
+    }
+
       .bloc{
       width:50vw;
       height: 250px;}
@@ -803,18 +831,20 @@ a:hover {
       margin-top:-85px;
       }
         
-      .swiper02 {
-        .swiper-button-prev{
-        margin-top: 200px; 
-        }
-        
-        .swiper-button-next{
-        margin-top: 200px; 
-        }
-      }
+
       }
       
-      @media screen and (min-width: 1200px) { 
+      @media screen and (min-width: 1200px) {
+    .swiper02 {
+        .swiper-button-prev{
+        padding-left:400px;
+        }
+            
+        .swiper-button-next{
+        padding-right:400px;
+         }
+    }
+
       .bloc{
       width:50vw;
       height: 200px;}
@@ -828,18 +858,9 @@ a:hover {
       .guillemets--down{
           transform: scaleX(-1);
           top: -60px;
-          left:64vw;
+          left:60vw;
       }
         
-      .swiper02 {
-        .swiper-button-prev{
-        margin-top: 180px; 
-        }
-        
-        .swiper-button-next{
-        margin-top: 180px; 
-        }
-      }
       }
       
 }
