@@ -74,3 +74,21 @@ const swiperFooter = new Swiper('.pied-page__swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+const swiper = new Swiper('.swiper02', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+    effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+  },
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
