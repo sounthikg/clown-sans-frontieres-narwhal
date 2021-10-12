@@ -3,18 +3,31 @@
 @use "partials/footer";
 @use "partials/menu";
 
+
+//VARIABLES
+
+$max-mobile: 767px;
+$min-tablet: 768px;
+$max-tablet: 1999px;
+$min-computer: 1200px;
+
+
 //MIXINS
 
 @mixin h1 {
   font-family: variables.$title-font;
   font-weight: 900;
-  font-size: 42px;
+  font-size: 35px;
 }
+
 @mixin h2 {
   font-family: variables.$title-font;
   font-weight: 700;
   font-size: 30px;
 }
+
+
+
 @mixin h3 {
   font-family: variables.$title-font;
   font-weight: 400;
@@ -37,12 +50,7 @@
   }
 }
 
-//VARIABLES
 
-$max-mobile: 767px;
-$min-tablet: 768px;
-$max-tablet: 1999px;
-$min-computer: 1200px;
 
 body {
   margin: 0px;
@@ -242,6 +250,11 @@ h2 {
   @include menu.menu-hamburger;
   @include footer.footer-sm;
 
+  h1 {
+    padding-top: 5%;
+    font-size: 25px!important;
+  } 
+
   .menu {
     &__logo {
       height: 100%;
@@ -306,6 +319,11 @@ h2 {
 @media screen and(min-width: $min-tablet) and (max-width: $min-computer) {
   @include menu.menu-hamburger;
   @include footer.footer-md;
+
+  h1 {
+    padding-top: 5%;
+    font-size: 30px!important;
+  }
 
   .menu {
     &__logo {
@@ -700,8 +718,6 @@ h2 {
 .services {
   position: relative;
   width: 100%;
-  //////////// une fois le contenu ajouté au html, vous pouvez enlever ça
-  
   z-index: 1;
   color: black;
   margin-top: -27%;
@@ -758,6 +774,7 @@ h1.services-title {
 }
 
 @media screen and(min-width: $min-tablet) and (max-width: $min-computer) {
+  
   .services {
     height: fit-content!important;
   }
@@ -795,7 +812,8 @@ h1.services-title {
     @include h1;
     color: variables.$primary;
     text-align: center;
-    font-size: 25px !important;
+    padding-top: 10%;
+    padding-bottom: 2%;
   }
 
   .container{
@@ -854,6 +872,10 @@ h1.services-title {
       font-weight: 900;
       margin-top: 150px;
       padding-right: 75px;
+    }
+
+    .swiper-slide-active {
+      z-index: 3;
     }
   }
 
