@@ -890,7 +890,7 @@ h1.services-title {
     height: 300px;
     background-color: variables.$fourth;
     border-radius: 15px;
-    padding: 2vw;
+    padding: 4%;
     margin: auto;
     text-align: center;
     font-family: variables.$text-font;
@@ -984,4 +984,19 @@ h1.services-title {
       left: 60vw;
     }
   }
+}
+
+@media screen and (min-width: 1500px) {
+  .swiper02 {
+
+  .guillemets--up {
+    top: 60px;
+    left: 11vw;
+  }
+
+  .guillemets--down {
+    top: -60px;
+    left: 60vw;
+  }
+}
 }
