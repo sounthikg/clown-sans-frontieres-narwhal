@@ -2,7 +2,7 @@
 @use "partials/variables";
 @use "partials/footer";
 @use "partials/menu";
-
+@use "sass:color";
 
 //VARIABLES
 
@@ -1001,13 +1001,7 @@ h1.services-title {
 }
 }
 
-.dot {
-  position: absolute;
-  background-color: transparent;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
+/*ANIMATION DON*/
 
 .button {
   border: none;
@@ -1041,10 +1035,53 @@ h1.services-title {
   }
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-.js-focus-visible .focus-visible {
-  outline: 3px solid lighten(red, 20%);
-  outline-offset: 5px;
-}
+.animation--don{
+  display:flex;
+  flex-direction:row;
+  position:relative;
+  top: -70vh;
+  left: -20vw;
+  }
+  
+  .ballon{
+  width:5vw;
+  height:5vw;
+  max-width:70px;
+  max-height:70px;
+  border-radius: 100%;
+  margin:1.5vw;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:70px ;
+  opacity:0;
+  border: none;
+  z-index:5;
+  }
+  
+  .ballon--rouge{
+  background-image: linear-gradient(color.adjust(variables.$primary, $hue: -5%), variables.$primary,)
+  }
+  
+  .ballon--orange{
+  background-image: linear-gradient(color.adjust(variables.$secondary, $hue: -5%), variables.$secondary,);
+  margin-top: 2vw;
+  }
+  
+  .ballon--bleu{
+    background-image: linear-gradient(color.adjust(variables.$third-alt, $hue: -5%), variables.$third-alt,);
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    .animation--don{
+      display:none;
+      }
+    }
+
+    @media screen and (max-width: $max-tablet) {
+    .ballon{
+      font-size: 4vw;
+    }
+      }
+  
