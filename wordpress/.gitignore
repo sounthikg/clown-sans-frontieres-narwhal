@@ -1,6 +1,6 @@
 wp-admin/
 wp-includes/
-index.php
+./index.php
 license.txt
 readme.html
 wp-activate.php
@@ -15,4 +15,7 @@ wp-mail.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-settings.php
+wp-config.php
+.htaccess
  
