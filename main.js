@@ -103,3 +103,42 @@ hamburgerBtn.addEventListener('mouseout', function() {
   gsap.to('.navicon', { y: '0px', rotationY:-180 }) 
 });
 
+const playDon = document.querySelectorAll('.button');
+playDon.forEach(function(button) {
+ button.addEventListener('click', function() {
+    gsap.timeline()
+      .fromTo('.ballon--rouge', { y: '-200%',
+        opacity: '0%',
+       }, 
+      { y: '0%', 
+       opacity: '100%',
+       ease: "back",
+       duration:0.4,
+      rotation: '360',
+    }
+    )
+    .fromTo('.ballon--orange', { y: '-200%',
+        opacity: '0%',
+       }, 
+      { y: '0%', 
+       opacity: '100%',
+       ease: "back",
+       duration:0.5,
+      rotation: '-360'}
+    )
+      .fromTo('.ballon--bleu', { y: '-200%',
+        opacity: '0%',
+       }, 
+      { y: '0%', 
+       opacity: '100%',
+       ease: "back",
+       duration:0.4,
+      rotation: '360'}
+    )
+    .to('.ballon', { rotation: '360',duration:2, y:'-400vh', delay:0.4,
+       })
+    
+  });
+  
+});
+
