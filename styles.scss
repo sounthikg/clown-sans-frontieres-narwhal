@@ -1000,3 +1000,51 @@ h1.services-title {
   }
 }
 }
+
+.dot {
+  position: absolute;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.button {
+  border: none;
+  font-size: 1rem;
+  z-index: 1;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 600ms;
+  &:before {
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-60deg, variables.$secondary 50%, transparent 50%);
+    background-size: 250%;
+    transition: background-position 600ms;
+    transform: rotate(180deg);
+  }
+  &:hover, &:focus {    
+    color: white;
+    &:before {
+      background-position: 100% 100%;
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+.js-focus-visible .focus-visible {
+  outline: 3px solid lighten(red, 20%);
+  outline-offset: 5px;
+}

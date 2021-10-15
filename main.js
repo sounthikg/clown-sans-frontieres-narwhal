@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { gsap } from "gsap";
 
+
 Swiper.use([Navigation, Pagination, Autoplay]);
 
 // init Swiper:
