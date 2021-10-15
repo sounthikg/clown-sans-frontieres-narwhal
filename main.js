@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import { gsap } from "gsap";
 
 Swiper.use([Navigation, Pagination, Autoplay]);
 
@@ -92,3 +93,12 @@ const swiper = new Swiper('.swiper02', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+hamburgerBtn.addEventListener('mouseover', function() {
+  gsap.to('.navicon', { y: '-10px', rotationY:180}) 
+});
+
+hamburgerBtn.addEventListener('mouseout', function() {
+  gsap.to('.navicon', { y: '0px', rotationY:-180 }) 
+});
+
