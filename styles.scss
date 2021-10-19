@@ -1085,3 +1085,80 @@ h1.services-title {
     }
       }
   
+
+  //PAGE 404//
+
+   .page404 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: black;
+    overflow-y: hidden;
+    
+    &__contenu {
+      background-size: 100% 100%;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: white;
+    }
+  }
+  
+  .page404 .forme{
+    position: relative;
+    width: 650px;
+    top: 150px;
+    left: 140px;
+  }
+
+  .page404 .clown{
+    position: relative;
+    top: 190px;
+    left: -650px;
+    width: 500px;
+  }
+
+  .page404 .ballon-404{
+    position: relative;
+    width: 150px;
+    top: 0px;
+    left: -530px;
+    transform-origin: bottom center;
+  }
+
+  .page404 .larme01{
+    position: relative;
+    width: 10px;
+    top: 95px;
+    left: -925px;
+  }
+  
+  .page404 .larme02{
+    position: relative;
+    width: 10px;
+    top: 95px;
+    left: -828px;
+  }
+
+  .message404{
+    position: fixed;
+    top: 250px;
+    left: 830px;
+  }
+
+  h1.message404{
+    @include h1;
+    color: #0a3563;
+    font-size: 90px;
+  }
+
+  p.message404{
+    font-family: 'Merriweather', serif;
+    color: #0a3563;
+    font-size: 35px;
+    position: fixed;
+    top: 375px;
+  }
+

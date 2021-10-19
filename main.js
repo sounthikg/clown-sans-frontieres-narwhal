@@ -17,22 +17,22 @@ var hamburgerBtn = document.querySelector('.navicon');
 var hamburgerMenu = document.querySelector('.menu__hamburger');
 
 
-hamburgerBtn.addEventListener('click', function() {
+hamburgerBtn.addEventListener('click', function () {
 
-    var hamDisplay = hamburgerMenu.style.display;
+  var hamDisplay = hamburgerMenu.style.display;
 
-    if (hamDisplay !== 'flex') {
+  if (hamDisplay !== 'flex') {
 
-        hamburgerMenu.style.display = 'flex';
-        hamburgerMenu.style.height = '100vh';
-    }
+    hamburgerMenu.style.display = 'flex';
+    hamburgerMenu.style.height = '100vh';
+  }
 
-    else {
+  else {
 
-        hamburgerMenu.style.display = 'none';
-        hamburgerMenu.style.height = '';
-    }
-    
+    hamburgerMenu.style.display = 'none';
+    hamburgerMenu.style.height = '';
+  }
+
 })
 
 const swiperHeros = new Swiper('.acc__heros__swiper', {
@@ -54,7 +54,7 @@ const swiperHeros = new Swiper('.acc__heros__swiper', {
     prevEl: '.swiper-button-prev',
   },
 
- 
+
 });
 
 const swiperFooter = new Swiper('.pied-page__swiper', {
@@ -81,7 +81,7 @@ const swiper = new Swiper('.swiper02', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-    effect: 'coverflow',
+  effect: 'coverflow',
   coverflowEffect: {
     rotate: 30,
     slideShadows: false,
@@ -95,50 +95,61 @@ const swiper = new Swiper('.swiper02', {
   },
 });
 
-hamburgerBtn.addEventListener('mouseover', function() {
-  gsap.to('.navicon', { y: '-10px', rotationY:180}) 
+hamburgerBtn.addEventListener('mouseover', function () {
+  gsap.to('.navicon', { y: '-10px', rotationY: 180 })
 });
 
-hamburgerBtn.addEventListener('mouseout', function() {
-  gsap.to('.navicon', { y: '0px', rotationY:-180 }) 
+hamburgerBtn.addEventListener('mouseout', function () {
+  gsap.to('.navicon', { y: '0px', rotationY: -180 })
 });
 
 const playDon = document.querySelectorAll('.button');
-playDon.forEach(function(button) {
- button.addEventListener('click', function() {
+playDon.forEach(function (button) {
+  button.addEventListener('click', function () {
     gsap.timeline()
-      .fromTo('.ballon--rouge', { y: '-200%',
+      .fromTo('.ballon--rouge', {
+        y: '-200%',
         opacity: '0%',
-       }, 
-      { y: '0%', 
-       opacity: '100%',
-       ease: "back",
-       duration:0.4,
-      rotation: '360',
-    }
-    )
-    .fromTo('.ballon--orange', { y: '-200%',
+      },
+        {
+          y: '0%',
+          opacity: '100%',
+          ease: "back",
+          duration: 0.4,
+          rotation: '360',
+        }
+      )
+      .fromTo('.ballon--orange', {
+        y: '-200%',
         opacity: '0%',
-       }, 
-      { y: '0%', 
-       opacity: '100%',
-       ease: "back",
-       duration:0.5,
-      rotation: '-360'}
-    )
-      .fromTo('.ballon--bleu', { y: '-200%',
+      },
+        {
+          y: '0%',
+          opacity: '100%',
+          ease: "back",
+          duration: 0.5,
+          rotation: '-360'
+        }
+      )
+      .fromTo('.ballon--bleu', {
+        y: '-200%',
         opacity: '0%',
-       }, 
-      { y: '0%', 
-       opacity: '100%',
-       ease: "back",
-       duration:0.4,
-      rotation: '360'}
-    )
-    .to('.ballon', { rotation: '360',duration:2, y:'-400vh', delay:0.4,
-       })
-    
+      },
+        {
+          y: '0%',
+          opacity: '100%',
+          ease: "back",
+          duration: 0.4,
+          rotation: '360'
+        }
+      )
+      .to('.ballon', {
+        rotation: '360', duration: 2, y: '-400vh', delay: 0.4,
+      })
+
   });
-  
+
 });
+
+
 
