@@ -565,6 +565,8 @@ h2 {
 
     .card-body {
       font-size: 17px;
+      padding: 20px 40px 30px 40px;
+
     }
 
     .card-title {
@@ -576,11 +578,13 @@ h2 {
 
     }
 
+
     .card-footer {
       text-align: left;
       font-size: 15px;
       color: variables.$primary;
       background-color: white;
+      padding: 10px 40px;
 
       img {
         position: relative;
