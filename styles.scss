@@ -510,8 +510,13 @@ h2 {
   }
 
   &__contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: -1px;
     width: 100%;
+    max-width: 2000px;
     height: 100%;
     position: relative;
     background-color: #fef1e2;
@@ -520,7 +525,70 @@ h2 {
     p {
       margin-bottom: 0;
     }
+    
+    button {
+      margin-top: 40px;
+      @include h2;
+      @include buttons;
+      color: variables.$secondary;
+      border-radius: 15px;
+      background-color: rgba(0,0,0,0);
+      border: 2px solid variables.$secondary;
+      padding: 20px 40px;
+      box-shadow: none;
+    }
   }
+
+  .nouvelles__cards__list {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .nouvelles__card {
+    font-family: variables.$text-font;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+    margin: 0 25px;
+    top: 0;    
+
+    &:hover {
+      top: -7px;
+      transition: 0.25s ease;
+    }
+
+    .card-body {
+      font-size: 17px;
+    }
+
+    .card-title {
+      color: variables.$primary;
+      font-family: variables.$title-font;
+      margin: 20px 0;
+      @include h2;
+      font-size: 22px;
+
+    }
+
+    .card-footer {
+      text-align: left;
+      font-size: 15px;
+      color: variables.$primary;
+      background-color: white;
+
+      img {
+        position: relative;
+        height: 40px;
+      }
+    }
+  }
+
 }
 
 .donation {
@@ -751,7 +819,7 @@ h1.services-title {
 
 .services p.card-text {
   font-family: variables.$text-font;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .services .border {
