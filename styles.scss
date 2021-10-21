@@ -1105,6 +1105,12 @@ h1.services-title {
       background-color: white;
     }
   }
+
+  .animation-clown{
+    position: fixed;
+    width: 100%;
+    bottom: 24%;
+  }
   
   .page404 .forme{
     position: relative;
@@ -1144,6 +1150,7 @@ h1.services-title {
 
   .message404{
     position: fixed;
+    width: 500px;
     top: 250px;
     left: 830px;
   }
@@ -1162,3 +1169,139 @@ h1.services-title {
     top: 375px;
   }
 
+  @media screen and(min-width: $min-tablet) and (max-width: $min-computer) {
+  
+    .page404 .forme{
+      position: relative;
+      width: 500px;
+      top: 350px;
+      left: 150px;
+    }
+
+    .animation-clown{
+      position: fixed;
+      width: 100%;
+      bottom: -5%;
+    }
+
+    .page404 .clown{
+      position: relative;
+      width: 350px;
+      top: -15px;
+      left: 220px;
+    }
+
+    .page404 .ballon-404{
+      position: relative;
+      width: 110px;
+      top: 250px;
+      left: -310px;
+    }
+
+    .page404 .larme01{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 25px;
+    }
+    
+    .page404 .larme02{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 92px;
+    }
+
+    .message404{
+      position: fixed;
+      width: 500px;
+      left: 150px;
+      top: 200px !important;
+      text-align: center;
+    }
+  
+    h1.message404{
+      @include h1;
+      color: #0a3563;
+      font-size: 60px !important;
+      position: fixed !important;
+      top: 70px !important;
+    }
+  
+    p.message404{
+      font-family: 'Merriweather', serif;
+      color: #0a3563;
+      font-size: 20px;
+      position: fixed;
+      top: 375px;
+    }
+  
+  }
+
+  @media screen and(max-width: $max-mobile) {
+    .page404 .forme{
+      position: relative;
+      width: 500px;
+      top: 350px;
+      left: 275px;
+    }
+
+    .animation-clown{
+      position: fixed;
+      width: 100%;
+      top: 0%;
+      left: -40%;
+    }
+
+    .page404 .clown{
+      position: relative;
+      width: 350px;
+      top: -15px;
+      left: 220px;
+    }
+
+    .page404 .ballon-404{
+      position: relative;
+      width: 110px;
+      top: -150px;
+      left: 310px;
+    }
+
+    .page404 .larme01{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 25px;
+    }
+    
+    .page404 .larme02{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 92px;
+    }
+
+    .message404{
+      position: fixed;
+      width: 300px;
+      left: 150px;
+      top: 200px !important;
+      text-align: center;
+    }
+  
+    h1.message404{
+      @include h1;
+      color: #0a3563;
+      font-size: 60px !important;
+      position: fixed !important;
+      top: 70px !important;
+    }
+  
+    p.message404{
+      font-family: 'Merriweather', serif;
+      color: #0a3563;
+      font-size: 20px;
+      position: fixed;
+      top: 375px;
+    }
+  }
