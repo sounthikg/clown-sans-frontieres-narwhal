@@ -500,14 +500,29 @@ h2 {
   background-color: #fff;
   position: relative;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   z-index: 3;
   color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   //margin-top: -10%;
+
+  &__wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #fef1e2;
+  }
 
   &__path {
     fill: #fef1e2;
   }
+
+
 
   &__contenu {
     display: flex;
