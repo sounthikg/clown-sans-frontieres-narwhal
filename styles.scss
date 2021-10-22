@@ -353,7 +353,7 @@ h2 {
   }
 
   .services {
-    margin-top: -40% !important;
+    margin-top: -50% !important;
   }
 }
 
@@ -597,6 +597,27 @@ h2 {
 
 }
 
+@media screen and (min-width: 768px) {
+
+  .nouvelles__cards__list {
+    flex-direction: row!important;
+    flex-wrap: wrap!important;
+  }
+
+  .nouvelles__card {
+    width: 40%!important;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .nouvelles__card {
+    width: 30%!important;
+  }
+
+}
+
 
 
 .donation {
@@ -796,7 +817,7 @@ h2 {
   width: 100%;
   z-index: 1;
   color: black;
-  margin-top: -27%;
+  margin-top: -35%;
 
   &__contenu {
     margin-top: -1px;
