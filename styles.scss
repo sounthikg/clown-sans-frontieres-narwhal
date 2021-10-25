@@ -1543,3 +1543,85 @@ h1.services-title {
       }
 }
 }
+
+
+/// HEROS GENERIQUES 
+
+.heros__gen {
+
+  /*width: 100%;
+  height: 100vh;
+  background-color:red;  
+  overflow: hidden;*/
+
+  @include heros.heros_generique;
+  z-index: 4;
+  overflow: visible;
+
+    &__title {
+    width: 100%;
+    height: 25%;
+    z-index: 8;
+    position: absolute;
+    top: 200px;
+    background-image: url(images/degrade.png);
+    background-position: 0 90%;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      
+      &-text {
+        @include h1;
+      }
+
+      &-date {
+        font-family: variables.$text-font;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 10px;
+      }
+    }
+
+    &__bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+      }
+    }
+}
+
+.description__gen {
+  width: 100%;
+  z-index: 4;
+  position: relative;
+  margin-top: -150px;
+  background-color: rgba(255, 0, 149, 0.5);
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #fef1e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    width: 100%;	
+    max-width: 2000px;
+    padding: 0% 10%;
+    font-family: variables.$text-font;
+    font-size: 20px;
+    color: black;
+  }
+}
