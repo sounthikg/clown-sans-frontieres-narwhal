@@ -1595,9 +1595,11 @@ h1.services-title {
     align-items: center;
 
       img {
+        display: flex;
         position: absolute;
         width: 100%;
         height: auto;
+        top: 190px;
       }
     }
 }
@@ -1606,8 +1608,7 @@ h1.services-title {
   width: 100%;
   z-index: 4;
   position: relative;
-  margin-top: -195px;
-  background-color: rgba(255, 0, 149, 0.5);
+  margin-top: -360px;
 
   &__wrapper {
     position: relative;
@@ -1621,11 +1622,212 @@ h1.services-title {
   &__text {
     width: 100%;	
     max-width: 2000px;
-    padding: 0% 10%;
+    padding: 0% 5%;
     font-family: variables.$text-font;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
+
+    &__source {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100px;
+      background-color: variables.$secondary;
+      align-items: center;
+      padding: 10px;
+      border-radius: 20px;
+
+
+      .text {
+
+        &--image {
+          position: relative;
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        &--wrapper {
+          display: flex;
+          align-items: flex-start;
+          justify-content: start;
+          flex-direction: column;
+          padding: 10px;
+          text-transform: uppercase;
+
+          p {
+            margin: 2px;
+            color: white;
+          }
+        }
+
+        &--nom {
+          @include h1;
+          font-size: 15px;          
+        }
+
+        &--type {
+          font-size: 14px; 
+        }
+      }
+    }
+
+    
+    &__wrapper {
+      position: relative;
+      padding: 20px 5px;
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        position: relative;
+        width: 100%;
+      }
+
+      .medias__infos {
+        padding: 5px 0px;
+        font-size: 10px;
+        border-bottom: 2px solid rgba(117, 117, 117, 0.2);
+      }
+
+      h3 {
+        padding: 10px 0px;
+        @include h3;
+        font-weight: bold;
+        color:variables.$primary;
+        font-size: inherit;
+        text-transform: uppercase;
+      }
+
+
+      
+    }
+
+  }
+  
+  &--quote {
+
+    padding: 0 20px;
+    position: relative;
+    color: variables.$secondary;
+    @include h2;
+    text-align: center;
+
+    &::before {
+      margin-bottom: 20px;
+      display: block;
+      content: '';
+      position: relative;
+      top: 0;
+      background-image: url('images/guillemetsvf.png');
+      height: 50px;
+      width: 50px;
+      background-size: 50px 50px;
+      left: 0%;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      position: relative;
+      top: 0;
+      background-image: url('images/guillemetsvf.png');
+      height: 50px;
+      width: 50px;
+      background-size: 50px 50px;
+      transform: rotate(180deg);
+      left: 90%;
+      margin-top: 20px;
+    }
+  }
+
+  &--synopsis {
+    color: variables.$primary;
+    font-weight: bold;
+    font-size: 16px!important;
+  }
+
+  &--headliner {
+    @include h2;
+  }
+
+  &--lieu {
+    text-transform: uppercase;
   }
 }
 
 
+//MEDIA QUERIES DESCRIPTION
+
+@media screen and (min-width: 500px) {
+  .nouvelle__description {
+    margin-top: -260px;  
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nouvelle__heros {
+  
+      &__title {
+        
+        &-text {
+          font-size: 30px;
+        }
+  
+        &-date {
+          font-size: 20px;
+        }
+      }
+
+      &__bg {
+
+        img {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+  }
+  
+ .nouvelle__description {
+    margin-top: -210px;  
+
+    &__text {
+      font-size: 20px;
+
+      &__source {    
+        .text {     
+          &--nom {
+            @include h1;
+            font-size: 20px;          
+          }
+            &--type {
+            font-size: 15px; 
+          }
+        }
+      }
+    }  
+  } 
+}
+  
+
+
+@media screen and (min-width: 1200px) {
+  .nouvelle__heros {
+  
+    &__title {
+      
+      &-text {
+        font-size: 30px;
+      }
+
+      &-date {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .nouvelle__description {
+    margin-top: -105px;  
+  } 
+}
