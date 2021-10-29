@@ -1552,6 +1552,46 @@ h1.services-title {
 
 
 /// DETAIL DE NOUVELLE
+.nouvelle__type {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin-top: 200px;
+  z-index: 9;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  padding: 0 5%;
+  border-bottom: 4px solid white;
+  font-family: variables.$title-font;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.type {
+  background-color: #2364AA;
+}
+
+.haiti {
+  background-color: #2364AA;
+}
+
+.appel {
+  background-color: #73BFB8;
+}
+
+.retour {
+  background-color: #F89225;
+}
+
+.campagne {
+  background-color: #AE2C1E;
+}
+
+.entrevue {
+  background-color:#e24285;
+}
+
 
 .nouvelle__heros {
 
@@ -1563,13 +1603,14 @@ h1.services-title {
   @include heros.heros_generique;
   z-index: 4;
   overflow: visible;
+  background-color: red;
 
     &__title {
     width: 100%;
     height: 25%;
     z-index: 8;
     position: absolute;
-    top: 200px;
+    top: 250px;
     background-image: url(images/degrade.png);
     background-position: 0 90%;
     background-size: 100% 100%;
@@ -1593,6 +1634,7 @@ h1.services-title {
     }
 
     &__bg {
+    margin-top: -20%;
     position: relative;
     width: 100%;
     height: 100%;
@@ -1603,9 +1645,7 @@ h1.services-title {
       img {
         display: flex;
         position: absolute;
-        width: 100%;
-        height: auto;
-        top: 190px;
+        height: 100%;
       }
     }
 }
@@ -1693,7 +1733,7 @@ h1.services-title {
 
       .medias__infos {
         padding: 5px 0px;
-        font-size: 10px;
+        font-size: 0.75em;
         border-bottom: 2px solid rgba(117, 117, 117, 0.2);
       }
 
@@ -1714,14 +1754,17 @@ h1.services-title {
   
   &--quote {
 
-    padding: 0 20px;
+    //background-color: red;
+    padding: 0 15%;
     position: relative;
     color: variables.$secondary;
     @include h2;
     text-align: center;
 
     &::before {
-      margin-bottom: 20px;
+      margin-right: 90px!important;
+      margin-top: 30px;
+      margin-bottom: 40px;
       display: block;
       content: '';
       position: relative;
@@ -1730,7 +1773,7 @@ h1.services-title {
       height: 50px;
       width: 50px;
       background-size: 50px 50px;
-      left: 0%;
+      left: -15%;
     }
 
     &::after {
@@ -1743,19 +1786,20 @@ h1.services-title {
       width: 50px;
       background-size: 50px 50px;
       transform: rotate(180deg);
-      left: 90%;
+      left: 100%;
       margin-top: 20px;
+      margin-bottom: 30px;
     }
   }
 
   &--synopsis {
     color: variables.$primary;
     font-weight: bold;
-    font-size: 16px!important;
   }
 
   &--headliner {
     @include h2;
+    font-size: 0.9em!important;
   }
 
   &--lieu {
@@ -1768,7 +1812,8 @@ h1.services-title {
 
 @media screen and (min-width: 500px) {
   .nouvelle__description {
-    margin-top: -260px;  
+    margin-top: -260px;
+
   }
 }
 
@@ -1786,9 +1831,11 @@ h1.services-title {
         }
       }
 
-      &__bg {
+      &__bg {    
+        height: 100vh;    
 
         img {
+          height: 100%;
           top: 50%;
           transform: translateY(-50%);
         }
@@ -1797,9 +1844,12 @@ h1.services-title {
   
  .nouvelle__description {
     margin-top: -210px;  
+    p {
+      font-size: 18px;          
+    }
 
     &__text {
-      font-size: 20px;
+      font-size: 18px;
 
       &__source {    
         .text {     
@@ -1812,16 +1862,32 @@ h1.services-title {
           }
         }
       }
-    }  
+    }
+    
+    &--quote {
+      &::before {
+        left: -10%!important;
+      }
+    }
+    
+
   } 
 }
   
 
 
 @media screen and (min-width: 1200px) {
+
+  .nouvelle__type {
+    font-size: 20px;
+  }
+
   .nouvelle__heros {
+    height: 980px;
   
     &__title {
+
+      height: 50%;
       
       &-text {
         font-size: 30px;
@@ -1831,9 +1897,60 @@ h1.services-title {
         font-size: 20px;
       }
     }
+
+    &__bg {    
+      width: 100vw;  
+      margin-top: -6%;
+
+      img {
+        width: 100%!important;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 
   .nouvelle__description {
-    margin-top: -105px;  
+    margin-top: -105px;
+    p {
+      font-size: 19px;
+    }
+
+    &--quote {
+      &::before {
+        left: -5%!important;
+      }
+    }
+  } 
+}
+
+@media screen and (min-width: 1500px) {
+
+
+  .nouvelle__heros {
+    height: 1310px;
+
+    &__bg {     
+      margin-top: -5%;
+      height: 150vh;
+
+      img {
+        width: 100%!important;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .nouvelle__description {
+    margin-top: -130px;
+
+    &__medias {
+      position: relative;
+      width:  500px;
+    }
+    
   } 
 }
