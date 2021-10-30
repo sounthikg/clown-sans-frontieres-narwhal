@@ -11,3 +11,4 @@ body{margin:0;display:flex;justify-content:center;align-items:center;flex-direct
 header {width: 100%; height: auto; margin: none; padding: none;}
 .menu__options { width: 100%; }
 .menu li { list-style: none;}
+.menu__don__button a:hover { color: white;}
