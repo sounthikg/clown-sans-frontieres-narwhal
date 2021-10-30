@@ -56,6 +56,29 @@
 								'menu_class' => 'menu__options',
 							));
 			?>
+			<script>
+				var donButton = document.querySelector('.menu__don__button');
+				var parentButton = document.querySelector('.menu__hamburger');
+				var lang = document.querySelector('.menu__lang');
+
+				var divButton = document.createElement('div');
+				divButton.className = 'menu__don';
+				
+				parentButton.appendChild(divButton);
+				divButton.appendChild(donButton);
+
+				function insertBefore(referenceNode, button) {
+  					referenceNode.parentNode.insertBefore(button, referenceNode.nextSibling);
+				}
+
+				insertBefore(lang, divButton);
+
+				//doit faire un if pour en français//
+				let child = lang.lastChild;
+				let spanLang = child.lastChild;
+				spanLang.innerText = 'EN';
+
+			</script>
 		</div>
 		</nav>
 
