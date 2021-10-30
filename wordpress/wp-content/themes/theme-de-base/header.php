@@ -33,25 +33,16 @@
 >
 
 <header>
-	<h1>
-		<a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Affiche le nom du site ?></a>
-	</h1>
-
-	<nav class="menu">
-		<?php 
-			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
-		?>
-		
+	<nav class="menu" id='menu'>		
 		<div class="menu__wrapper">
 			<div class="menu__logo">
-			<a href="index.html">
+			<a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>">
 				<picture>
 				<source
-					srcset="/assets/logo_horizontalcsf.5f43988e.png "
+					srcset="<?php echo get_template_directory_uri(); ?>/images/logo_horizontalcsf.png "
 					media="(min-width: 768px)"
 				/>
-				<img src="/assets/logo_verticalcsf.74cd4195.png" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_verticalcsf.png" />
 				</picture>
 			</a>
 			</div>
@@ -59,28 +50,12 @@
 			<!-- MENU HAMBURGER -->
 			<label class="menu__icon" for="menu__btn"><span class="navicon"></span></label>
 			<div class="menu__hamburger">
-			<ul class="menu__options">
-				<li class="menu__options__nouvelles">
-				<a href="nouvelles.html">Nouvelles</a>
-				</li>
-				<li class="menu__options__services">
-				<a href="services.html">Services</a>
-				</li>
-				<li class="menu__options__equipe">
-				<a href="equipe.html">Équipe</a>
-				</li>
-				<li class="menu__options__a_propos nav-item">
-				<a href="a_propos.html">À propos</a>
-				</li>
-				<li class="menu__options__histoire">
-				<a href="404.html">Histoire</a>
-				</li>
-			</ul>
-			<div class="menu__don">
-				<a href="don.html"><button type="button">Donnez !</button></a>
-			</div>
-			<div class="menu__lang">EN</div>
-			</div>
+			<?php 
+				wp_nav_menu(array('theme_location' => 'main-menu',
+								'container' => 'ul',
+								'menu_class' => 'menu__options',
+							));
+			?>
 		</div>
 		</nav>
 
