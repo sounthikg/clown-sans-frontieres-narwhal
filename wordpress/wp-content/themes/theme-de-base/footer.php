@@ -69,8 +69,8 @@
                       src="<?php echo get_template_directory_uri(); ?>/images/Relations-internationales-et-francophonie.png"
                     />
                   </div>
-                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>images/tohu.png" /></div>
-                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>images/telus.png" /></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/tohu.png" /></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/telus.png" /></div>
                 </div>
 
                 <!-- If we need navigation buttons -->

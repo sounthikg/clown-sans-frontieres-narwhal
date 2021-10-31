@@ -18,4 +18,7 @@ body{margin:0;display:flex;justify-content:center;align-items:center;flex-direct
 
 .nouvelles .nouvelles__card .card-title{color:#ae2c1e;margin-top:20px;margin-bottom: 0px;font-family:"Merriweather",serif;font-weight:700;font-size:30px;font-size:22px;}
 
-.nouvelles__type {font-size: 0.75em; padding-bottom: 20px; text-transform: uppercase}
+.nouvelles__type {font-size: 0.9em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;};

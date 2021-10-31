@@ -34,6 +34,19 @@
       crossorigin="anonymous"
     ></script>
 
+	 <!-- SWIPER -->
+	 <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  	/>
+  
+  	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
 <title>
 	<?php bloginfo('name'); // Affiche le nom du blog ?> | 
 	<?php is_front_page() ? bloginfo('description') : wp_title(''); // si nous sommes sur la page d'accueil, affichez la description à partir des paramètres du site - sinon, affichez le titre du post ou de la page. ?>
