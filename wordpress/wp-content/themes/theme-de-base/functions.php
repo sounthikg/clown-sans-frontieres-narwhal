@@ -7,6 +7,7 @@
 /* --------------------------------
 Ajoute les vignettes dans les posts de type Article */
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails', array('nouvelles'));
 
 
 /* --------------------------------

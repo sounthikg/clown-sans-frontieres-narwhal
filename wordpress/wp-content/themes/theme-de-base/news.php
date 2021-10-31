@@ -1,7 +1,8 @@
 <?php 
 /**
- * 	Template Name: news
- * 	Identique à page, mais avec une barre latérale
+ * 	Template Name: Nouvelle
+ * Template Post Type: post
+
  */
 
 get_header(); // Affiche header.php
@@ -26,6 +27,5 @@ else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
 get_footer(); // Affiche footer.php 
 ?>
