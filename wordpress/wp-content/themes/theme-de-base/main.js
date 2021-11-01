@@ -1,20 +1,11 @@
-import './styles.scss'
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-console.log(ScrollTrigger);
 
 Swiper.use([Navigation, Pagination, Autoplay]);
 
 // init Swiper:
 //const swiper = new Swiper(...);
-
+alert('caca!')
 
 var hamburgerBtn = document.querySelector('.navicon');
 var hamburgerMenu = document.querySelector('.menu__hamburger');

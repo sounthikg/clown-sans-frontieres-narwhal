@@ -7,8 +7,6 @@
 /* --------------------------------
 Ajoute les vignettes dans les posts de type Article */
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-thumbnails', array('nouvelles'));
-
 
 /* --------------------------------
 Déclare le menu principal */
@@ -47,7 +45,7 @@ function add_style_and_js()  {
 	  1. 'default' = ID de référence à donner au à la feuille de style
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
-	wp_enqueue_style('default', get_template_directory_uri() . '/styles.css');
+	wp_enqueue_style('default', get_template_directory_uri() . '/style.css');
 
 	/* Pour ajoutez une feuille de style supplémentaire, copier la ligne précédente et ajuster le chemin du fichier de façon relative vers votre nouveau fichier CSS */
 
