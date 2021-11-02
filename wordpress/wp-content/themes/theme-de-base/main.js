@@ -1,3 +1,6 @@
+/*gsap.registerPlugin(ScrollTrigger);
+Swiper.use([Navigation, Pagination, Autoplay]);*/
+
 // init Swiper:
 //const swiper = new Swiper(...);
 alert('Allo, ca marche ou pas???')
@@ -84,13 +87,18 @@ const swiper = new Swiper('.swiper02', {
   },
 });
 
+
 hamburgerBtn.addEventListener('mouseover', function () {
-  gsap.to('.navicon', { y: '-10px', rotationY: 180 })
+  gsap.timeline()
+  .to('.navicon', { rotationZ: -10 })
+  .to('.navicon', { rotationZ: 20 })
+  .to('.navicon', { rotationZ: 0 },
+  '-=0.25');
 });
 
-hamburgerBtn.addEventListener('mouseout', function () {
-  gsap.to('.navicon', { y: '0px', rotationY: -180 })
-});
+/*hamburgerBtn.addEventListener('mouseout', function () {
+  gsap.to('.navicon', { rotationZ: 0 })
+});*/
 
 
 gsap.timeline({ 

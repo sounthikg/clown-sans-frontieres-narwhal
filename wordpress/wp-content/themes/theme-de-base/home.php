@@ -326,13 +326,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 						let type = data[i].acf.type;
 						let date = data[i].acf.date;
 						let resume = data[i].acf.resume;
-
-						//console.log(title, author, type, date, resume);
+            let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
 
 						html += `
 
 						<div class="nouvelles__card">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/nouvelles.jpg" class="card-img-top">
+							<img src="${image}" class="card-img-top">
 							<div class="card-body">
 								<h3 class="card-title">${title}</h3>
 								<p class='nouvelles__type'>${type}</p>
