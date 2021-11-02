@@ -99,17 +99,16 @@ const swiper = new Swiper('.swiper02', {
 });
 
 hamburgerBtn.addEventListener('mouseover', function () {
-  gsap.to('.navicon', { y: '-10px', rotationY: 180 })
+  gsap.timeline()
+  .to('.navicon', { rotationZ: -10 })
+  .to('.navicon', { rotationZ: 20 })
+  .to('.navicon', { rotationZ: 0 },
+  '-=0.1');
 });
-
-hamburgerBtn.addEventListener('mouseout', function () {
-  gsap.to('.navicon', { y: '0px', rotationY: -180 })
-});
-
 
 gsap.timeline({ 
   scrollTrigger: {
-    markers: false,
+    markers: true,
     start: 'top 75%',
     end: 'bottom 25%',
     toggleActions: 'restart complete reverse reset',
