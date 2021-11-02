@@ -21,31 +21,22 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <!-- BOOTSTRAP -->
+    <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
 
-	 <!-- SWIPER -->
+
+	 <!-- SWIPER CSS -->
 	 <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
   	/>
-  
-  	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <!-- GSAP -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
 <title>
 	<?php bloginfo('name'); // Affiche le nom du blog ?> | 

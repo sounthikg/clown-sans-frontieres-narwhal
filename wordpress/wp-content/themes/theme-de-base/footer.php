@@ -107,7 +107,8 @@
     <!-- GSAP -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    
 <?php wp_footer(); 
 /* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
 	 Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 
