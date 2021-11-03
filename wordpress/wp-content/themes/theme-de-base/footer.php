@@ -2,9 +2,7 @@
 	/*-----------------------------------------------------------------------------------*/
 	/* Affiche le pied de page (Footer) sur toutes vos pages
 	/*-----------------------------------------------------------------------------------*/
-
-// Fermeture de la zone de contenu principale ?>
-</main>
+?>
 
 <footer class="pied-page">
 	    <!---------------------------- FOOTER À COPIER/COLLER ---------------------------->

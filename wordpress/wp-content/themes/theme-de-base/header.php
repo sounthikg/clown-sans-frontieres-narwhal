@@ -47,7 +47,7 @@
 	?>
 >
 
-<header>
+
 	<nav class="menu" id='menu'>		
 		<div class="menu__wrapper">
 			<div class="menu__logo">
@@ -99,6 +99,3 @@
 		bloginfo( 'description' ); 
 	?>
 
-</header>
-
-<main><!-- Débute le contenu principal de notre site -->
