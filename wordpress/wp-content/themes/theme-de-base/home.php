@@ -312,44 +312,44 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class='nouvelles__cards__list'>
 
 			<script>
-				fetch("./wp-json/wp/v2/nouvelles?_embed")
-				.then(response => response.json())
-				.then(data => {
+				// fetch("./wp-json/wp/v2/nouvelles?_embed")
+				// .then(response => response.json())
+				// .then(data => {
 
-					let html = "";
-    				let cardList = document.querySelector('.nouvelles__cards__list')
+				// 	let html = "";
+    		// 		let cardList = document.querySelector('.nouvelles__cards__list')
 
-					for (let i = 0; i < 3; i++) {
+				// 	for (let i = 0; i < 3; i++) {
 
-						let title = data[i].title.rendered;
-						let author = data[i].acf.auteur;
-						let type = data[i].acf.type;
-						let date = data[i].acf.date;
-						let resume = data[i].acf.resume;
-            let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
+				// 		let title = data[i].title.rendered;
+				// 		let author = data[i].acf.auteur;
+				// 		let type = data[i].acf.type;
+				// 		let date = data[i].acf.date;
+				// 		let resume = data[i].acf.resume;
+        //     let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
 
-						html += `
+				// 		html += `
 
-						<div class="nouvelles__card">
-							<img src="${image}" class="card-img-top">
-							<div class="card-body">
-								<h3 class="card-title">${title}</h3>
-								<p class='nouvelles__type'>${type}</p>
-									${resume}
-							</div>
-							<div class="card-footer">
-							<img src='<?php echo get_template_directory_uri(); ?>/images/user.png'/> Par ${author}</div>
-           				</div>
+				// 		<div class="nouvelles__card">
+				// 			<img src="${image}" class="card-img-top">
+				// 			<div class="card-body">
+				// 				<h3 class="card-title">${title}</h3>
+				// 				<p class='nouvelles__type'>${type}</p>
+				// 					${resume}
+				// 			</div>
+				// 			<div class="card-footer">
+				// 			<img src='<?php echo get_template_directory_uri(); ?>/images/user.png'/> Par ${author}</div>
+        //    				</div>
 						
 						
-						`;
+				// 		`;
 
-						cardList.innerHTML = html;
+				// 		cardList.innerHTML = html;
 					
-					} 
+				// 	} 
 					
 
-				});
+				// });
 			</script>
 
 			<?php 

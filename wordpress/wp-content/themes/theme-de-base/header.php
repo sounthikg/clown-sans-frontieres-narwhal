@@ -22,11 +22,6 @@
       rel="stylesheet"
     />
 
-	<!--BOOTSTRAP CSS--->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
 
 <title>
 	<?php bloginfo('name'); // Affiche le nom du blog ?> | 
@@ -77,21 +72,21 @@
 							));
 			?>
 			<script>
-				var donButton = document.querySelector('.menu__don__button');
-				var parentButton = document.querySelector('.menu__hamburger');
-				var lang = document.querySelector('.menu__lang');
+				// var donButton = document.querySelector('.menu__don__button');
+				// var parentButton = document.querySelector('.menu__hamburger');
+				// var lang = document.querySelector('.menu__lang');
 
-				var divButton = document.createElement('div');
-				divButton.className = 'menu__don';
+				// var divButton = document.createElement('div');
+				// divButton.className = 'menu__don';
 				
-				parentButton.appendChild(divButton);
-				divButton.appendChild(donButton);
+				// parentButton.appendChild(divButton);
+				// divButton.appendChild(donButton);
 
-				function insertBefore(referenceNode, button) {
-  					referenceNode.parentNode.insertBefore(button, referenceNode.nextSibling);
-				}
+				// function insertBefore(referenceNode, button) {
+  			// 		referenceNode.parentNode.insertBefore(button, referenceNode.nextSibling);
+				// }
 
-				insertBefore(lang, divButton);
+				// insertBefore(lang, divButton);
 
 			</script>
 		</div>
