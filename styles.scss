@@ -4,6 +4,8 @@
 @use "partials/menu";
 @use "sass:color";
 
+@import "bootstrap/scss/bootstrap";
+
 //VARIABLES
 
 $max-mobile: 767px;
@@ -481,7 +483,7 @@ h2 {
   z-index:3;
   color:#000;
   text-align:center;
-  background-image:url(images/texture-grain.png);
+  background-image:url(/images/texture-grain.png);
   background-size:100% 100%;
 
   &__contenu {
