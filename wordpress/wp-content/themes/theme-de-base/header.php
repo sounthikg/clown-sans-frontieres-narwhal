@@ -21,7 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
- 
+
+	<!--BOOTSTRAP CSS--->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
 <title>
@@ -61,7 +65,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_verticalcsf.png" />
 				</picture>
 			</a>
-			</div>
+		</div>
 
 			<!-- MENU HAMBURGER -->
 			<label class="menu__icon" for="menu__btn"><span class="navicon"></span></label>
@@ -89,14 +93,9 @@
 
 				insertBefore(lang, divButton);
 
-				//doit faire un if pour en français//
-				let child = lang.lastChild;
-				let spanLang = child.lastChild;
-				spanLang.innerText = 'EN';
-
 			</script>
 		</div>
-		</nav>
+	</nav>
 
 
 
@@ -104,6 +103,7 @@
 		// Affiche la description de site se trouvant dans "General Settings" dans l'admin WordPress
 		bloginfo( 'description' ); 
 	?>
+
 </header>
 
 <main><!-- Débute le contenu principal de notre site -->

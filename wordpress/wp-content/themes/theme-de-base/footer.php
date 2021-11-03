@@ -93,7 +93,6 @@
 	
 </footer>
 
-    
 <?php wp_footer(); 
 /* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
 	 Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 
@@ -101,6 +100,11 @@
 
   
 ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js%22%3E"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js%22%3E"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js%22%3E"></script>
+
 
 </body>
 </html>
