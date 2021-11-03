@@ -110,7 +110,7 @@ hamburgerBtn.addEventListener('mouseover', function () {
 
 gsap.timeline({ 
   scrollTrigger: {
-    markers: true,
+    markers: false,
     start: 'top 75%',
     end: 'bottom 25%',
     toggleActions: 'restart complete reverse reset',
