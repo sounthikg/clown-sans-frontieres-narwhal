@@ -1,0 +1,187 @@
+[
+    {
+        "key": "group_617d9975d19b9",
+        "title": "Cartes nouvelles",
+        "fields": [
+            {
+                "key": "field_617d999077dc7",
+                "label": "Auteur de la nouvelle",
+                "name": "auteur",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_617d9a9b77dca",
+                "label": "Date de publication",
+                "name": "date",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "04 décembre 2018",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_617d9aea77dcb",
+                "label": "Résumé de la nouvelle",
+                "name": "resume",
+                "type": "textarea",
+                "instructions": "Petit résumé de la nouvelle en une phrase ou phrase accrochante.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_61809bd5a8fd7",
+                "label": "Type de nouvelle",
+                "name": "type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "haiti": "Haïti",
+                    "campagne": "Campagne de sensibilisation",
+                    "appel": "Appel",
+                    "retour": "Retour en image",
+                    "entrevue": "Entrevue",
+                    "autres": "Autres"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_61834c2d045b9",
+                "label": "Type d'auteur",
+                "name": "type_auteur",
+                "type": "text",
+                "instructions": "ex. Collaboration spéciale",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_61834cb7443e7",
+                "label": "Lieu des incidents",
+                "name": "lieu",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_61834d21443e9",
+                "label": "Headliner",
+                "name": "headliner",
+                "type": "textarea",
+                "instructions": "Mettre le premier paragraphe de l'article ici.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_61834d5b443ea",
+                "label": "Synopsis",
+                "name": "synopsis",
+                "type": "textarea",
+                "instructions": "Mettre le deuxième paragraphe de l'article ici.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "nouvelles"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "side",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
