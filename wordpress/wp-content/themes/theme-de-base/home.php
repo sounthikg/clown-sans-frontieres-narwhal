@@ -262,46 +262,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <h1>Lisez nos dernières nouvelles </h1>
           <div class='nouvelles__cards__list'>
 
-            <script>
-              // fetch("./wp-json/wp/v2/nouvelles?_embed")
-              // .then(response => response.json())
-              // .then(data => {
-
-              // 	let html = "";
-              // 		let cardList = document.querySelector('.nouvelles__cards__list')
-
-              // 	for (let i = 0; i < 3; i++) {
-
-              // 		let title = data[i].title.rendered;
-              // 		let author = data[i].acf.auteur;
-              // 		let type = data[i].acf.type;
-              // 		let date = data[i].acf.date;
-              // 		let resume = data[i].acf.resume;
-              //     let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
-
-              // 		html += `
-
-              // 		<div class="nouvelles__card">
-              // 			<img src="${image}" class="card-img-top">
-              // 			<div class="card-body">
-              // 				<h3 class="card-title">${title}</h3>
-              // 				<p class='nouvelles__type'>${type}</p>
-              // 					${resume}
-              // 			</div>
-              // 			<div class="card-footer">
-              // 			<img src='<?php echo get_template_directory_uri(); ?>/images/user.png'/> Par ${author}</div>
-              //    				</div>
-
-
-              // 		`;
-
-              // 		cardList.innerHTML = html;
-
-              // 	} 
-
-
-              // });
-            </script>
+            
 
             <?php
 
@@ -392,6 +353,5 @@ else : // Si aucune page n'a été trouvée
   get_template_part('partials/404'); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
 get_footer(); // Affiche footer.php 
 ?>

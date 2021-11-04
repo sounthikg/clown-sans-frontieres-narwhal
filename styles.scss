@@ -252,6 +252,10 @@ h2 {
   @include menu.menu-hamburger;
   @include footer.footer-sm;
 
+  .pied-page {
+    margin-top:-35%;
+  }
+
   h1 {
     padding-top: 5%;
     font-size: 25px!important;
@@ -353,6 +357,10 @@ h2 {
     }
   }
 
+  .pied-page {
+    margin-top: -20%;
+  }
+
 }
 
 // HEROS
@@ -368,6 +376,7 @@ h2 {
   background-position: 0% 40%;
   width: 100%;
   display: flex;
+  margin-top: 100px;
   flex-direction: row !important;
   justify-content: center;
   align-items: flex-start;
@@ -657,7 +666,7 @@ h2 {
 // FOOTER
 
 .pied-page {
-  margin-top: -14%;
+  margin-top: -20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1562,7 +1571,7 @@ justify-content: center;
   width: 100%;
   position: relative;
   height: 50px;
-  margin-top: 200px;
+  margin-top: 95px;
   z-index: 9;
   display: flex;
   flex-direction: center;
@@ -1613,7 +1622,7 @@ justify-content: center;
 
     &__title {
     width: 100%;
-    height: 25%;
+    height: 40%;
     z-index: 8;
     position: absolute;
     top: 250px;
@@ -1811,6 +1820,8 @@ justify-content: center;
   &--lieu {
     text-transform: uppercase;
   }
+
+
 }
 
 
@@ -1821,9 +1832,18 @@ justify-content: center;
     margin-top: -260px;
 
   }
+
+  .nouvelle__heros__title {
+    height: 40%;
+  }
+
+    
 }
 
+
 @media screen and (min-width: 768px) {
+
+  
   .nouvelle__heros {
   
       &__title {
@@ -1846,6 +1866,10 @@ justify-content: center;
           transform: translateY(-50%);
         }
       }
+
+      
+
+      
   }
   
  .nouvelle__description {
@@ -1878,6 +1902,13 @@ justify-content: center;
     
 
   } 
+
+  .nouvelle__type {
+    width: 100%;
+    position: relative;
+    height: 50px;
+
+    
 }
   
 
@@ -1968,7 +1999,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 .menu__options { width: 100%; }
 .menu li { list-style: none;}
 .menu__don__button a:hover { color: white;}
-.acc__heros{display:block;height:150vh;min-height:1500px;padding-top:100px;position:relative;background-image:url(images/degrade.png);background-size:cover;background-position:0% 40%;width:100%;display:flex;flex-direction:row!important;justify-content:center;align-items:flex-start;margin:0}
+.acc__heros{margin-top: -100px; display:block;height:150vh;min-height:1500px;padding-top:100px;position:relative;background-image:url(images/degrade.png);background-size:cover;background-position:0% 40%;width:100%;display:flex;flex-direction:row!important;justify-content:center;align-items:flex-start;margin:0}
 
 .services__contenu{margin-top:-1px;background-image:url(images/texture-grain.png);background-size:100% 100%;width:100%;height:100%;position:relative;background-color:green}
 
@@ -2090,6 +2121,6 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     
   }
     
-
+}
   
     
