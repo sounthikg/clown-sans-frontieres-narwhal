@@ -1569,6 +1569,28 @@ justify-content: center;
 
 
 /// DETAIL DE NOUVELLE
+
+.div-detail-nouvelle{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+}
+
+.bouton-detail-nouvelle {
+  position:relative;
+  @include h2;
+  @include buttons;
+  color: variables.$secondary;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid variables.$secondary;
+  padding: 20px 40px;
+  box-shadow: none;
+}
+
+
+
 .nouvelle__type {
   width: 100%;
   position: relative;
