@@ -277,7 +277,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
                     blanditiis praesentium voluptatum deleniti atque corrupti quos
                     dolores et quas.
               </div>
-              <div class="card-footer"><img src='<?php echo get_template_directory_uri(); ?>/images/user.png'/> Par Anonyme Ipsum</div>
+              <div class="card-footer"><img src="<?php echo get_template_directory_uri(); ?>/images/user.png"> Par Anonyme Ipsum</div>
             </div>
 
           </div>

@@ -272,6 +272,7 @@ h2 {
     justify-content: center !important;
     flex-direction: column !important;
     padding-top: 50px!important;
+    margin-top: -90px!important;
 
     &__slide {
       flex-direction: column !important;
@@ -337,7 +338,7 @@ h2 {
   }
 
   .acc__heros {
-    padding-top: 65px!important;
+    margin-top: -10px!important;
 
     &__description {
       padding-left: 15% !important;
@@ -379,7 +380,8 @@ h2 {
   flex-direction: row !important;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 65px;
+  margin-top: -10px;
+  
 
   .swiper-pagination-bullet {
     background: white;
@@ -627,7 +629,7 @@ h2 {
   }
 
   .nouvelles__card {
-    width: 40%!important;
+    width: 100%!important;
   }
 
 }
@@ -992,6 +994,7 @@ h1.services-title {
       font-weight: 900;
       margin-top: 150px;
       padding-right: 75px;
+      color: variables.$third;
     }
 
     .swiper-slide-active {
@@ -1681,11 +1684,12 @@ justify-content: center;
 
   &__text {
     width: 100%;	
-    max-width: 2000px;
+    max-width: 1600px;
     padding: 0% 5%;
     font-family: variables.$text-font;
     font-size: 15px;
     color: black;
+    margin-top: -7vw;
 
     &__source {
       display: flex;
