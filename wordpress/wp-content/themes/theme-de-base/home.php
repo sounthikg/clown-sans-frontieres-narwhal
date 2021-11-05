@@ -221,7 +221,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               </div>
               <img class="guillemets guillemets--down" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="temoin">
-                <img class="temoin--img" src="<?php echo get_template_directory_uri(); ?>/images/personne2.jpg" />
+                <img class="temoin--img" src="<?php echo get_template_directory_uri(); ?>/images/personne2.png" />
               </div>
               <span class="personne">Une autre personne</span>
             </div>
