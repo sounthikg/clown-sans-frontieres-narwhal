@@ -16,7 +16,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
       
       <div class='nouvelle__heros'>
-        <div class='nouvelle__heros__bg'> <?php the_post_thumbnail( 'full' )?> </div>
+        <div class='nouvelle__heros__bg'> <img src='<?php echo get_the_post_thumbnail_url();?>'> </div>
         <div class='nouvelle__heros__title'>
           <div class='nouvelle__heros__title-text'><?php the_title()?><p class='nouvelle__heros__title-date'><?php the_field("date")?></p></div>
         </div>

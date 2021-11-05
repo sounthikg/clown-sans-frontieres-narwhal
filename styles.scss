@@ -271,8 +271,7 @@ h2 {
   .acc__heros {
     justify-content: center !important;
     flex-direction: column !important;
-    padding-top: 50px!important;
-    margin-top: -90px!important;
+    margin-top: -50px!important;
 
     &__slide {
       flex-direction: column !important;
@@ -338,7 +337,7 @@ h2 {
   }
 
   .acc__heros {
-    margin-top: 0px!important;
+    margin-top: 30px!important;
 
     &__description {
       padding-left: 15% !important;
@@ -380,7 +379,7 @@ h2 {
   flex-direction: row !important;
   justify-content: center;
   align-items: flex-start;
-  margin-top: -10px;
+  margin-top: 30px!important;
   
 
   .swiper-pagination-bullet {
@@ -1759,7 +1758,7 @@ justify-content: center;
   width: 100%;
   z-index: 4;
   position: relative;
-  margin-top: -360px;
+  margin-top: -12vw;
 
   &__wrapper {
     position: relative;
@@ -1919,10 +1918,7 @@ justify-content: center;
 //MEDIA QUERIES DESCRIPTION
 
 @media screen and (min-width: 500px) {
-  .nouvelle__description {
-    margin-top: -260px;
 
-  }
 
   .nouvelle__heros__title {
     height: 40%;
@@ -1964,7 +1960,7 @@ justify-content: center;
 
   
  .nouvelle__description {
-    margin-top: -210px;  
+    
     p {
       font-size: 18px;          
     }
@@ -2036,7 +2032,7 @@ justify-content: center;
   }
 
   .nouvelle__description {
-    margin-top: -105px;
+    
     p {
       font-size: 19px;
     }
@@ -2069,7 +2065,7 @@ justify-content: center;
   }
 
   .nouvelle__description {
-    margin-top: -130px;
+    
 
     &__medias {
       position: relative;
