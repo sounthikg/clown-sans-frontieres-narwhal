@@ -25,7 +25,8 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
                		let cardList = document.querySelector('.nouvelles__cards__list')
 
               	for (let i = 0; i < 3; i++) {
-
+					  
+					let link = data[i].link;
               		let title = data[i].title.rendered;
               		let author = data[i].acf.auteur;
                		let type = data[i].acf.type;
@@ -34,7 +35,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
                    let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
 
              		html += `
-
+					<a href='${link}'>
               		<div class="nouvelles__card">
                			<img src="${image}" class="card-img-top">
               			<div class="card-body">
@@ -44,7 +45,8 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
              			</div>
               			<div class="card-footer">
               			<img src='<?php echo get_template_directory_uri(); ?>/images/user.png'/> Par ${author}</div>
-                  				</div>
+                  	</div>
+					</a>
 
 
               		`;
