@@ -2036,18 +2036,20 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     text-align: center;
     padding: 0% 5%;
 
-    &-text {
-      @include h1;
+      &-text {
+        @include h1;
+      }
     }
-  }
+}
     
   
 
-  .equipe__contenu {
+.equipe__contenu {
     height: 100%;
     width: 100vw;
     margin-left: 10vw;
     margin-top: 25vh !important;
+    position: relative;
     
     &__title{
       @include h1;
@@ -2065,7 +2067,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     margin-top: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-columns: repeat(4,minmax(0,1fr));
     grid-auto-flow: row;
     gap: 24px;
   }
@@ -2073,6 +2075,11 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   .block {
     margin: 18px auto;
     padding: 0 5vw;
+  }
+
+  .equipe-texte{
+    color: black;
+    font-family: 'Varela Round', sans-serif;
   }
   
 
@@ -2119,6 +2126,30 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     
   }
     
-}
+  @media screen and(min-width: $min-tablet) and (max-width: $min-computer) {
+    .grid{
+      display: grid;
+      margin-top: 5vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      grid-auto-flow: row;
+      gap: 24px;
+    }
+  }
+
+  @media screen and(max-width: $max-mobile) {
+    .grid{
+      display: grid;
+      margin-top: 5vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      grid-auto-flow: row;
+      gap: 24px;
+    }
+  }
+  
+
   
     
