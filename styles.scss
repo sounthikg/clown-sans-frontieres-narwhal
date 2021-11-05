@@ -1589,6 +1589,72 @@ justify-content: center;
   box-shadow: none;
 }
 
+.apercu-bigger-box-visible{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.apercu-bigger-box{
+  display:none;
+  width:100%;
+}
+
+.apercu-box{
+  padding: 0% 10%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+      .nouvelles__card {
+      box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4);
+      font-family: variables.$text-font;
+      background-color: #fff;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      margin: 15px;
+      top: 0;
+      color:black;
+
+      &:hover {
+        top: -7px;
+        transition: 0.25s ease;
+      }
+  
+      .card-body {
+        font-size: 17px;
+        padding: 20px 40px 30px 40px;
+  
+      }
+  
+      .card-title {
+        color: variables.$primary;
+        font-family: variables.$title-font;
+        margin: 20px 0;
+        @include h2;
+        font-size: 22px;
+  
+      }
+  
+  
+      .card-footer {
+        text-align: left;
+        font-size: 15px;
+        color: variables.$primary;
+        background-color: white;
+        padding: 10px 40px;
+  
+        img {
+          position: relative;
+          height: 40px;
+        }
+      }
+    
+    } 
+}
 
 
 .nouvelle__type {

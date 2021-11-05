@@ -158,6 +158,18 @@ gsap.timeline({
   })
 
 
+//apercu suivante nouvelle
+
+let boutonapercu = 
+document.querySelector(".bouton-detail-nouvelle");
+let apercu = 
+document.querySelector(".apercu-bigger-box");
+
+
+boutonapercu.addEventListener('click', ()=> {
+apercu.classList.add('apercu-bigger-box-visible');
+apercu.classList.remove('apercu-bigger-box')
+});
 
 
 
