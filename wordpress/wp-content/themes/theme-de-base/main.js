@@ -35,7 +35,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
                    let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
 
              		html += `
-					<a href='${link}'>
+					<a class='nouvelles__link' href='${link}'>
               		<div class="nouvelles__card">
                			<img src="${image}" class="card-img-top">
               			<div class="card-body">
