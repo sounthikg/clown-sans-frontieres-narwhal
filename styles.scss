@@ -2461,3 +2461,15 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   }
 
 }
+
+
+.nouvelles__card {
+
+  .card-img, .card-img-top, .card-img-bottom {
+    width: 105%!important;
+    overflow: hidden!important;
+    max-height: 180px!important;
+    height: 200px!important;
+    object-fit: cover!important;
+}
+}
