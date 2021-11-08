@@ -195,7 +195,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
         <!-- Slider main container -->
         <div class="swiper02">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" id='swiper-temoignage'>
             <!-- Slides -->
             <div class="swiper-slide">
               <img class="guillemets guillemets--up" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
