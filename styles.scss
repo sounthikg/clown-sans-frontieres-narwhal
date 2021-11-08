@@ -2200,11 +2200,46 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     width: 50%;
   }
 
+  .equipe-btn{
+    margin-top: 1vh;
+  }
+
+  .equipe-btn:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: 0.25s ease;
+  }
+
   .modal-title{
     font-family: 'Merriweather', serif;
-    color: #F89225;
+    color: white;
     font-weight: 600;
   }
+
+
+  .modal-italique{
+    font-family: 'Varela Round', sans-serif;
+    color: #73BFB8;
+    font-style: italic;
+    font-weight: 600;
+    padding-bottom: 1vh;
+  }
+
+  .modal-header{
+    background: #2364AA;
+  }
+
+
+  .center-photo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .icone-photo{
+    border-radius: 50%;
+    width: 75%;
+  }
+
 
   .modal-body {
     font-family: 'Varela Round', sans-serif;
@@ -2240,6 +2275,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
       display: block;
       width: 100%;
       margin-bottom: 16px; 
+      border-radius: 5%;
     }
     
     h2 {
