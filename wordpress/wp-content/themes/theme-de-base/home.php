@@ -29,13 +29,12 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <div class="swiper-slide acc__heros__slide">
             <div class="acc__heros__description">
               <div class="acc__heros__description__title">
-                Ce que les médecins font pour le corps, les clowns le font pour
-                l'âme.
+                <?php the_field('slider1') ?>
               </div>
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button">Donnez!</button>
+                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
                 </div>
               </div>
             </div>
@@ -47,13 +46,12 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <div class="swiper-slide acc__heros__slide">
             <div class="acc__heros__description">
               <div class="acc__heros__description__title">
-                Pour que le bonheur soit partout, pour que le rire soit partout,
-                pour que l'espoir soit partout.
+                <?php the_field('slider2') ?>
               </div>
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button">Faites un don!</button>
+                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
                 </div>
               </div>
             </div>
@@ -65,13 +63,12 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <div class="swiper-slide acc__heros__slide">
             <div class="acc__heros__description">
               <div class="acc__heros__description__title">
-                Plus jamais d'enfants sans sourire. Aidez-nous à accomplir notre
-                mission.
+                <?php the_field('slider3') ?>
               </div>
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button">Donnez!</button>
+                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
                 </div>
               </div>
             </div>
@@ -83,14 +80,12 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <div class="swiper-slide acc__heros__slide">
             <div class="acc__heros__description">
               <div class="acc__heros__description__title">
-                La magie du spectacle et du rire sont un soutien psychologique
-                pour les populations fragilisés victimes de la guerre, de la
-                misère ou de l’exclusion.
+                <?php the_field('slider4') ?>
               </div>
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button">Faites un don!</button>
+                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
                 </div>
               </div>
             </div>
@@ -122,10 +117,10 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
       </svg>
 
       <div class="services__contenu">
-        <h1 class="services-title">Aperçu de nos services</h1>
+        <h1 class="services-title"><?php the_field('titre_services') ?></h1>
 
         <div class="container">
-          <div class="row justify-content-evenly">
+          <div class="row justify-content-evenly" id='services_api'>
 
 
             <div class="col-xl-6 col-md-6">
@@ -178,6 +173,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -191,7 +187,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
       </svg>
 
       <div class="temoignages__contenu">
-        <h1>Nos témoignages</h1>
+        <h1><?php the_field('titre_temoignages') ?></h1>
         <!-- Slider main container -->
         <div class="swiper02">
           <!-- Additional required wrapper -->
@@ -200,45 +196,36 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
             <div class="swiper-slide">
               <img class="guillemets guillemets--up" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="bloc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                <?php the_field('temoignage1') ?>
               </div>
               <img class="guillemets guillemets--down" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="temoin">
                 <img class="temoin--img" src="<?php echo get_template_directory_uri(); ?>/images/personne.jpg" />
               </div>
-              <span class="personne">Une personne</span>
+              <span class="personne">Sylvie Julliot</span>
             </div>
+
             <div class="swiper-slide">
               <img class="guillemets guillemets--up" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="bloc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et eos qui ratione voluptatem
-                sequi nesciunt.
+              <?php the_field('temoignage2') ?>
               </div>
               <img class="guillemets guillemets--down" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="temoin">
                 <img class="temoin--img" src="<?php echo get_template_directory_uri(); ?>/images/personne2.png" />
               </div>
-              <span class="personne">Une autre personne</span>
+              <span class="personne">Bethy Chambers</span>
             </div>
             <div class="swiper-slide">
               <img class="guillemets guillemets--up" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="bloc">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi.
+                <?php the_field('temoignage3') ?>
               </div>
               <img class="guillemets guillemets--down" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
               <div class="temoin">
                 <img class="temoin--img" src="<?php echo get_template_directory_uri(); ?>/images/personne3.jpg" />
               </div>
-              <span class="personne">Encore une personne</span>
+              <span class="personne">Éliott Hubert</span>
             </div>
           </div>
 
@@ -259,7 +246,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
       <div class='nouvelles__wrapper'>
 
         <div class="nouvelles__contenu">
-          <h1>Lisez nos dernières nouvelles </h1>
+          <h1><?php the_field('titre_nouvelle') ?></h1>
           <div class='nouvelles__cards__list'>
 
             
@@ -283,7 +270,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           </div>
 
           <div class='nouvelles__bouton'>
-            <a href='nouvelles.html'><button>Plus de nouvelles...</button></a>
+            <a href='nouvelles.html'><button><?php the_field('btn_nouvelles')?></button></a>
           </div>
         </div>
       </div>
@@ -305,16 +292,13 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
         <div class="don--contenu">
           <div class="don--img"> </div>
           <div class="don--texte">
-            <h4> Donations faciles et sécuritaires</h4>
-            <h2> Plus jamais d'enfants sans sourire</h2>
-            <span> Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veina.</span>
+            <h4><?php the_field('don_securitaire') ?></h4>
+            <h2><?php the_field('don_motto') ?></h2>
+            <span><?php the_field('don_description') ?></span>
             <div class="acc__heros__description__button">
               <div class="feature" id="featureAnimation">
                 <div id="featureBackground"></div>
-                <button id="button" class="button">Donnez!</button>
+                <button id="button" class="button"><?php the_field('btn_don1') ?></button>
               </div>
             </div>
           </div>

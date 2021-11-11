@@ -16,8 +16,12 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
 
 	        insertBefore(lang, divButton);
 
+
+
+
+			//FETCH NOUVELLES POUR ACCUEIL
       
-              fetch("./wp-json/wp/v2/nouvelles?_embed")
+            fetch("./wp-json/wp/v2/nouvelles?_embed")
               .then(response => response.json())
               .then(data => {
 
@@ -64,52 +68,8 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
                		cardList.innerHTML = html;
 	
 
-              	} 
+              	}
+            });
 
+			
 
-               });
-
-
-			   ///TEMOIGNAGES
-
-			   fetch("./wp-json/wp/v2/temoignage?_embed")
-			   .then(response => response.json())
-			   .then(data => {
- 
-				   let html = "";
-					let temoignageList = document.querySelector('#swiper-temoignage')
- 
-				   for (let i = 0; i < 4; i++) {
-
-					let temoinTxt = data[i].content.rendered;
-					let temoinName = data[i].acf.nom_temoin;
-					let temoinImg = data[i]._embedded['wp:featuredmedia'][0].source_url;
- 
- 
- 
-				   
-					  html += `
- 
-						<div class="swiper-slide">
-							<img class="guillemets guillemets--up" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
-							<div class="bloc">
-								${temoinTxt}
-							</div>
-						<img class="guillemets guillemets--down" src="<?php echo get_template_directory_uri(); ?>/images/guillemetsvf.png" />
-						<div class="temoin">
-							<img class="temoin--img" src="${temoinImg}" />
-						</div>
-						<span class="personne">${temoinName}</span>
-						</div>
-					   `;
- 
-					   temoignageList.innerHTML = html;
-
-				   }
-	 
- 
-				   });
-
-
-
-            
