@@ -58,7 +58,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
               					${resume}
              			</div>
               			<div class="card-footer">
-              			<img src='<?php echo get_template_directory_uri(); ?>/images/user.png'/> Par ${author}</div>
+              			<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
                   	</div>
 					</a>
 
