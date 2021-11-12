@@ -61,7 +61,7 @@
                   <!-- Slides -->
 
                 
-                  <div class="swiper-slide">
+                  <!---<div class="swiper-slide">
                     <a href='https://google.ca'><img src="<?php echo get_template_directory_uri(); ?>/images/desjardins.png" class="img-horizontal" /></a>
                   </div>
 
@@ -77,23 +77,23 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/telus.png"  class="img-horizontal"  />
                   </div>
 
-                </div> 
+                 -->
 
-                <!---<?php
-                      //$partenaires = new WP_Query('post_type=partenaires');
-                      //while ($partenaires->have_posts()) : $partenaires->the_post(); 
+                <?php
+                      $partenaires = new WP_Query('post_type=partenaires');
+                      while ($partenaires->have_posts()) : $partenaires->the_post(); 
                     ?>
                     
                     <div class="swiper-slide">
-                      <a href='<?php the_field('lien_partenaire')?>'><?php the_post_thumbnail('thumbnail', array('class' => 'img-horizontal')); ?></a>
+                      <a href='<?php the_field('lien_partenaire')?>'><img src="<?php the_post_thumbnail_url(); ?>"  class="img-horizontal" /></a>
                     </div>
 
 
                     <?php
-                     // endwhile; 
-                     // wp_reset_postdata(); 
-                    ?>-->
-
+                     endwhile; 
+                     wp_reset_postdata(); 
+                    ?>
+                </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
