@@ -123,7 +123,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <div class="row justify-content-evenly" id='services_api'>
 
 
-            <div class="col-xl-6 col-md-6">
+           <!--- <div class="col-xl-6 col-md-6">
               <div class="card border border-2 mb-3 p-3" style="max-width: 600px">
                 <div class="row align-items-center">
                   <div class="col-xl-3">
@@ -165,14 +165,16 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
                         exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.
                       </p>
-                      <button type="button" class="btn btn-outline-info border-2">
+                      <a href='https://google.ca'>
+                        <button type="button" class="btn btn-outline-info border-2">
                         En savoir plus
                       </button>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             
           </div>
         </div>

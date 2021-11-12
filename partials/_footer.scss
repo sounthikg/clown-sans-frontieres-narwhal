@@ -131,8 +131,12 @@
         }
 
         .img-horizontal {
-            width: 200px;
-            height: auto!important;
+            width: auto;
+            height: 100px!important;
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            display:none;
         }
     }
 }
