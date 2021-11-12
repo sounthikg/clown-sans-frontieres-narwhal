@@ -2637,6 +2637,10 @@ header {width: 100%; height: auto; margin: none; padding: none;}
       grid-auto-flow: row;
       gap: 24px;
     }
+
+    .partenaire{
+      width: 15%;
+    }
   }
 
   @media screen and(max-width: $max-mobile) {
@@ -2649,6 +2653,11 @@ header {width: 100%; height: auto; margin: none; padding: none;}
       grid-auto-flow: row;
       gap: 24px;
     }
+
+    .partenaire{
+      width: 20%;
+    }
+  
   }
   
 
