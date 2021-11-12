@@ -34,7 +34,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
+                  <a href='https://www.clownssansfrontieres.ca/donner/'><button id="button" class="button"><?php the_field('btn_don2') ?></button></a>
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
+                  <a href='https://www.clownssansfrontieres.ca/donner/'><button id="button" class="button"><?php the_field('btn_don2') ?></button></a>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
+                  <a href='https://www.clownssansfrontieres.ca/donner/'><button id="button" class="button"><?php the_field('btn_don2') ?></button></a>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               <div class="acc__heros__description__button">
                 <div class="feature" id="featureAnimation">
                   <div id="featureBackground"></div>
-                  <button id="button" class="button"><?php the_field('btn_don2') ?></button>
+                  <a href='https://www.clownssansfrontieres.ca/donner/'><button id="button" class="button"><?php the_field('btn_don2') ?></button></a>
                 </div>
               </div>
             </div>
@@ -298,7 +298,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
             <div class="acc__heros__description__button">
               <div class="feature" id="featureAnimation">
                 <div id="featureBackground"></div>
-                <button id="button" class="button"><?php the_field('btn_don1') ?></button>
+                <a href='https://www.clownssansfrontieres.ca/donner/'><button id="button" class="button"><?php the_field('btn_don1') ?></button></a>
               </div>
             </div>
           </div>
