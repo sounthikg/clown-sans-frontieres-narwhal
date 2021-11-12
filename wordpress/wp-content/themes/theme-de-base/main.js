@@ -124,6 +124,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
               		let resume = data[i].acf.resume;
                    let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
 
+					//texte se coupe si trop long pour les cartes nouvelles
 
 					if (resume.length > 150) {
 					resume = resume.substr(0, resume.lastIndexOf(' ', 100)) + ' [...]';
@@ -131,10 +132,12 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
 
 				  if (title.length > 50) {
 					title = title.substr(0, title.lastIndexOf(' ', 50)) + '...';
-				  }
+				  } 
+				  ///
 
 				  
              		html += `
+					 
 					<a class='nouvelles__link' href='${link}'>
               		<div class="nouvelles__card">
                			<img src="${image}" class="card-img-top">
@@ -157,7 +160,14 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
               	}
             });
 
+
+			//FETCH DES MEMBRES
+
 		
+
+
+
+
 
 			
 

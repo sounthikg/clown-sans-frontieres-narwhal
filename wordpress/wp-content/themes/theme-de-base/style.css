@@ -17,3 +17,14 @@ Version: 1.0
       object-fit: cover!important;
     
   }
+
+  @media screen and (max-width:378px) {
+    .nouvelle__type {
+      margin-top: 75px!important
+    }
+  
+    .nouvelle__heros__bg img {
+      top: 150px!important;
+    }
+   
+  }

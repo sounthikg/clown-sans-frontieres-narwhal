@@ -655,6 +655,17 @@ h2 {
 
 }
 
+@media screen and (max-width:378px) {
+  .nouvelle__type {
+    margin-top: 75px 
+  }
+
+  .nouvelle__heros__bg img {
+    top: 150px;
+  }
+ 
+}
+
 @media screen and (min-width: 768px) {
 
   .nouvelles__cards__list {
@@ -1251,8 +1262,8 @@ justify-content: center;
 
   //PAGE 404//
 
-   .page404 {
-    position: absolute;
+ /*  .page404 {
+    position: relative;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -1467,7 +1478,303 @@ justify-content: center;
       position: fixed;
       top: 375px;
     }
+  } */
+
+  .page404 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: black;
+    overflow-x: hidden;
+    z-index: 2;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    height: 100vh;
+
+    
+    &__contenu {
+      width: 100%;
+      height: 100%;
+      max-width: 2000px;
+      position: relative;
+     // background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
   }
+  .animation-clown{
+   //background-color: red;
+    position: relative;
+    width: 663px;
+    height: 700px;
+  }
+  
+  .page404 .forme{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .page404 .clown{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width:70%;
+  }
+
+  .page404 .ballon-404{
+    position: absolute;
+    width: 26%;
+    top: 0px;
+    left: 7%;
+    transform-origin: bottom center;
+  }
+
+  .page404 .larme01{
+    position: absolute;
+    width: 10px;
+    top: 46%;
+    left: 47%;
+  }
+  
+  .page404 .larme02{
+    position: relative;
+    width: 10px;
+    top: 46%;
+    left: 63%;
+  }
+
+  .message404{
+    position: relative;
+    width: 500px;
+    top: 20%;
+    margin-left: 5%;
+    transform: translateY(-50%);
+  }
+
+  h1.message404{
+    @include h1;
+    color: #0a3563;
+    font-size: 80px;
+    position: relative;
+  }
+
+  p.message404{
+    font-family: 'Merriweather', serif;
+    color: #0a3563;
+    font-size: 30px;
+    position: relative;
+  }
+
+  .goback a{
+    top: 0px;
+    margin-left: 5%;
+    font-family: 'Merriweather', serif;
+    color: #3DA5D9;
+    font-size: 20px;
+    position: relative;
+    border: solid 3px #3DA5D9;
+    padding: 5%;
+    border-radius: 10px;
+  }
+
+  .goback a:hover {
+    color: #73BFB8!important;
+    top: -5px;
+    transition: 0.3s ease;
+    border: solid 3px #73BFB8;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .page404__contenu {
+      flex-direction: column;
+    }
+    .message404 {
+      //order: -1;
+    }
+    .animation-clown{
+       width: 563px;
+       height: 600px;
+       bottom: -10%;
+      // background-color: red;
+     }
+
+     .message404 {
+       width: 600px;
+      text-align: center;
+      margin-left: 0;
+      justify-content: center;
+      
+     }
+     h1.message404 {
+       font-size: 50px!important;
+     }
+     p.message404 {
+       
+       font-size: 25px;
+     }
+     .goback {
+       margin-left: 0;
+       margin-top: 15%;
+     }
+     .goback a {
+      font-size: 17px;
+      padding: 15px;
+      margin-left: 0;
+      margin-bottom: 10%;
+     }
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  }
+
+ /* @media screen and(min-width: $min-tablet) and (max-width: $min-computer) {
+  
+    .page404 .forme{
+      position: relative;
+      width: 500px;
+      top: 350px;
+      left: 150px;
+    }
+
+    .animation-clown{
+      position: fixed;
+      width: 100%;
+      bottom: -5%;
+    }
+
+    .page404 .clown{
+      position: relative;
+      width: 350px;
+      top: -15px;
+      left: 220px;
+    }
+
+    .page404 .ballon-404{
+      position: relative;
+      width: 110px;
+      top: 250px;
+      left: -310px;
+    }
+
+    .page404 .larme01{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 25px;
+    }
+    
+    .page404 .larme02{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 92px;
+    }
+
+    .message404{
+      position: fixed;
+      width: 500px;
+      left: 150px;
+      top: 200px !important;
+      text-align: center;
+    }
+  
+    h1.message404{
+      @include h1;
+      color: #0a3563;
+      font-size: 60px !important;
+      position: fixed !important;
+      top: 70px !important;
+    }
+  
+    p.message404{
+      font-family: 'Merriweather', serif;
+      color: #0a3563;
+      font-size: 20px;
+      position: fixed;
+      top: 375px;
+    }
+  
+  }
+
+  @media screen and(max-width: $max-mobile) {
+    .page404 .forme{
+      position: relative;
+      width: 500px;
+      top: 350px;
+      left: 275px;
+    }
+
+    .animation-clown{
+      position: fixed;
+      width: 100%;
+      top: 0%;
+      left: -40%;
+    }
+
+    .page404 .clown{
+      position: relative;
+      width: 350px;
+      top: -15px;
+      left: 220px;
+    }
+
+    .page404 .ballon-404{
+      position: relative;
+      width: 110px;
+      top: -150px;
+      left: 310px;
+    }
+
+    .page404 .larme01{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 25px;
+    }
+    
+    .page404 .larme02{
+      position: relative;
+      width: 8px;
+      top: -90px;
+      left: 92px;
+    }
+
+    .message404{
+      position: fixed;
+      width: 300px;
+      left: 150px;
+      top: 200px !important;
+      text-align: center;
+    }
+  
+    h1.message404{
+      @include h1;
+      color: #0a3563;
+      font-size: 60px !important;
+      position: fixed !important;
+      top: 70px !important;
+    }
+  
+    p.message404{
+      font-family: 'Merriweather', serif;
+      color: #0a3563;
+      font-size: 20px;
+      position: fixed;
+      top: 375px;
+    }
+  }*/
 
 // BLOC DON
 .donation__contenu{
@@ -1869,6 +2176,7 @@ justify-content: center;
       img {
         position: relative;
         width: 100%;
+        height: auto;
       }
 
       .medias__infos {
