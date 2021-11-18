@@ -5,6 +5,7 @@
  */
 
 get_header(); // Affiche header.php
+get_template_part( 'partials/heros_generique' );
 
 if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
