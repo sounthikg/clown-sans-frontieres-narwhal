@@ -192,4 +192,21 @@ apercu.classList.remove('apercu-bigger-box')
 });
 
 
+//apercu suivante service
+
+let boutonapercu2 = 
+document.querySelector(".bouton-detail-service");
+let apercu2 = 
+document.querySelector(".apercu-bigger-box-service");
+
+
+boutonapercu2.addEventListener('click', ()=> {
+apercu2.classList.add('apercu-bigger-box-service-visible');
+apercu2.classList.remove('apercu-bigger-box-service')
+});
+
+
+
+
+
 

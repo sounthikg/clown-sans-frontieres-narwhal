@@ -2345,6 +2345,87 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     }
   }
   
+//PAGE SERVICES
+
+.services__contenu{
+  background-image: url('images/texture-grain.png');
+  z-index: 10;
+  margin-top: -5vh;
+}
+
+.services-texte{
+  padding-right: 15vw;
+  padding-left: 3vw;
+  margin-top: 10vh;
+}
+
+.services-titre{
+  @include h1;
+  font-size: 30px;
+  color: variables.$primary;
+  text-align: left; 
+}
+
+.services-explication{
+  margin-top: 3vh;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.services-liste{
+  margin-top: 3vh;
+  color: #73BFB8;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.img-services{
+  border-radius: 0 75px 55px 0;
+  width: 100%;
+}
+
+.apercu-service{
+  margin-top: 15vh;
+}
+
+.card-service{
+  border-color: #73BFB8 !important;
+  border-radius: 20px;
+}
+
+.card-title-service{
+  color: variables.$secondary;
+  font-family: variables.$title-font;
+  margin: 20px 0;
+  @include h2;
+  font-size: 22px;
+}
+
+.card-text-service{
+  color: black;
+}
+
+.btn-page-service {
+  border-color: variables.$fourth !important;
+  border-radius: 15px;
+  font-family: variables.$title-font;
+  color: variables.$fourth;
+  font-weight: 600;
+}
+
+.btn-page-service:hover {
+  transform: scale(1.1);
+  transition: 0.25s ease;
+  color: variables.$fourth;
+  background-color: transparent;
+}
+
+.plus-service{
+  margin-top: 10vh;
+}
+
+
 
   
     
