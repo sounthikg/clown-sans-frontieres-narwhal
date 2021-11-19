@@ -386,7 +386,7 @@ h2 {
   height: 150vh;
   min-height: 1500px;
   position: relative;
-  background-image: url("images/degrade.png");
+  background-image: url("assets/degrade.png");
   background-size: cover;
   background-position: 0% 40%;
   width: 100%;
@@ -507,7 +507,7 @@ h2 {
   z-index:3;
   color:#000;
   text-align:center;
-  background-image:url(/images/texture-grain.png);
+  background-image:url(assets/texture-grain.png);
   background-size:100% 100%;
 
   &__contenu {
@@ -686,7 +686,7 @@ h2 {
   //background-color: red;
 
   &__contenu {
-    background-image: url(images/texture-grain.png);
+    background-image: url(assets/texture-grain.png);
     background-size: 100% 100%;
     text-align: center;
 
@@ -707,7 +707,7 @@ h2 {
   position: relative;
   width: 100%;
   z-index: 1;
-  background-image: url("images/degrade-footer.png");
+  background-image: url("assets/degrade-footer.png");
   background-size: 100% 140%; //media QUERY
   background-position: 50% 100%; //media QUERY
   padding: 20% 8% 0% 8%;
@@ -878,7 +878,7 @@ h2 {
 
   &__contenu {
     margin-top: -1px;
-    background-image: url(images/texture-grain.png);
+    background-image: url(assets/texture-grain.png);
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -1748,7 +1748,7 @@ justify-content: center;
     z-index: 8;
     position: absolute;
     top: 250px;
-    background-image: url(images/degrade.png);
+    background-image: url(assets/degrade.png);
     background-position: 0 90%;
     background-size: 100% 100%;
     display: flex;
@@ -1907,7 +1907,7 @@ justify-content: center;
       content: '';
       position: relative;
       top: 0;
-      background-image: url('images/guillemetsvf.png');
+      background-image: url('assets/guillemetsvf.png');
       height: 50px;
       width: 50px;
       background-size: 50px 50px;
@@ -1919,7 +1919,7 @@ justify-content: center;
       content: '';
       position: relative;
       top: 0;
-      background-image: url('images/guillemetsvf.png');
+      background-image: url('assets/guillemetsvf.png');
       height: 50px;
       width: 50px;
       background-size: 50px 50px;
@@ -1988,7 +1988,7 @@ justify-content: center;
   }
 
   .nouvelle__type {
-    margin-top: 165px!important;
+    margin-top: 200px!important;
   }
 
   
@@ -2116,7 +2116,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 .menu li { list-style: none;}
 .menu__don__button a:hover { color: white;}
 
-.services__contenu{margin-top:-1px;background-image:url(images/texture-grain.png);background-size:100% 100%;width:100%;height:100%;position:relative;background-color:green}
+.services__contenu{margin-top:-1px;background-image:url(assets/texture-grain.png);background-size:100% 100%;width:100%;height:100%;position:relative;background-color:green}
 
 .nouvelles .nouvelles__card .card-title{color:#ae2c1e;margin-top:20px;margin-bottom: 0px;font-family:"Merriweather",serif;font-weight:700;font-size:30px;font-size:22px;}
 
@@ -2144,7 +2144,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     height: 25%;
     z-index: 8;
     position: absolute;
-    background-image: url(images/degrade.png);
+    background-image: url(assets/degrade.png);
     background-position: 0 90%;
     background-size: 100% 100%;
     display: flex;
@@ -2366,7 +2366,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('images/degrade.png');
+    background-image: url('assets/degrade.png');
     background-size: auto 130%;
     opacity: 60%;
 
@@ -2477,4 +2477,15 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     height: 200px!important;
     object-fit: cover!important;
   }
+}
+
+@media screen and (max-width:378px) {
+  .nouvelle__type {
+    margin-top: 120px!important
+  }
+
+  .nouvelle__heros__bg img {
+    top: 120px!important;
+  }
+ 
 }
