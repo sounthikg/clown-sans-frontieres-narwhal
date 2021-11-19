@@ -1,5 +1,9 @@
 import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";const g=function(){const n=document.createElement("link").relList;if(n&&n.supsports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function p(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=p(e);fetch(e.href,t)}};g();a.registerPlugin(c);console.log(c);r.use([d,f,y]);var u=document.querySelector(".navicon"),o=document.querySelector(".menu__hamburger");u.addEventListener("click",function(){var l=o.style.display;l!=="flex"?(o.style.display="flex",o.style.height="100vh"):(o.style.display="none",o.style.height="")});new r(".acc__heros__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:5e3,disableOnInteraction:!1},pagination:{el:".pagination-heros"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});new r(".pied-page__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:4e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});new r(".swiper02",{direction:"horizontal",loop:!0,effect:"coverflow",coverflowEffect:{rotate:30,slideShadows:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});u.addEventListener("mouseover",function(){a.timeline().to(".navicon",{rotationZ:-10}).to(".navicon",{rotationZ:20}).to(".navicon",{rotationZ:0},"-=0.1")});a.timeline({scrollTrigger:{markers:false,start:"top 75%",end:"bottom 25%",toggleActions:"restart complete reverse reset",trigger:".don--img"}}).fromTo(".ballon--rouge",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).fromTo(".ballon--orange",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.5,rotation:"-360"}).fromTo(".ballon--bleu",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).to(".ballon",{rotation:"360",duration:2,y:"-400vh",delay:.4});
 
+
+
+
+
 			//FOOTER PARTENAIRES FETCH
 			/*fetch("./wp-json/wp/v2/partenaires?_embed")
               .then(response => response.json())
@@ -29,7 +33,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
            		});*/
 
 
-
+/*
 
 
 			//MENU DON STYLE
@@ -102,12 +106,12 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
             });
 
 
-
+*/
 
 
 			//FETCH NOUVELLES POUR ACCUEIL
       
-            fetch("./wp-json/wp/v2/nouvelles?_embed")
+/*            fetch("./wp-json/wp/v2/nouvelles?_embed")
               .then(response => response.json())
               .then(data => {
 
@@ -160,8 +164,148 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
               	}
             });
 
+*/
+			//APERCU NOUVELLE SUIVANTE
+/*
+			let boutonapercu = 
+			document.querySelector(".bouton-detail-nouvelle");
+			let apercu = 
+			document.querySelector(".apercu-bigger-box");
 
-			//FETCH DES MEMBRES
+
+			boutonapercu.addEventListener('click', ()=> {
+			apercu.classList.add('apercu-bigger-box-visible');
+			apercu.classList.remove('apercu-bigger-box')
+			});
+*/
+
+
+//FETCH LES MEMBRES DE L'ÉQUIPE 
+
+fetch("https://clownssansfrontieres.qc.lu/wp-json/wp/v2/membres?_embed&orderby=date&order=asc&per_page=13")
+.then(response => response.json())
+.then(data => { 
+
+	let htmlModal = '';
+	let htmlGrid1 = "";
+  	let htmlGrid2 = "";
+	let grid1 = document.querySelector('#grid1');
+  	let grid2 = document.querySelector('#grid2');
+	let modals = document.querySelector('#modals');
+
+	//MODALS
+
+	for (let i = 0; i < data.length; i++) {
+		
+		let memberName = data[i].title.rendered;
+		let role = data[i].acf.role_membre;
+		let quote = data[i].acf.quote;
+	  	let description = data[i].acf.description_membre;
+	  	let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
+
+		htmlModal += `
+
+		<div class="modal fade" id="${shortName}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+					<h5 class="modal-title w-100" id="exampleModalLabel">À propos de ${memberName}</h5>
+					</div>
+					<div class="modal-body">
+					<div class="row align-items-center">
+						<div class="col-5 center-photo">
+						<img class="icone-photo" src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-couleur.jpg" alt="">
+						</div>
+						<div class="col-7">
+						<div class="modal-italique">${quote}</div>
+						<div class="modal-texte">${description}</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+	  	</div>
+	  `
+
+	  modals.innerHTML = htmlModal;
+	}
+
+	//GRID 1
+
+	for (let i = 0; i < 6; i++) {
+		
+		let memberName = data[i].title.rendered;
+		let role = data[i].acf.role_membre;
+		let quote = data[i].acf.quote;
+	  	let description = data[i].acf.description_membre;
+		let membreImage = data[i]._embedded['wp:featuredmedia'][0].source_url;
+	  	let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
+	
+
+	  	console.log(memberName, role, quote, description, membreImage, shortName)
+
+		  htmlGrid1 += `
+		  
+		  <div class="membre">
+			  <div class="image">
+				  <img src="${membreImage}" alt="${shortName}">
+				  <div class="doodle"><img src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-doodle.png" alt="${shortName}"></div>
+			  </div>
+
+			  <h2>${memberName}</h2>
+			  <div class="desc">${role}</div>
+			  <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
+			  En savoir plus</button>
+		  </div>
+		  `
+
+		
+
+		  grid1.innerHTML = htmlGrid1;	
+	  
+
+	}
+
+	//GRID 2
+
+	for (let i = 6; i < 15; i++) {
+		
+		let memberName = data[i].title.rendered;
+		let role = data[i].acf.role_membre;
+		let quote = data[i].acf.quote;
+	  	let description = data[i].acf.description_membre;
+		let membreImage = data[i]._embedded['wp:featuredmedia'][0].source_url;
+	  	let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
+	
+
+	  	console.log(memberName, role, quote, description, membreImage, shortName)
+
+		  htmlGrid2 += `
+		  
+		  <div class="membre">
+			  <div class="image">
+				  <img src="${membreImage}" alt="${shortName}">
+				  <div class="doodle"><img src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-doodle.png" alt="${shortName}"></div>
+			  </div>
+
+			  <h2>${memberName}</h2>
+			  <div class="desc">${role}</div>
+			  <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
+			  En savoir plus</button>
+		  </div>
+		  `
+
+		
+
+		  grid2.innerHTML = htmlGrid2;	  
+
+
+	}
+	
+
+
+	
+});
 
 		
 

@@ -56,6 +56,28 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
         </div>
       </div>
+
+      <!--PROCHAINE NOUVELLE--->
+      <div class="div-detail-nouvelle">
+        <a><button class='bouton-detail-nouvelle'>Voir un aperçu de la prochaine nouvelle</button></a>
+      </div>
+      
+      <div class="apercu-bigger-box">
+      <div class="apercu-box"> 
+        <div class="nouvelles__card">
+          <img src="assets/nouvelles.jpg" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Titre de la nouvelle</h3>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas.
+          </div>
+          <div class="card-footer"><img src='assets/user.png'/> Par Anonyme Ipsum</div>
+        </div>
+      </div>
+    </div>
+
+
 	  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">  
         <path fill="#fef1e2" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,256C480,256,600,224,720,192C840,160,960,128,1080,138.7C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
