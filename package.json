@@ -17,6 +17,6 @@
     "gsap-plugin": "^5.0.6",
     "sass": "^1.43.4",
     "scrolltrigger": "^1.0.1",
-    "swiper": "^7.2.0"
+    "swiper": "^7.3.0"
   }
 }
