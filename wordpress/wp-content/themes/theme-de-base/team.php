@@ -177,12 +177,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           Vous avez la volonté de nous appuyer dans nos actions? Contactez-nous!
         </p>
         <div class="images-partenaires">
-          <img class="partenaire" src="images/logo-desjardins-couleur.png" alt=""> 
-          <img class="partenaire" src="images/logo-canada-couleur.png" alt="">
-          <img class="partenaire" src="images/logo-relationquebec-couleur.png" alt="">
-          <img class="partenaire" src="images/logo-telus-couleur.png" alt="">
-          <img class="partenaire" src="images/logo-tohu-couleur.png" alt="">
-        </div>
+          <img class="partenaire" src="<?php echo get_template_directory_uri(); ?>/assets/logo-desjardins-couleur.png" alt=""> 
+          <img class="partenaire" src="<?php echo get_template_directory_uri(); ?>/assets/logo-canada-couleur.png" alt="">
+          <img class="partenaire" src="<?php echo get_template_directory_uri(); ?>/assets/logo-relationquebec-couleur.png" alt="">
+          <img class="partenaire" src="<?php echo get_template_directory_uri(); ?>/assets/logo-telus-couleur.png" alt="">
+          <img class="partenaire" src="<?php echo get_template_directory_uri(); ?>/assets/logo-tohu-couleur.png" alt="">
+        </div> 
 
     </div>
 

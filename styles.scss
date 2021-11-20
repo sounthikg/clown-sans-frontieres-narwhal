@@ -100,7 +100,7 @@ h2 {
   background-color: white;
   width: 100%;
   height: 200px;
-  z-index: 10;
+  z-index: 15;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -272,7 +272,9 @@ h2 {
       min-width: 100px;
       
       picture img {
-        height: 90px;
+       
+          width: 70%;
+        
       }
     }
     &__options {
@@ -345,6 +347,7 @@ h2 {
     &__logo {
       width: 20%;
       min-width: 220px;
+
     }
     &__options {
       margin: 0!important;
@@ -2375,12 +2378,14 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   .block {
     margin: 18px auto;
     padding: 0 5vw;
+    padding-bottom: 20%;
   }
 
   .equipe-texte{
     color: black;
     font-family: 'Varela Round', sans-serif;
     padding-left: 5vw;
+    font-size: 19px;
   }
 
   .btn-outline-info {
@@ -2461,6 +2466,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
       opacity: 0;
       transition: .5s ease;
       background: transparent;
+      height: 65%;
     }
     
     .image:hover .doodle {
@@ -2527,7 +2533,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 //PAGE SERVICES
 
 .services__contenu{
-  background-image: url('images/texture-grain.png');
+  background-image: url('assets/texture-grain.png');
   z-index: 10;
   margin-top: -5vh;
 }
@@ -2619,7 +2625,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   z-index: 5;
 }
 .heros__gen {
-  margin-top: 150px;
+  margin-top: 120px;
   position: relative;
   width: 100%;
   height: 500px;
@@ -2659,9 +2665,9 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 .description__gen {
   position: relative;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
-  background-color: white;
+  background-color: #fef1e2;
   color: variables.$primary;
   font-family: variables.$text-font;
   font-size: 15px;
@@ -2687,6 +2693,11 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 
 @media screen and (min-width: 768px) {
+
+  
+  .up-vague {
+    margin-top: -16%!important;
+  }
 
   .heros__gen {
     height: 600px;
@@ -2720,6 +2731,10 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 
 @media screen and (min-width: 1200px) {
+
+  .up-vague {
+    margin-top: -12%!important;
+  }
 
   .heros__gen {
 
@@ -2779,4 +2794,15 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   .nouvelle__type {
     margin-top: 70px!important;
   }
+
+
 }
+
+.z-index {
+  z-index: 5;
+}
+
+.up-vague {
+  margin-top: -30%;
+}
+
