@@ -44,9 +44,10 @@
 		 etc. */
 	?>
 >
-
-
-
+<?php
+  $traduction = new WP_Query('post_type=traduction');
+  while ($traduction->have_posts()) : $traduction->the_post(); 
+?>
 <div class="page404">
         <div class="page404__contenu">
             <div class="animation-clown">
@@ -63,6 +64,11 @@
             </div>
         </div>
 </div>
+<?php
+  endwhile; 
+  wp_reset_postdata(); 
+?>
+
 
 
 
