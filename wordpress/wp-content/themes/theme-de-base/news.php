@@ -30,7 +30,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
           <!---description-->
           <div class='nouvelle__description__text__source'>
-            <img class='text--image' src='images/personne.jpg'/>
+            <img class='text--image' src='<?php echo get_template_directory_uri(); ?>/assets/katel-couleur.jpg'/>
             <div class='text--wrapper'>
               <p class='text--nom'><?php the_field("auteur")?></p>
               <p class='text--type'><?php the_field("type_auteur")?></p>

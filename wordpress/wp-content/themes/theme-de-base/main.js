@@ -130,6 +130,141 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
 */
 
 
+			//FETCH POUR HUB NOUVELLES
+
+			var trier = document.querySelector('#trier');
+			var btnPlus = document.querySelector('#plusNouvelles');
+			var nbrNouvelles = 6;
+			
+			trier.addEventListener("change", function() {
+				var tri = this.value;
+				changeOrder(tri);
+			});
+
+			btnPlus.addEventListener('click', function() {
+				nbrNouvelles += 6;
+			})
+
+
+			fetch(`https://clownssansfrontieres.qc.lu/wp-json/wp/v2/nouvelles?_embed&orderby=date&order=asc&per_page=13`)
+				.then(response => response.json())
+				.then(data => {
+
+					let htmlNouvelles = "";
+					let nouvellesList = document.querySelector('.nouvelles-list')
+
+					for (let i = 0; i < nbrNouvelles; i++) {
+						
+					let link = data[i].link;
+					let title = data[i].title.rendered;
+					let author = data[i].acf.auteur;
+					let type = data[i].acf.type;
+					let date = data[i].acf.date;
+					let resume = data[i].acf.resume;
+					let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
+
+					//texte se coupe si trop long pour les cartes nouvelles
+
+					if (resume.length > 60) {
+					resume = resume.substr(0, resume.lastIndexOf(' ', 100)) + ' [...]';
+					}
+
+					if (title.length > 50) {
+					title = title.substr(0, title.lastIndexOf(' ', 50)) + '...';
+					} 
+					///
+
+					
+					htmlNouvelles += `
+					
+					<a class='nouvelles__link' href='${link}'>
+						<div class="nouvelles__card">
+							<img src="${image}" class="card-img-top">
+							<div class="card-body">
+								<h3 class="card-title">${title}</h3>
+								<p class='nouvelles__type'>${type}</p>
+									${resume}
+						</div>
+							<div class="card-footer">
+							<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
+						</div>
+					</a>
+
+
+						`;
+
+						nouvellesList.innerHTML = htmlNouvelles;
+
+
+					}
+				});
+
+				function changeOrder(tri) {
+
+				fetch(`https://clownssansfrontieres.qc.lu/wp-json/wp/v2/nouvelles?_embed&orderby=date&order=${tri}&per_page=13`)
+				.then(response => response.json())
+				.then(data => {
+
+					var btnPlus = document.querySelector('#plusNouvelles');
+					var nbrNouvelles = 6;
+
+					btnPlus.addEventListener('click', function() {
+						nbrNouvelles += 6;
+					});				
+					
+		
+
+					let htmlNouvelles = "";
+						let nouvellesList = document.querySelector('.nouvelles-list')
+
+					for (let i = 0; i < nbrNouvelles; i++) {
+						
+					let link = data[i].link;
+						let title = data[i].title.rendered;
+						let author = data[i].acf.auteur;
+						let type = data[i].acf.type;
+						let date = data[i].acf.date;
+						let resume = data[i].acf.resume;
+					let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
+
+					//texte se coupe si trop long pour les cartes nouvelles
+
+					if (resume.length > 60) {
+					resume = resume.substr(0, resume.lastIndexOf(' ', 100)) + ' [...]';
+					}
+
+					if (title.length > 50) {
+					title = title.substr(0, title.lastIndexOf(' ', 50)) + '...';
+					} 
+					///
+
+					
+					htmlNouvelles += `
+					
+					<a class='nouvelles__link' href='${link}'>
+						<div class="nouvelles__card">
+							<img src="${image}" class="card-img-top">
+							<div class="card-body">
+								<h3 class="card-title">${title}</h3>
+								<p class='nouvelles__type'>${type}</p>
+									${resume}
+						</div>
+							<div class="card-footer">
+							<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
+						</div>
+					</a>
+
+
+						`;
+
+						nouvellesList.innerHTML = htmlNouvelles;
+
+
+					}
+				});
+
+			}
+
 
 			//FOOTER PARTENAIRES FETCH
 			fetch("./wp-json/wp/v2/partenaires?_embed")
@@ -292,62 +427,6 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
             });
 
 
-			//FETCH POUR HUB NOUVELLES	
-      
-			fetch("./wp-json/wp/v2/nouvelles?_embed")
-			.then(response => response.json())
-			.then(data => {
-
-				let html = "";
-					 let cardList = document.querySelector('.nouvelles__cards__list')
-
-				for (let i = 0; i < 3; i++) {
-					
-				  let link = data[i].link;
-					let title = data[i].title.rendered;
-					let author = data[i].acf.auteur;
-					 let type = data[i].acf.type;
-					let date = data[i].acf.date;
-					let resume = data[i].acf.resume;
-				 let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
-
-				  //texte se coupe si trop long pour les cartes nouvelles
-
-				  if (resume.length > 200) {
-				  resume = resume.substr(0, resume.lastIndexOf(' ', 200)) + ' [...]';
-				}
-
-				if (title.length > 50) {
-				  title = title.substr(0, title.lastIndexOf(' ', 50)) + '...';
-				} 
-				///
-
-				
-				   html += `
-				   
-				  <a class='nouvelles__link' href='${link}'>
-					<div class="nouvelles__card">
-						 <img src="${image}" class="card-img-top">
-						<div class="card-body">
-							<h3 class="card-title">${title}</h3>
-							<p class='nouvelles__type'>${type}</p>
-								${resume}
-					   </div>
-						<div class="card-footer">
-						<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
-					</div>
-				  </a>
-
-
-					`;
-
-					 cardList.innerHTML = html;
-  
-
-				}
-		  });
-
-
 			//APERCU NOUVELLE SUIVANTE
 
 			let boutonapercu = 
@@ -360,6 +439,8 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
 			apercu.classList.add('apercu-bigger-box-visible');
 			apercu.classList.remove('apercu-bigger-box')
 			});
+			
+
 
 
 
