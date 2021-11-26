@@ -2806,3 +2806,120 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   margin-top: -30%;
 }
 
+
+//HUB NOUVELLES
+
+.hub-nouvelles {
+  background-color: #fef1e2;
+  width: 100%;
+  position: relative;
+  min-height: 1000px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+
+  .nouvelles-list {
+    width: 100%;
+    position: relative;
+    background-color: #fef1e2;
+    padding: 0% 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+
+      .nouvelles__link{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: none;
+        position: relative;
+        width: 100%;
+      }
+      
+      
+      .nouvelles__link:hover {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: black;
+      }
+      
+    
+      .nouvelles__card {
+        box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4);
+        font-family: variables.$text-font;
+        background-color: #fff;
+        border-radius: 30px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: 15px;
+        top: 0;    
+    
+        &:hover {
+          top: -7px;
+          transition: 0.25s ease;
+        }
+    
+        .card-body {
+          font-size: 17px;
+          padding: 20px 40px 30px 40px;
+          color: black;
+    
+        }
+    
+        .card-title {
+          color: variables.$primary;
+          font-family: variables.$title-font;
+          margin: 20px 0;
+          @include h2;
+          font-size: 22px;
+    
+        }
+    
+    
+        .card-footer {
+          text-align: left;
+          font-size: 15px;
+          color: variables.$primary;
+          background-color: white;
+          padding: 10px 40px;
+    
+          img {
+            position: relative;
+            height: 40px;
+          }
+        }
+      }
+  }
+}
+
+
+
+//media queries cards
+@media screen and (min-width: 768px){
+  .hub-nouvelles {
+
+    .nouvelles__card {
+      width: 40%!important;
+    }
+
+    .nouvelles-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .hub-nouvelles {
+
+    .nouvelles__card {
+      width: 30%!important;
+    }
+
+  }
+}

@@ -6,7 +6,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
 
 //FETCH LES MEMBRES DE L'ÉQUIPE 
 
-fetch("https://clownssansfrontieres.qc.lu/wp-json/wp/v2/membres?_embed&orderby=date&order=asc&per_page=13")
+fetch("./wp-json/wp/v2/membres?_embed&orderby=date&order=asc&per_page=13")
 .then(response => response.json())
 .then(data => { 
 	console.log(data);
