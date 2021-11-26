@@ -57,9 +57,9 @@
                 <img class="larme02" src="https://zupimages.net/up/21/41/wpe7.png" alt="">
             </div>
             <div class="message404">
-                <h1 class="message404">Oups...</h1>
-                <p class="message404">La page que vous recherchez n'existe pas</p>
-                <p class="goback"><a class='404_link' href='<?php echo esc_url( home_url( '/' ) ); ?>'>Revenir à la page d'accueil</a></p>
+                <h1 class="message404"> <?php the_field('oups_404') ?> </h1>
+                <p class="message404"> <?php the_field('description_404') ?> </p>
+                <p class="goback"><a class='404_link' href='<?php echo esc_url( home_url( '/' ) ); ?>'><?php the_field('revenir_accueil') ?></a></p>
             </div>
         </div>
 </div>
