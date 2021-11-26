@@ -212,7 +212,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	
 
     <script>
-      fetch("<?php echo get_home_path()?>/wp-json/wp/v2/membres?_embed&orderby=date&order=asc&per_page=13")
+      fetch("<?php echo get_site_url(); ?>/wp-json/wp/v2/membres?_embed&orderby=date&order=asc&per_page=13")
 .then(response => response.json())
 .then(data => { 
 	console.log(data);
