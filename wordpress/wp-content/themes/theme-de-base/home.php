@@ -122,59 +122,6 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
         <div class="container">
           <div class="row justify-content-evenly" id='services_api'>
 
-
-           <!--- <div class="col-xl-6 col-md-6">
-              <div class="card border border-2 mb-3 p-3" style="max-width: 600px">
-                <div class="row align-items-center">
-                  <div class="col-xl-3">
-                    <img class="card-img" src="https://zupimages.net/up/21/40/psod.png" alt="" />
-                  </div>
-                  <div class="col-xl-9">
-                    <div class="card-body">
-                      <h4 class="card-title">Spectacles, animations et ateliers</h4>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                      <button type="button" class="btn btn-outline-info border-2">
-                        En savoir plus
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-xl-6 col-md-6">
-              <div class="card border border-2 mb-3 p-3" style="max-width: 600px">
-                <div class="row align-items-center">
-                  <div class="col-xl-3">
-                    <img class="card-img" src="https://zupimages.net/up/21/40/78h6.png" alt="" />
-                  </div>
-                  <div class="col-xl-9">
-                    <div class="card-body">
-                      <h4 class="card-title">Exposition de photographies</h4>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                      <a href='https://google.ca'>
-                        <button type="button" class="btn btn-outline-info border-2">
-                        En savoir plus
-                      </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
             
           </div>
         </div>
