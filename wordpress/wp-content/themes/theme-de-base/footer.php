@@ -15,12 +15,11 @@
           ></a>
           <div class="pied-page__description">
             <p>
-              Ce que les médecins font pour le corps, <br />les clowns le font
-              pour l'âme.
+            <?php the_field('slogan_footer') ?>
             </p>
           </div>
           <a href="https://www.clownssansfrontieres.ca/donner/"
-            ><button class="pied-page__btnDon">Donnez !</button></a
+            ><button class="pied-page__btnDon"><?php the_field('donnez_footer') ?></button></a
           >
         </div>
         <div class="pied-page__droit">
@@ -28,8 +27,8 @@
             <p>
               <img src="<?php echo get_template_directory_uri(); ?>/images/address.png" /><a
                 href="https://goo.gl/maps/JbPGfpbce26Mf4Zs8"
-                >105 rue Ontario Est, bureau 203 <br />
-                Montréal, Québec, H2X 1G9</a
+                > <?php the_field('adresse_footer') ?> <br />
+                <?php the_field('adresse_footer_02') ?></a
               >
             </p>
             <p><img src="<?php echo get_template_directory_uri(); ?>/images/email.png" />contact@clownssansfrontieres.ca</p>
