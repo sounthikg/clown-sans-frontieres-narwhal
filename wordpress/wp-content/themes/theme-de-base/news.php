@@ -59,7 +59,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
       <!--PROCHAINE NOUVELLE--->
       <div class="div-detail-nouvelle">
-        <a><button class='bouton-detail-nouvelle'>Voir un aperçu de la prochaine nouvelle</button></a>
+        <a><button class='bouton-detail-nouvelle'><?php the_field('voir_plus_nouvelle')?></button></a>
       </div>
       
       <div class="apercu-bigger-box">
