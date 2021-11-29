@@ -13,6 +13,15 @@ Version: 1.0
     color: black;
 }
 
+
+@media screen and (min-width: 1200px) {
+
+    .equipe__contenu {
+        padding: 0% 10%!important;
+    }
+
+    
+}
 @media screen and (min-width: 768px) {
 
     .hub-nouvelles .nouvelles-list {
