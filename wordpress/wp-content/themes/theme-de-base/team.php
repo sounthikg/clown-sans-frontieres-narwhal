@@ -213,126 +213,126 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
     <script>
       fetch("<?php the_field('fetch_lien')?>")
-.then(response => response.json())
-.then(data => { 
-	console.log(data);
-	let htmlModal = '';
-	let htmlGrid1 = "";
-  	let htmlGrid2 = "";
-	let grid1 = document.querySelector('#grid1');
-  	let grid2 = document.querySelector('#grid2');
-	let modals = document.querySelector('#modals');
+        .then(response => response.json())
+        .then(data => { 
+          console.log(data);
+          let htmlModal = '';
+          let htmlGrid1 = "";
+            let htmlGrid2 = "";
+          let grid1 = document.querySelector('#grid1');
+            let grid2 = document.querySelector('#grid2');
+          let modals = document.querySelector('#modals');
 
-	//MODALS
+          //MODALS
 
-	for (let i = 0; i < data.length; i++) {
-		
-		let memberName = data[i].title.rendered;
-		let role = data[i].acf.role_membre;
-		let quote = data[i].acf.quote;
-	  	let description = data[i].acf.description_membre;
-	  	let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
+          for (let i = 0; i < data.length; i++) {
+            
+            let memberName = data[i].title.rendered;
+            let role = data[i].acf.role_membre;
+            let quote = data[i].acf.quote;
+              let description = data[i].acf.description_membre;
+              let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
 
-		htmlModal += `
+            htmlModal += `
 
-		<div class="modal fade" id="${shortName}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg">
-				<div class="modal-content">
-					<div class="modal-header text-center">
-					<h5 class="modal-title w-100" id="exampleModalLabel">À propos de ${memberName}</h5>
-					</div>
-					<div class="modal-body">
-					<div class="row align-items-center">
-						<div class="col-5 center-photo">
-						<img class="icone-photo" src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-couleur.jpg" alt="">
-						</div>
-						<div class="col-7">
-						<div class="modal-italique">${quote}</div>
-						<div class="modal-texte">${description}</div>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-	  	</div>
-	  `
+            <div class="modal fade" id="${shortName}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="exampleModalLabel">À propos de ${memberName}</h5>
+                  </div>
+                  <div class="modal-body">
+                  <div class="row align-items-center">
+                    <div class="col-5 center-photo">
+                    <img class="icone-photo" src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-couleur.jpg" alt="">
+                    </div>
+                    <div class="col-7">
+                    <div class="modal-italique">${quote}</div>
+                    <div class="modal-texte">${description}</div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            `
 
-	  modals.innerHTML = htmlModal;
-	}
+            modals.innerHTML = htmlModal;
+          }
 
-	//GRID 1
+          //GRID 1
 
-	for (let i = 0; i < 6; i++) {
-		
-		let memberName = data[i].title.rendered;
-		let role = data[i].acf.role_membre;
-		let quote = data[i].acf.quote;
-	  	let description = data[i].acf.description_membre;
-		let membreImage = data[i]._embedded['wp:featuredmedia'][0].source_url;
-	  	let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
-	
+          for (let i = 0; i < 6; i++) {
+            
+            let memberName = data[i].title.rendered;
+            let role = data[i].acf.role_membre;
+            let quote = data[i].acf.quote;
+              let description = data[i].acf.description_membre;
+            let membreImage = data[i]._embedded['wp:featuredmedia'][0].source_url;
+              let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
+          
 
-	  	console.log(memberName, role, quote, description, membreImage, shortName)
+              console.log(memberName, role, quote, description, membreImage, shortName)
 
-		  htmlGrid1 += `
-		  
-		  <div class="membre">
-			  <div class="image">
-				  <img src="${membreImage}" alt="${shortName}">
-				  <div class="doodle"><img src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-doodle.png" alt="${shortName}"></div>
-			  </div>
+              htmlGrid1 += `
+              
+              <div class="membre">
+                <div class="image">
+                  <img src="${membreImage}" alt="${shortName}">
+                  <div class="doodle"><img src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-doodle.png" alt="${shortName}"></div>
+                </div>
 
-			  <h2>${memberName}</h2>
-			  <div class="desc">${role}</div>
-			  <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
-			  En savoir plus</button>
-		  </div>
-		  `
+                <h2>${memberName}</h2>
+                <div class="desc">${role}</div>
+                <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
+                En savoir plus</button>
+              </div>
+              `
 
-		
+            
 
-		  grid1.innerHTML = htmlGrid1;	
-	  
+              grid1.innerHTML = htmlGrid1;	
+            
 
-	}
+          }
 
-	//GRID 2
+          //GRID 2
 
-	for (let i = 6; i < 15; i++) {
-		
-		let memberName = data[i].title.rendered;
-		let role = data[i].acf.role_membre;
-		let quote = data[i].acf.quote;
-	  	let description = data[i].acf.description_membre;
-		let membreImage = data[i]._embedded['wp:featuredmedia'][0].source_url;
-	  	let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
-	
+          for (let i = 6; i < 15; i++) {
+            
+            let memberName = data[i].title.rendered;
+            let role = data[i].acf.role_membre;
+            let quote = data[i].acf.quote;
+              let description = data[i].acf.description_membre;
+            let membreImage = data[i]._embedded['wp:featuredmedia'][0].source_url;
+              let shortName = data[i]._embedded['wp:featuredmedia'][0].slug;
+          
 
-	  	console.log(memberName, role, quote, description, membreImage, shortName)
+              console.log(memberName, role, quote, description, membreImage, shortName)
 
-		  htmlGrid2 += `
-		  
-		  <div class="membre">
-			  <div class="image">
-				  <img src="${membreImage}" alt="${shortName}">
-				  <div class="doodle"><img src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-doodle.png" alt="${shortName}"></div>
-			  </div>
+              htmlGrid2 += `
+              
+              <div class="membre">
+                <div class="image">
+                  <img src="${membreImage}" alt="${shortName}">
+                  <div class="doodle"><img src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-doodle.png" alt="${shortName}"></div>
+                </div>
 
-			  <h2>${memberName}</h2>
-			  <div class="desc">${role}</div>
-			  <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
-			  En savoir plus</button>
-		  </div>
-		  `
+                <h2>${memberName}</h2>
+                <div class="desc">${role}</div>
+                <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
+                En savoir plus</button>
+              </div>
+              `
 
-		
+            
 
-		  grid2.innerHTML = htmlGrid2;	  
+              grid2.innerHTML = htmlGrid2;	  
 
 
-	}
-	
-});
+          }
+          
+        });
 
     </script>
     

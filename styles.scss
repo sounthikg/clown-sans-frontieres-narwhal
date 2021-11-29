@@ -658,6 +658,10 @@ h2 {
 
 @media screen and (min-width: 768px) {
 
+  .nouvelles__link{
+    width: 50%!important;
+  }
+
   .nouvelles__cards__list {
     flex-direction: row!important;
     flex-wrap: wrap!important;
@@ -1929,7 +1933,7 @@ justify-content: center;
     height: 40%;
     z-index: 8;
     position: absolute;
-    top: 250px;
+    top: 160px;
     background-image: url(assets/degrade.png);
     background-position: 0 90%;
     background-size: 100% 100%;
@@ -2170,7 +2174,7 @@ justify-content: center;
   }
 
   .nouvelle__type {
-    margin-top: 169px!important;
+    margin-top: 168px!important;
   }
 
   
@@ -2795,6 +2799,10 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 @media screen and (min-width: 768px) {
 
+  .nouvelle__heros__title {
+    top: 250px!important;
+  }
+
   
   .up-vague {
     margin-top: -16%!important;
@@ -2873,15 +2881,14 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   .card-img, .card-img-top, .card-img-bottom {
     width: 105%!important;
     overflow: hidden!important;
-    max-height: 180px!important;
-    height: 200px!important;
     object-fit: cover!important;
   }
 }
 
 @media screen and (max-width:378px) {
+
   .nouvelle__type {
-    margin-top: 120px!important
+    margin-top: 70px;
   }
 
   .nouvelle__heros__bg img {
@@ -2892,8 +2899,12 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 @media screen and (min-width:378px) {
 
+  .nouvelle__heros__title {
+    top: 160px;
+  }
+
   .nouvelle__type {
-    margin-top: 70px!important;
+    margin-top: 70px;
   }
 
 
@@ -2924,7 +2935,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     width: 100%;
     position: relative;
     background-color: #fef1e2;
-    padding: 0% 10%;
+    padding: 2% 0%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -2998,31 +3009,16 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   }
 }
 
+.bouton-hub-nouvelles {
+   
+  position:relative;
+  @include h2;
+  @include buttons;
+  color: variables.$secondary;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid variables.$secondary;
+  padding: 20px 40px;
+  box-shadow: none;
 
-
-//media queries cards
-
-/*@media screen and (min-width: 768px){
-  .hub-nouvelles {
-
-    .nouvelles__card {
-      width: 40%!important;
-    }
-
-    .nouvelles-list {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-  }
 }
-
-@media screen and (min-width: 1200px){
-  .hub-nouvelles {
-
-    .nouvelles__card {
-      width: 30%!important;
-    }
-
-  }
-}*/

@@ -26,8 +26,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	</div>
 			<div class='nouvelles-list'>		
 			</div>
-			<div class='nouvelles__bouton'>
-            	<button id='plusNouvelles'>Plus de nouvelles</button>
+			<div>
+            	<button id='plusNouvelles' class='bouton-hub-nouvelles'>Charger plus de nouvelles...</button>
           </div>
 	</div>
 

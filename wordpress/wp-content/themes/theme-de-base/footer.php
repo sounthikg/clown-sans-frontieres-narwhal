@@ -63,25 +63,6 @@
                 <div class="swiper-wrapper" id='partenaires-api'>
                   <!-- Slides -->
 
-                
-                  <!---<div class="swiper-slide">
-                    <a href='https://google.ca'><img src="<?php echo get_template_directory_uri(); ?>/images/desjardins.png" class="img-horizontal" /></a>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Relations-internationales-et-francophonie.png"  class="img-horizontal" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/tohu.png"  class="img-horizontal" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/telus.png"  class="img-horizontal"  />
-                  </div>
-
-                 -->
-
                 <?php
                       $partenaires = new WP_Query('post_type=partenaires');
                       while ($partenaires->have_posts()) : $partenaires->the_post(); 
