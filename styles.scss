@@ -800,8 +800,7 @@ h2 {
 
     .swiper-button-next,
     .swiper-button-prev {
-      filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
-      -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+      display:none;
     }
 
     img {
@@ -1879,7 +1878,7 @@ justify-content: center;
   width: 100%;
   position: relative;
   height: 50px;
-  margin-top: 150px;
+  margin-top: 120px;
   z-index: 9;
   display: flex;
   flex-direction: center;
@@ -2174,7 +2173,7 @@ justify-content: center;
   }
 
   .nouvelle__type {
-    margin-top: 168px!important;
+    margin-top: 200px!important;
   }
 
   
@@ -2351,7 +2350,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     height: 100%;
     width: 100vw;
     margin-left: 10vw;
-    margin-top: -18vh !important;
+    margin-top: -6% !important;
     position: relative;
     background-color: #fef1e2;
     z-index: 10;
@@ -2382,7 +2381,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   .block {
     margin: 18px auto;
     padding: 0 5vw;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
   }
 
   .equipe-texte{
@@ -2537,7 +2536,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 //PAGE SERVICES
 
 .services__contenu{
-  background-image: url('images/texture-grain.png');
+  background-image: url('assets/texture-grain.png');
   z-index: 10;
   margin-top: -5vh;
 }
@@ -2721,7 +2720,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     
 //HEROS GENERIQUE 
 .wrapper-vague {
-  margin-top: -100px;
+  margin-top: -10%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -2809,7 +2808,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   }
 
   .heros__gen {
-    height: 600px;
+    height: 520px;
   
     .heros__gen__bg {
       position: relative;
@@ -2829,7 +2828,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   }
 
   .wrapper-vague {
-    margin-top: -145px;
+    margin-top: -10%;
   }
 
   .description__gen__wrapper {
@@ -2861,7 +2860,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     }
   
     &__vague {
-      background-size: 100% auto;
+      background-size: 113% auto;
       }  
   }
 
@@ -2887,9 +2886,6 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 @media screen and (max-width:378px) {
 
-  .nouvelle__type {
-    margin-top: 70px;
-  }
 
   .nouvelle__heros__bg img {
     top: 120px!important;
@@ -2903,11 +2899,6 @@ header {width: 100%; height: auto; margin: none; padding: none;}
     top: 160px;
   }
 
-  .nouvelle__type {
-    margin-top: 70px;
-  }
-
-
 }
 
 .z-index {
@@ -2915,7 +2906,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 }
 
 .up-vague {
-  margin-top: -30%;
+  margin-top: -20%;
 }
 
 

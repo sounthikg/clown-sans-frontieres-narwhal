@@ -40,19 +40,19 @@
 
             <div class="pied-page__reseaux">
               <a
-                href="https://www.facebook.com/Clowns-Sans-Fronti%C3%A8res-Canada-174316817738/"
+                href="https://www.facebook.com/Clowns-Sans-Fronti%C3%A8res-Canada-174316817738/" target="_blank"
                 ><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png"
               /></a>
-              <a href="https://twitter.com/csf_canada"
+              <a href="https://twitter.com/csf_canada" target="_blank"
                 ><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"
               /></a>
-              <a href="https://www.instagram.com/clownssansfrontieres/?hl=fr-ca"
+              <a href="https://www.instagram.com/clownssansfrontieres/?hl=fr-ca" target="_blank"
                 ><img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png"
               /></a>
-              <a href="https://www.youtube.com/channel/UCQWUO8JZx69GPWRInazRPMw"
+              <a href="https://www.youtube.com/channel/UCQWUO8JZx69GPWRInazRPMw" target="_blank"
                 ><img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png"
               /></a>
-              <a href="https://vimeo.com/user2650793"
+              <a href="https://vimeo.com/user2650793" target="_blank"
                 ><img src="<?php echo get_template_directory_uri(); ?>/images/vimeo.png"
               /></a>
             </div>

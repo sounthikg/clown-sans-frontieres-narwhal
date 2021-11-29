@@ -23,10 +23,11 @@ get_template_part( 'partials/heros_generique' );
 get_template_part( 'partials/description_generique' );
 ?>
 
-<svg xmlns="http://www.w3.org/2000/svg" class='z-index' viewBox="0 0 1440 320">  
-        <path fill="#fef1e2" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,256C480,256,600,224,720,192C840,160,960,128,1080,138.7C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-        ></path>
+<svg xmlns="http://www.w3.org/2000/svg" class="z-index" viewBox="0 0 1440 320">  
+			<path fill="#fef1e2" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,256C480,256,600,224,720,192C840,160,960,128,1080,138.7C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
 </svg>
+
+	
 
 <?php endwhile; // Fermeture de la boucle
 
@@ -34,6 +35,5 @@ else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
 get_footer(); // Affiche footer.php 
 ?>
