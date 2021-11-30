@@ -82,25 +82,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
      <script>
          <?php 
-          $next = get_next_post();
-
-          $next_auteur = get_post_meta( get_the_ID($next), 'auteur', $nouvelles = true);
-          $next_date = get_post_meta( get_the_ID($next), 'date', $nouvelles = true);
-          $next_resume = get_post_meta( get_the_ID($next), 'resume', $nouvelles = true);
-          $next_type = get_post_meta( get_the_ID($next), 'type', $nouvelles = true);
-          
+          $next = get_next_post();          
           $next_link = get_permalink($next);
           $next_img = get_the_post_thumbnail_url($next);
           
           ?>
-
-          console.log("");
-          console.log('<?php echo $next_date?>');
-          console.log('<?php echo $next_auteur?>');
-          console.log('<?php echo $next_img?>');
-          console.log('');
-          console.log('<?php echo $next_link?>');
-        
           
           let divNext = document.querySelector('#fetchNextNew')
 
@@ -112,12 +98,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <img src="<?php echo $next_img?>" class="card-img-top">
                 <div class="card-body">
                     <h3 class="card-title"><?php echo get_the_title($next)?></h3>
-                    <p class='nouvelles__type'><?php echo $next_type?></p>
-                    <?php echo $next_resume?>
+                    <p class='nouvelles__type'><?php the_field('type', get_the_id($next))?></p>
+                    <?php the_field('resume', get_the_id($next))?>
               </div>
             </div>
                 <div class="card-footer">
-                <img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par <?php echo $next_auteur?></div>
+                <img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par <?php the_field('auteur', get_the_id($next))?></div>
                      
           </a>          
           ` 
