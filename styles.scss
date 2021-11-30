@@ -1825,6 +1825,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   text-align: left;
+  flex-direction: column;
       .nouvelles__card {
       box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4);
       font-family: variables.$text-font;

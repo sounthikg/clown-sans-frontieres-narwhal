@@ -56,26 +56,19 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
         </div>
       </div>
-
-      <!--PROCHAINE NOUVELLE--->
+      
       <div class="div-detail-nouvelle">
         <a><button class='bouton-detail-nouvelle'><?php the_field('voir_plus_nouvelle')?></button></a>
       </div>
-      
-      <div class="apercu-bigger-box">
-      <div class="apercu-box"> 
-        <div class="nouvelles__card">
-          <img src="assets/nouvelles.jpg" class="card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">Titre de la nouvelle</h3>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas.
+
+        <div class="apercu-bigger-box">
+          <div class="apercu-box" id="fetchNextNew"> 
+            
           </div>
-          <div class="card-footer"><img src='assets/user.png'/> Par Anonyme Ipsum</div>
-        </div>
-      </div>
-    </div>
+        </div> 
+      
+
+    
 
 
 	  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">  
@@ -83,6 +76,55 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         ></path>
       </svg>
     </div>
+
+
+     <!--PROCHAINE NOUVELLE -->
+
+     <script>
+         <?php 
+          $next = get_next_post();
+
+          $next_auteur = get_post_meta( get_the_ID($next), 'auteur', $nouvelles = true);
+          $next_date = get_post_meta( get_the_ID($next), 'date', $nouvelles = true);
+          $next_resume = get_post_meta( get_the_ID($next), 'resume', $nouvelles = true);
+          $next_type = get_post_meta( get_the_ID($next), 'type', $nouvelles = true);
+          
+          $next_link = get_permalink($next);
+          $next_img = get_the_post_thumbnail_url($next);
+          
+          ?>
+
+          console.log("");
+          console.log('<?php echo $next_date?>');
+          console.log('<?php echo $next_auteur?>');
+          console.log('<?php echo $next_img?>');
+          console.log('');
+          console.log('<?php echo $next_link?>');
+        
+          
+          let divNext = document.querySelector('#fetchNextNew')
+
+          let html = `
+
+          <a class='nouvelles__link' href='<?php echo $next_link?>'>
+            <div class="nouvelles__card">
+              <div class='row'>
+                <img src="<?php echo $next_img?>" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title"><?php echo get_the_title($next)?></h3>
+                    <p class='nouvelles__type'><?php echo $next_type?></p>
+                    <?php echo $next_resume?>
+              </div>
+            </div>
+                <div class="card-footer">
+                <img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par <?php echo $next_auteur?></div>
+                     
+          </a>          
+          ` 
+
+          divNext.innerHTML = html;
+      </script>
+
 
 
 
