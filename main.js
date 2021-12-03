@@ -173,7 +173,11 @@ gsap.timeline()
     }
   )
   .to('.ballon', {
-    rotation: '360', duration: 2, y: '-400vh',  opacity: '0%', delay: 0.4,
+    rotation: '360', duration: 2, y: '-400vh', delay: 0.4,
+  })
+  
+  .to('.ballon', {
+    opacity: '0%',
   })
 });
 
