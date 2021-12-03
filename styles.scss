@@ -2884,7 +2884,6 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   
   .description__gen__wrapper {
 
-    margin-top: -50px;
     font-size: 19px;
   }
 
@@ -3037,4 +3036,59 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
 .playDon{
   cursor: pointer !important;
+}
+
+.hub_services__contenu {
+  position: relative;
+  width: 100%;
+  color: black;
+}
+
+.hub_services__contenu .card {
+  width: 100%!important;
+  border-radius: 15px;
+  border-color: #73BFB8 !important;
+  top:0;
+}
+
+.services-img {
+  width: 100%;
+  position: absolute;
+}
+
+.hub_services__contenu .card-img {
+  position: relative; 
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+
+}
+
+.hub_services__contenu .card-title {
+  color: #F89225;
+  @include h2;
+  font-size: 22px;
+
+}
+
+.hub_services__contenu .card-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 17px;
+}
+
+.hub_services__contenu button {
+  border-radius: 15px;
+}
+
+.hub_services__contenu button:hover {
+  color: white;
+  transform: scale(1.1);
+  transition: 0.25s ease;
+  background-color: transparent;
+  color: #73BFB8;
+  border-color: #73BFB8;
 }
