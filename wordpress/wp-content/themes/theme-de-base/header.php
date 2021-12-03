@@ -8,9 +8,10 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<meta property="og:title" content="Clown Sans Frontière">
+<meta property="og:title" content="Clown Sans Frontières | <?php the_title()?> ">
 <meta property="og:description" content="Plus jamais d'enfants sans sourire">
-<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/logo_horizontalcsf.png ">
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/apercu.png ">
+
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/clown_logo.png" />
 
     <!-- GOOGLE FONTS -->
