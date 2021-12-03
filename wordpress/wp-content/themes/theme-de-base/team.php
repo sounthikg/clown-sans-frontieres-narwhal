@@ -239,10 +239,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                   </div>
                   <div class="modal-body">
                   <div class="row align-items-center">
-                    <div class="col-5 center-photo">
+                  <div class="col-xl-5 col-md-5 col-sm-12 center-photo">
                     <img class="icone-photo" src="https://clownssansfrontieres.qc.lu/wp-content/uploads/2021/11/${shortName}-couleur.jpg" alt="">
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7 col-md-7">
                     <div class="modal-italique">${quote}</div>
                     <div class="modal-texte">${description}</div>
                     </div>

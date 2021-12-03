@@ -901,6 +901,7 @@ h1.services-title {
 
 .services .card {
   margin-top: 5%;
+  min-height: 360px;
 }
 
 .services h4.card-title {
@@ -1817,15 +1818,17 @@ justify-content: center;
   display:none;
   width:100%;
 }
-
+.apercu-box a:hover {
+  color: black;
+}
 .apercu-box{
-  padding: 0% 10%;
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
   flex-direction: column;
+  max-width: 500px;
       .nouvelles__card {
       box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4);
       font-family: variables.$text-font;
@@ -2532,6 +2535,18 @@ header {width: 100%; height: auto; margin: none; padding: none;}
       grid-auto-flow: row;
       gap: 24px;
     }
+
+    .center-photo{
+      margin-bottom: 2vh;
+    }
+
+    .modal-texte, .modal-italique{
+      text-align: center;
+    }
+
+    .icone-photo{
+      width: 60%;
+    }
   }
   
 //PAGE SERVICES
@@ -3014,4 +3029,8 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   padding: 20px 40px;
   box-shadow: none;
 
+}
+
+.nouvelles__card .card-img, .nouvelles__card .card-img-top, .nouvelles__card .card-img-bottom {
+  max-height: 250px!important;
 }
