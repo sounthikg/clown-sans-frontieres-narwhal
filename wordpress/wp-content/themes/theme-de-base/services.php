@@ -36,7 +36,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="container-services">
         <div class="row">
         <div class="col-xl-5 col-md-6">
-        <img class="img-services" src='<?php echo get_the_post_thumbnail_url();?>'>
+        <img class="img-services" src='<?php the_field("image_services")?>'>
         </div>
         <div class="col-xl-7 col-md-6">
                 <div class="services-texte">
