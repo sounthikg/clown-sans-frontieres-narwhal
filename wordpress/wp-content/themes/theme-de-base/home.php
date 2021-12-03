@@ -242,7 +242,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <div class="don--img"> </div>
           <div class="don--texte">
             <h4><?php the_field('don_securitaire') ?></h4>
-            <h2><?php the_field('don_motto') ?></h2>
+            <h2 class="playDon"><?php the_field('don_motto') ?></h2>
             <span><?php the_field('don_description') ?></span>
             <div class="acc__heros__description__button">
               <div class="feature" id="featureAnimation">

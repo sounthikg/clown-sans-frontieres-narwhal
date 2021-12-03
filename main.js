@@ -128,15 +128,10 @@ hamburgerBtn.addEventListener('mouseover', function () {
   '-=0.1');
 });
 
-gsap.timeline({ 
-  scrollTrigger: {
-    markers: false,
-    start: 'top 75%',
-    end: 'bottom 25%',
-    toggleActions: 'restart complete reverse reset',
-    trigger: '.don--img',
-  }
-})
+const playDon = document.querySelector('.playDon');
+
+playDon.addEventListener('click', function() {
+gsap.timeline()
 .fromTo('.ballon--rouge', {
     y: '-200%',
     opacity: '0%',
@@ -176,7 +171,7 @@ gsap.timeline({
   .to('.ballon', {
     rotation: '360', duration: 2, y: '-400vh', delay: 0.4,
   })
-
+});
 
 //apercu suivante nouvelle
 
