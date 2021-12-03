@@ -190,7 +190,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 								${resume}
 					</div>
 						<div class="card-footer">
-						<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
+						<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> <?php the_field('nouvelles_par') ?> ${author}</div>
 					</div>
 				</a>
 
