@@ -67,6 +67,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
         </div>
         </div>
+        </div>
 
 
 
@@ -96,13 +97,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             });
 
          <?php 
-          $next = get_next_post();          
-          $next_link = get_permalink($next);
-          $next_img = get_the_post_thumbnail_url($next);
+         //this post
+          $post = get_the_id();
+         //next post
+          $other_post = get_next_post();
+
+          $nextID = get_the_id($other_post);         
+          $next_link = get_permalink($other_post);
+          $next_img = get_the_post_thumbnail_url($other_post);
+          
+
           
           ?>
           
-          let divNext = document.querySelector('#fetchNextService')
+          let divNext = document.querySelector('#fetchNextService');
+
+        
 
           let html = `
 
@@ -116,16 +126,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 				</div>
 			<div class="col-xl-6">
 				<div class="card-body">
-					<h4 class="card-title"><?php echo get_the_title($next)?></h4>
+					<h4 class="card-title"><?php echo get_the_title($other_post)?></h4>
 					<p class="card-text">
-					<?php the_field('resume_du_service', get_the_id($next))?>
+					<?php the_field('resume_du_service', get_the_id($other_post))?>
 					</p>
 					<a href='<?php echo $next_link?>'>
 					<button
 					type="button"
 					class="btn btn-outline-info border-2"
 					>
-					<?php the_field('plus-service') ?>
+					<?php the_field('plus-service1') ?>
 					</button>
 					</a>
 				</div>
@@ -167,6 +177,5 @@ else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
 get_footer(); // Affiche footer.php 
 ?>
