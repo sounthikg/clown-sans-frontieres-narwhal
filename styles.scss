@@ -2532,6 +2532,18 @@ header {width: 100%; height: auto; margin: none; padding: none;}
       grid-auto-flow: row;
       gap: 24px;
     }
+
+    .center-photo{
+      margin-bottom: 2vh;
+    }
+
+    .modal-texte, .modal-italique{
+      text-align: center;
+    }
+
+    .icone-photo{
+      width: 60%;
+    }
   }
   
 //PAGE SERVICES
