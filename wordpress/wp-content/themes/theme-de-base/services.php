@@ -1,6 +1,8 @@
 <?php 
 /**
  * 	Template Name: services
+ * Template Post Type: servicess
+ * 
  * 	Identique à page, mais avec une barre latérale
  */
 
@@ -40,27 +42,13 @@ get_template_part( 'partials/heros_generique' );
         <div class="container-services">
         <div class="row">
         <div class="col-xl-5 col-md-6">
-                <img class="img-services" src="images/servicesv2.jpg" alt="">
+        <img src='<?php echo get_the_post_thumbnail_url();?>'>
         </div>
         <div class="col-xl-7 col-md-6">
                 <div class="services-texte">
-                <div class='services-titre'>Spectacles, animations et ateliers</div>
+                <div class='services-titre'><?php the_title()?></div>
                 <div class="services-explication">
-                Saviez-vous que vous pouvez faire appel à Clowns Sans Frontières pour vos événements?
-                L’organisation a développé une forte expertise en arts clownesques et ses fondations sont solides grâce
-                à la qualité de ses contacts et de son réseau élargi. Notre structure flexible s’adapte à vos besoins
-                particuliers. <br><br>
-                Clowns Sans Frontières offre des spectacles, des animations et des ateliers pour vos différents
-                événements. Grâce à nos médiums artistiques, nous favorisons l’éducation des jeunes et du grand public
-                à la responsabilité sociale ainsi qu’à une citoyenneté mondiale active et éclairé.<br>
-                <div class="services-liste">
-                        - Les spectacles clownesques et interactifs allient des techniques de cirque basées sur une
-                        réflexion sociale et adaptées au milieu.<br><br>
-                        - Les ateliers permettent aux participants de découvrir et de s’initier à plusieurs techniques faisant
-                        partie de la grande famille du cirque. Ils navigueront entre les mondes de l’acrobatie et de la
-                        jonglerie.<br><br>
-                        - Les conférences ont pour objectifs de faire un portrait global sur la situation des enfants dans le
-                        monde et de sensibiliser sur les droits de l’enfant tout en faisant découvrir le clown social.
+                <?php the_content();?>
                 </div>
                 </div>
         </div>
