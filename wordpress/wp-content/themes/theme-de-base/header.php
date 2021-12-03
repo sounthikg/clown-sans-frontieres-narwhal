@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width" />
 <meta property="og:title" content="Clown Sans Frontières | <?php the_title()?> ">
 <meta property="og:description" content="Plus jamais d'enfants sans sourire">
-<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/apercu.png ">
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/apercu.PNG ">
 
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/clown_logo.png" />
 
