@@ -125,7 +125,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 					type="button"
 					class="btn btn-outline-info border-2"
 					>
-					En savoir plus
+					<?php the_field('plus-service') ?>
 					</button>
 					</a>
 				</div>
