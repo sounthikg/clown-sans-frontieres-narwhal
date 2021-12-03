@@ -81,6 +81,18 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
      <!--PROCHAINE NOUVELLE -->
 
      <script>
+
+            let boutonapercu = 
+            document.querySelector(".bouton-detail-nouvelle");
+            let apercu = 
+            document.querySelector(".apercu-bigger-box");
+
+
+            boutonapercu.addEventListener('click', ()=> {
+            apercu.classList.add('apercu-bigger-box-visible');
+            apercu.classList.remove('apercu-bigger-box')
+            });
+
          <?php 
           $next = get_next_post();          
           $next_link = get_permalink($next);

@@ -276,7 +276,60 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
       </svg>
     </div>
 
+<script>
 
+  			//FETCH SERVICES POUR ACCUEIL
+
+        fetch("./wp-json/wp/v2/servicess")
+              .then(response => response.json())
+              .then(data => {
+
+              	let htmlService= "";
+            	let servicesList = document.querySelector('#services_api')
+
+              	for (let i = 0; i < 3; i++) {
+					  
+					let linkService = data[i].link;
+              		let titleService = data[i].title.rendered;
+              		let resumeService = data[i].acf.resume_du_service;
+					let iconService = data[i].acf.icon_service;
+
+				  
+					htmlService += `
+					
+					 <div class="col-xl-6 col-md-6">
+					 <div class="card border border-2 mb-3 p-3" style="max-width: 600px">
+					   <div class="row align-items-center">
+						 <div class="col-xl-3">
+						   <img class="card-img" src="${iconService}" alt="" />
+						 </div>
+						 <div class="col-xl-9">
+						   <div class="card-body">
+							 <h4 class="card-title">${titleService}</h4>
+							 <p class="card-text">
+							   ${resumeService}
+							 </p>
+							 <a href='${linkService}'>
+							   <button type="button" class="btn btn-outline-info border-2">
+							   En savoir plus
+							 </button>
+							 </a>
+						   </div>
+						 </div>
+					   </div>
+					 </div>
+				   </div>
+
+              		`;
+
+					servicesList.innerHTML = htmlService;
+	
+
+              	}
+            });
+
+			
+</script>
 
 
 

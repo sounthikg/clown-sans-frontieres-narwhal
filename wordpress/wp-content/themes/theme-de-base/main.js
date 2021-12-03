@@ -2,7 +2,7 @@
 
 		
 //import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";const g=function(){const n=document.createElement("link").relList;if(n&&n.supsports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function p(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=p(e);fetch(e.href,t)}};g();a.registerPlugin(c);console.log(c);r.use([d,f,y]);var u=document.querySelector(".navicon"),o=document.querySelector(".menu__hamburger");u.addEventListener("click",function(){var l=o.style.display;l!=="flex"?(o.style.display="flex",o.style.height="100vh"):(o.style.display="none",o.style.height="")});new r(".acc__heros__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:5e3,disableOnInteraction:!1},pagination:{el:".pagination-heros"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});new r(".pied-page__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:4e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});new r(".swiper02",{direction:"horizontal",loop:!0,effect:"coverflow",coverflowEffect:{rotate:30,slideShadows:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});u.addEventListener("mouseover",function(){a.timeline().to(".navicon",{rotationZ:-10}).to(".navicon",{rotationZ:20}).to(".navicon",{rotationZ:0},"-=0.1")});a.timeline({scrollTrigger:{markers:false,start:"top 75%",end:"bottom 25%",toggleActions:"restart complete reverse reset",trigger:".don--img"}}).fromTo(".ballon--rouge",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).fromTo(".ballon--orange",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.5,rotation:"-360"}).fromTo(".ballon--bleu",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).to(".ballon",{rotation:"360",duration:2,y:"-400vh",delay:.4});
-import{g as t,S as p,a as i}from"./vendor.19d6675d.js";const d=function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&s(a)}).observe(document,{childList:!0,subtree:!0});function u(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerpolicy&&(o.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?o.credentials="include":e.crossorigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function s(e){if(e.ep)return;e.ep=!0;const o=u(e);fetch(e.href,o)}};d();t.registerPlugin(p);t.timeline({defaults:{repeat:-1,delay:1}}).fromTo(".larme01",{scale:.5,opacity:.5},{scale:1,opacity:1,duration:2,y:"400%"},{scale:.5,opacity:0,duration:2,ease:"sine"}).fromTo(".larme02",{scale:.5,opacity:.5},{scale:1,opacity:1,duration:2,y:"400%"},{scale:.5,opacity:0,duration:2,ease:"sine"});t.fromTo(".ballon-404",{rotate:"2deg"},{rotate:"-2deg",duration:2.5,ease:"slow",repeat:-1,yoyo:!0});var c=document.querySelector(".navicon"),r=document.querySelector(".menu__hamburger");c.addEventListener("click",function(){var l=r.style.display;l!=="flex"?(r.style.display="flex",r.style.height="100vh"):(r.style.display="none",r.style.height="")});new i(".acc__heros__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:5e3,disableOnInteraction:!1},pagination:{el:".pagination-heros"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});new i(".pied-page__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:4e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});new i(".swiper02",{direction:"horizontal",loop:!0,effect:"coverflow",coverflowEffect:{rotate:30,slideShadows:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});c.addEventListener("mouseover",function(){t.timeline().to(".navicon",{rotationZ:-10}).to(".navicon",{rotationZ:20}).to(".navicon",{rotationZ:0},"-=0.1")});const y=document.querySelector(".playDon");y.addEventListener("click",function(){t.timeline().fromTo(".ballon--rouge",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).fromTo(".ballon--orange",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.5,rotation:"-360"}).fromTo(".ballon--bleu",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).to(".ballon",{rotation:"360",duration:2,y:"-400vh",delay:.4})});
+import{S as a,N as p,P as d,g as t,a as y}from"./vendor.abb6f11d.js";const f=function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const n of o.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&s(n)}).observe(document,{childList:!0,subtree:!0});function u(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerpolicy&&(o.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?o.credentials="include":e.crossorigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function s(e){if(e.ep)return;e.ep=!0;const o=u(e);fetch(e.href,o)}};f();a.use([p,d]);t.registerPlugin(y);t.timeline({defaults:{repeat:-1,delay:1}}).fromTo(".larme01",{scale:.5,opacity:.5},{scale:1,opacity:1,duration:2,y:"400%"},{scale:.5,opacity:0,duration:2,ease:"sine"}).fromTo(".larme02",{scale:.5,opacity:.5},{scale:1,opacity:1,duration:2,y:"400%"},{scale:.5,opacity:0,duration:2,ease:"sine"});t.fromTo(".ballon-404",{rotate:"2deg"},{rotate:"-2deg",duration:2.5,ease:"slow",repeat:-1,yoyo:!0});var c=document.querySelector(".navicon"),r=document.querySelector(".menu__hamburger");c.addEventListener("click",function(){var l=r.style.display;l!=="flex"?(r.style.display="flex",r.style.height="100vh"):(r.style.display="none",r.style.height="")});new a(".acc__heros__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:5e3,disableOnInteraction:!1},pagination:{el:".pagination-heros"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});new a(".pied-page__swiper",{direction:"horizontal",loop:!0,speed:600,autoplay:{delay:4e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});new a(".swiper02",{direction:"horizontal",loop:!0,effect:"coverflow",coverflowEffect:{rotate:30,slideShadows:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});c.addEventListener("mouseover",function(){t.timeline().to(".navicon",{rotationZ:-10}).to(".navicon",{rotationZ:20}).to(".navicon",{rotationZ:0},"-=0.1")});const m=document.querySelector(".playDon");m.addEventListener("click",function(){t.timeline().fromTo(".ballon--rouge",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).fromTo(".ballon--orange",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.5,rotation:"-360"}).fromTo(".ballon--bleu",{y:"-200%",opacity:"0%"},{y:"0%",opacity:"100%",ease:"back",duration:.4,rotation:"360"}).to(".ballon",{rotation:"360",duration:2,y:"-400vh",opacity:"0%",delay:.4})});
 
 
 
@@ -58,60 +58,7 @@ import{g as t,S as p,a as i}from"./vendor.19d6675d.js";const d=function(){const 
 	        insertBefore(lang, divButton);
 
 
-/*
-			//FETCH SERVICES POUR ACCUEIL
 
-			fetch("./wp-json/wp/v2/servicess")
-              .then(response => response.json())
-              .then(data => {
-
-              	let htmlService= "";
-            	let servicesList = document.querySelector('#services_api')
-
-              	for (let i = 0; i < 3; i++) {
-					  
-					let linkService = data[i].link;
-              		let titleService = data[i].title.rendered;
-              		let resumeService = data[i].acf.resume_du_service;
-					let iconService = data[i].acf.icon_service;
-
-				  
-					htmlService += `
-					
-					 <div class="col-xl-6 col-md-6">
-					 <div class="card border border-2 mb-3 p-3" style="max-width: 600px">
-					   <div class="row align-items-center">
-						 <div class="col-xl-3">
-						   <img class="card-img" src="${iconService}" alt="" />
-						 </div>
-						 <div class="col-xl-9">
-						   <div class="card-body">
-							 <h4 class="card-title">${titleService}</h4>
-							 <p class="card-text">
-							   ${resumeService}
-							 </p>
-							 <a href='${linkService}'>
-							   <button type="button" class="btn btn-outline-info border-2">
-							   En savoir plus
-							 </button>
-							 </a>
-						   </div>
-						 </div>
-					   </div>
-					 </div>
-				   </div>
-
-              		`;
-
-					servicesList.innerHTML = htmlService;
-	
-
-              	}
-            });
-
-			
-
-*/
 
 
 
@@ -170,20 +117,3 @@ import{g as t,S as p,a as i}from"./vendor.19d6675d.js";const d=function(){const 
 
               	}
             });
-			
-			
-			/*
-
-
-			//APERCU NOUVELLE SUIVANTE
-
-			let boutonapercu = 
-			document.querySelector(".bouton-detail-nouvelle");
-			let apercu = 
-			document.querySelector(".apercu-bigger-box");
-
-
-			boutonapercu.addEventListener('click', ()=> {
-			apercu.classList.add('apercu-bigger-box-visible');
-			apercu.classList.remove('apercu-bigger-box')
-			});*/

@@ -25,13 +25,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 		  	
 
-				<div id='hub_services_fetch'>
+				<div class='hub_services_fetch' id='services-api'>
 				</div>
             
             
 			</div>
 		</div>
 		</div>
+		
 	
 
 	<svg xmlns="http://www.w3.org/2000/svg" class='z-index' viewBox="0 0 1440 320">  
@@ -47,7 +48,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               .then(data => {
 
               	let htmlService= "";
-            	let servicesList = document.querySelector('#hub_services_fetch')
+            	let servicesList = document.querySelector('#services-api')
 
               	for (let i = 0; i < data.length; i++) {
 					  
@@ -78,7 +79,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 									type="button"
 									class="btn btn-outline-info border-2"
 								>
-									En savoir plus
+									<?php the_field('plus-service') ?>
 								</button>
 								</a>
 								</div>
