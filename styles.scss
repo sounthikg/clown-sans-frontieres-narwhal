@@ -1818,15 +1818,17 @@ justify-content: center;
   display:none;
   width:100%;
 }
-
+.apercu-box a:hover {
+  color: black;
+}
 .apercu-box{
-  padding: 0% 10%;
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
   flex-direction: column;
+  max-width: 500px;
       .nouvelles__card {
       box-shadow: -2px 5px 10px rgba(50, 50, 50, 0.4);
       font-family: variables.$text-font;
