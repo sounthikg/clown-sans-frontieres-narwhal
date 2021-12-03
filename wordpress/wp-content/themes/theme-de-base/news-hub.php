@@ -18,16 +18,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 	<div class='hub-nouvelles'>
         <div class='input-text'>
-			Trier par :
+		<?php the_field('nouvelles_trier') ?> :
             <select id="trier">
-                <option value="asc">Plus récentes</option>
-                <option value="desc">Plus anciennes</option>
+                <option value="asc"> <?php the_field('nouvelles_recentes') ?></option>
+                <option value="desc"> <?php the_field('nouvelles_anciennes') ?></option>
         </select>
 	</div>
 			<div class='nouvelles-list'>		
 			</div>
 			<div>
-            	<button id='plusNouvelles' class='bouton-hub-nouvelles'>Charger plus de nouvelles...</button>
+            	<button id='plusNouvelles' class='bouton-hub-nouvelles'> <?php the_field('nouvelles_charger') ?>...</button>
           </div>
 	</div>
 
@@ -99,7 +99,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 											${resume}
 								</div>
 									<div class="card-footer">
-									<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
+									<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> <?php the_field('nouvelles_par') ?> ${author}</div>
 								</div>
 							</a>
 
@@ -122,7 +122,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 											${resume}
 								</div>
 									<div class="card-footer">
-									<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
+									<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> <?php the_field('nouvelles_par') ?> ${author}</div>
 								</div>
 							</a>
 
@@ -190,7 +190,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 								${resume}
 					</div>
 						<div class="card-footer">
-						<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> Par ${author}</div>
+						<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> <?php the_field('nouvelles_par') ?> ${author}</div>
 					</div>
 				</a>
 

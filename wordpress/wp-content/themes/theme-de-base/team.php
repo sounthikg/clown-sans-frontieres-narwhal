@@ -22,7 +22,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
     <div class='equipe__contenu block'>
 
-        <div class='equipe-titre'>Direction et bénévoles</div>
+        <div class='equipe-titre'><?php the_field('equipe_direction') ?></div>
 
         <div class="grid" id='grid1'>
           
@@ -96,7 +96,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         -->
         </div> 
 
-        <div class='equipe-titre'>Conseil d'administration</div>
+        <div class='equipe-titre'><?php the_field('equipe_conseil') ?></div>
 
         <div class="grid" id='grid2'>
 
@@ -168,11 +168,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			
 -->
         </div>
-        <div class='equipe-titre'>Merci à nos précieux partenaires</div>
+        <div class='equipe-titre'><?php the_field('equipe_merci') ?></div>
         <br>
         <p class="equipe-texte">
-          Nos partenaires sont précieux pour la réussite de nos activités ici et ailleurs.
-          Vous avez la volonté de nous appuyer dans nos actions? Contactez-nous!
+        <?php the_field('equipe_partenaires') ?>
         </p>
         <div class="images-partenaires">
           <img class="partenaire" src="<?php echo get_template_directory_uri(); ?>/assets/logo-desjardins-couleur.png" alt=""> 
@@ -236,7 +235,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                   <div class="modal-header text-center">
-                  <h5 class="modal-title w-100" id="exampleModalLabel">À propos de ${memberName}</h5>
+                  <h5 class="modal-title w-100" id="exampleModalLabel"><?php the_field('equipe_propos') ?> ${memberName}</h5>
                   </div>
                   <div class="modal-body">
                   <div class="row align-items-center">
@@ -282,7 +281,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <h2>${memberName}</h2>
                 <div class="desc">${role}</div>
                 <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
-                En savoir plus</button>
+                <?php the_field('equipe_plus') ?></button>
               </div>
               `
 
@@ -318,7 +317,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <h2>${memberName}</h2>
                 <div class="desc">${role}</div>
                 <button type="button" class="btn btn-outline-info border-2 equipe-btn" data-bs-toggle="modal" data-bs-target="#${shortName}">
-                En savoir plus</button>
+                <?php the_field('equipe_plus') ?></button>
               </div>
               `
 
