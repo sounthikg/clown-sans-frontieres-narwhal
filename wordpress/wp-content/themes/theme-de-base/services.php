@@ -14,9 +14,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-<svg class="grain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#fef1e2" d="M0,192L80,202.7C160,213,320,235,480,213.3C640,192,800,128,960,112C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-      </svg>
+
 
       <div class='wrapper-vague'>
 
@@ -38,7 +36,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="container-services">
         <div class="row">
         <div class="col-xl-5 col-md-6">
-        <img src='<?php echo get_the_post_thumbnail_url();?>'>
+        <img class="img-services" src='<?php echo get_the_post_thumbnail_url();?>'>
         </div>
         <div class="col-xl-7 col-md-6">
                 <div class="services-texte">
