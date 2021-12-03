@@ -3027,3 +3027,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   box-shadow: none;
 
 }
+
+.nouvelles__card .card-img, .nouvelles__card .card-img-top, .nouvelles__card .card-img-bottom {
+  max-height: 250px!important;
+}
