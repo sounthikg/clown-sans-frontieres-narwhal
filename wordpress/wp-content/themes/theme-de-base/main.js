@@ -57,7 +57,7 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
 	        insertBefore(lang, divButton);
 
 
-
+/*
 			//FETCH SERVICES POUR ACCUEIL
 
 			fetch("./wp-json/wp/v2/servicess")
@@ -108,6 +108,9 @@ import{g as a,S as c,a as r,N as d,P as f,A as y}from"./vendor.3019e036.js";cons
               	}
             });
 
+			
+
+*/
 
 
 
