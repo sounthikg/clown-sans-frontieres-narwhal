@@ -173,7 +173,7 @@ gsap.timeline()
   })
 });
 
-//apercu suivante nouvelle
+/*//apercu suivante nouvelle
 
 let boutonapercu = 
 document.querySelector(".bouton-detail-nouvelle");
@@ -198,7 +198,7 @@ document.querySelector(".apercu-bigger-box-service");
 boutonapercu2.addEventListener('click', ()=> {
 apercu2.classList.add('apercu-bigger-box-service-visible');
 apercu2.classList.remove('apercu-bigger-box-service')
-});
+});*/
 
 
 

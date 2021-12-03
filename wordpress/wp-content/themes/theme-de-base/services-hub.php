@@ -16,10 +16,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			<path fill="#fef1e2" d="M0,192L80,202.7C160,213,320,235,480,213.3C640,192,800,128,960,112C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
 	</svg>
 
-	<div class='services-hub'>
-		<div id='services_api2'></div>
-	</div>
+	<div class="hub_services__contenu">
 
+	<?php get_template_part( 'partials/description_generique' );?>
+
+        <div class="container">
+          <div class="row justify-content-evenly">
+
+		  	
+
+				<div id='hub_services_fetch'>
+				</div>
+            
+            
+			</div>
+		</div>
+		</div>
 	
 
 	<svg xmlns="http://www.w3.org/2000/svg" class='z-index' viewBox="0 0 1440 320">  
@@ -35,40 +47,45 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               .then(data => {
 
               	let htmlService= "";
-            	let servicesList = document.querySelector('#services_api2')
+            	let servicesList = document.querySelector('#hub_services_fetch')
 
-              	for (let i = 0; i < 3; i++) {
+              	for (let i = 0; i < data.length; i++) {
 					  
 					let linkService = data[i].link;
               		let titleService = data[i].title.rendered;
               		let resumeService = data[i].acf.resume_du_service;
-					let iconService = data[i].acf.icon_service;
+					let imgService = data[i]._embedded['wp:featuredmedia'][0].source_url;
 
 				  
 					htmlService += `
 					
-					 <div class="col-xl-6 col-md-6">
-					 <div class="card border border-2 mb-3 p-3" style="max-width: 600px">
-					   <div class="row align-items-center">
-						 <div class="col-xl-3">
-						   <img class="card-img" src="${iconService}" alt="" />
-						 </div>
-						 <div class="col-xl-9">
-						   <div class="card-body">
-							 <h4 class="card-title">${titleService}</h4>
-							 <p class="card-text">
-							   ${resumeService}
-							 </p>
-							 <a href='${linkService}'>
-							   <button type="button" class="btn btn-outline-info border-2">
-							   En savoir plus
-							 </button>
-							 </a>
-						   </div>
-						 </div>
-					   </div>
-					 </div>
-				   </div>
+					<div class="col-12">
+						<div class="card border border-2 mb-3 p-3">
+							<div class="row align-items-center">
+							<div class="col-xl-6">
+								<div class="card-img">
+									<img class='services-img' src="${imgService}" alt=""/>
+								</div>
+							</div>
+							<div class="col-xl-6">
+								<div class="card-body">
+								<h4 class="card-title">${titleService}</h4>
+								<p class="card-text">
+									${resumeService}
+								</p>
+								<a href='${linkService}'>
+								<button
+									type="button"
+									class="btn btn-outline-info border-2"
+								>
+									En savoir plus
+								</button>
+								</a>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
 
               		`;
 
@@ -88,6 +105,5 @@ else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
 get_footer(); // Affiche footer.php 
 ?>
