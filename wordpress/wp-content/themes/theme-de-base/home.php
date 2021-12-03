@@ -14,7 +14,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
 
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil 
     ?>
-			<h2>
+			<h2 property="og:title">
 				<?php the_title(); // Titre de la page 
         ?>
 			</h2>
@@ -28,7 +28,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           <!-- Slide 01 -->
           <div class="swiper-slide acc__heros__slide">
             <div class="acc__heros__description">
-              <div class="acc__heros__description__title">
+              <div class="acc__heros__description__title" property="og:description">
                 <?php the_field('slider1') ?>
               </div>
               <div class="acc__heros__description__button">
@@ -39,7 +39,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               </div>
             </div>
             <div class="acc__heros__image">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/dessin.png" />
+              <img property="og:image" src="<?php echo get_template_directory_uri(); ?>/images/dessin.png" />
             </div>
           </div>
           <!-- Slide 02 -->

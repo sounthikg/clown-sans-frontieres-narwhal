@@ -41,7 +41,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="col-xl-7 col-md-6">
                 <div class="services-texte">
                 <div class='services-titre'><?php the_title()?></div>
-                <div class="services-explication">
+                <div property="og:description" class="services-explication">
                 <?php the_content();?>
                 </div>
                 </div>
