@@ -170,7 +170,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         </div>
         <div class='equipe-titre'><?php the_field('equipe_merci') ?></div>
         <br>
-        <p class="equipe-texte" property="og:description">
+        <p class="equipe-texte">
         <?php the_field('equipe_partenaires') ?>
         </p>
         <div class="images-partenaires">

@@ -16,9 +16,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
       
       <div class='nouvelle__heros'>
-        <div class='nouvelle__heros__bg'> <img property="og:image" src='<?php echo get_the_post_thumbnail_url();?>'> </div>
+        <div class='nouvelle__heros__bg'> <img src='<?php echo get_the_post_thumbnail_url();?>'> </div>
         <div class='nouvelle__heros__title'>
-          <div class='nouvelle__heros__title-text' property="og:title"><?php the_title()?><p class='nouvelle__heros__title-date'><?php the_field("date")?></p></div>
+          <div class='nouvelle__heros__title-text'><?php the_title()?><p class='nouvelle__heros__title-date'><?php the_field("date")?></p></div>
         </div>
     </div>
     <div class='nouvelle__description'>
@@ -39,7 +39,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
           <div class='nouvelle__description__text__wrapper'>
 
-            <p class='nouvelle__description--synopsis' property="og:description"> 
+            <p class='nouvelle__description--synopsis'>
 				<?php the_field('synopsis')?>
             </p>
 
