@@ -51,11 +51,12 @@
 <div class="page404">
         <div class="page404__contenu">
             <div class="animation-clown">
-                <img class="forme" src="https://zupimages.net/up/21/41/0x0s.png" alt="">
-                <img class="ballon-404" src="https://zupimages.net/up/21/41/jipl.png" alt="">
-                <img class="clown" src="https://zupimages.net/up/21/41/o668.png" alt="">
-                <img class="larme01" src="https://zupimages.net/up/21/41/wpe7.png" alt="">
-                <img class="larme02" src="https://zupimages.net/up/21/41/wpe7.png" alt="">
+            <img class="forme"  src="<?php echo get_template_directory_uri(); ?>/images/bulle_404.png" alt="forme">
+                <img class="ballon-404" property="og:image" src="<?php echo get_template_directory_uri(); ?>/images/ballon_404.png" alt="ballon_404">
+                <img class="clown" src="<?php echo get_template_directory_uri(); ?>/images/clown_404.png"
+               alt="clown_404">
+                <img class="larme01" src="<?php echo get_template_directory_uri(); ?>/images/larme01.png" alt="larme01">
+                <img class="larme02" src="<?php echo get_template_directory_uri(); ?>/images/larme01.png" alt="larme02">
             </div>
             <div class="message404">
                 <h1 class="message404"> <?php the_field('oups_404') ?> </h1>
