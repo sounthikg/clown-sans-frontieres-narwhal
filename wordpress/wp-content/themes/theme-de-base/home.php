@@ -328,7 +328,58 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
               	}
             });
 
-			
+            fetch("./wp-json/wp/v2/nouvelles?_embed")
+              .then(response => response.json())
+              .then(data => {
+
+              	let html = "";
+               		let cardList = document.querySelector('.nouvelles__cards__list')
+
+              	for (let i = 0; i < 3; i++) {
+					  
+					let link = data[i].link;
+              		let title = data[i].title.rendered;
+              		let author = data[i].acf.auteur;
+               		let type = data[i].acf.type;
+              		let date = data[i].acf.date;
+              		let resume = data[i].acf.resume;
+                   let image = data[i]._embedded['wp:featuredmedia'][0].source_url;
+
+					//texte se coupe si trop long pour les cartes nouvelles
+
+					if (resume.length > 200) {
+					resume = resume.substr(0, resume.lastIndexOf(' ', 200)) + ' [...]';
+				  }
+
+				  if (title.length > 50) {
+					title = title.substr(0, title.lastIndexOf(' ', 50)) + '...';
+				  } 
+				  ///
+
+				  
+             		html += `
+					 
+					<a class='nouvelles__link' href='${link}'>
+              		<div class="nouvelles__card">
+               			<img src="${image}" class="card-img-top">
+              			<div class="card-body">
+              				<h3 class="card-title">${title}</h3>
+              				<p class='nouvelles__type'>${type}</p>
+              					${resume}
+             			</div>
+              			<div class="card-footer">
+              			<img src='https://clownssansfrontieres.qc.lu/wp-content/themes/theme-de-base/images/user.png'/> <?php the_field('home_par') ?> ${author}</div>
+                  	</div>
+					</a>
+
+
+              		`;
+
+               		cardList.innerHTML = html;
+	
+
+              	}
+            });
 </script>
 
 
