@@ -55,8 +55,8 @@
                 <img class="ballon-404" property="og:image" src="<?php echo get_template_directory_uri(); ?>/images/ballon_404.png" alt="ballon_404">
                 <img class="clown" src="<?php echo get_template_directory_uri(); ?>/images/clown_404.png"
                alt="clown_404">
-                <img class="larme01" src="<?php echo get_template_directory_uri(); ?>/images/larme01.png" alt="larme01">
-                <img class="larme02" src="<?php echo get_template_directory_uri(); ?>/images/larme01.png" alt="larme02">
+                <img class="larme01" src="<?php echo get_template_directory_uri(); ?>/images/larme_01.png" alt="larme01">
+                <img class="larme02" src="<?php echo get_template_directory_uri(); ?>/images/larme_01.png" alt="larme02">
             </div>
             <div class="message404">
                 <h1 class="message404"> <?php the_field('oups_404') ?> </h1>
