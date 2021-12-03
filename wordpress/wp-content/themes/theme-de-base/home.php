@@ -219,7 +219,7 @@ if (have_posts()) : // Est-ce que nous avons des pages à afficher ?
           </div>
 
           <div class='nouvelles__bouton'>
-            <a href='nouvelles.html'><button><?php the_field('btn_nouvelles')?></button></a>
+            <a href='./nouvelles-2'><button><?php the_field('btn_nouvelles')?></button></a>
           </div>
         </div>
       </div>
