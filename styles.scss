@@ -387,7 +387,7 @@ h2 {
 .acc__heros {
   display: block;
   height: 150vh;
-  min-height: 1500px;
+  min-height: 1300px;
   position: relative;
   background-image: url("assets/degrade.png");
   background-size: cover;
@@ -582,7 +582,7 @@ h2 {
   }
 
   .nouvelles__cards__list {
-    padding: 0% 10%;
+    padding: 0% 3%;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -801,7 +801,7 @@ h2 {
 
     .swiper-button-next,
     .swiper-button-prev {
-      display:none;
+      color: white;
     }
 
     img {
@@ -881,7 +881,7 @@ h2 {
   width: 100%;
   z-index: 1;
   color: black;
-  margin-top: -600px!important;
+  margin-top: -520px!important;
 
   &__contenu {
     margin-top: -1px;
@@ -1972,7 +1972,7 @@ justify-content: center;
       img {
         display: flex;
         position: absolute;
-        height: 100%;
+        height: 110%;
       }
     }
 }
@@ -2144,7 +2144,7 @@ justify-content: center;
 
 
   .nouvelle__heros__title {
-    height: 40%;
+    height: 55%;
   }
     
 }
@@ -2306,7 +2306,8 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 .menu li { list-style: none;}
 .menu__don__button a:hover { color: white;}
 
-.services__contenu{margin-top:-1px;background-image:url(assets/texture-grain.png);background-size:100% 100%;width:100%;height:100%;position:relative;}
+.services__contenu{
+  margin-top:-1px;background-image:url(assets/texture-grain.png);background-size:100% 100%;width:100%;height:100%;position:relative;}
 
 .nouvelles .nouvelles__card .card-title{color:#ae2c1e;margin-top:20px;margin-bottom: 0px;font-family:"Merriweather",serif;font-weight:700;font-size:30px;font-size:22px;}
 
@@ -2552,10 +2553,9 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   
 //PAGE SERVICES
 
-.services__contenu{
+.page-service{
   background-image: url('assets/texture-grain.png');
   z-index: 10;
-  margin-top: -5vh;
 }
 
 .services-texte{
@@ -2753,6 +2753,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   @include h1;
 
   &__title {
@@ -2761,7 +2762,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
 
   .heros__gen__bg {
     position: relative;
-    height: 100%;
+    height: 110%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2776,7 +2777,7 @@ header {width: 100%; height: auto; margin: none; padding: none;}
   &__vague {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
     background-image: url('assets/degrade.png');
     background-size: auto 130%;
     opacity: 60%;

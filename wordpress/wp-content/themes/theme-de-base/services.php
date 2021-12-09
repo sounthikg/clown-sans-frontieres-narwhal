@@ -31,7 +31,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <path class="grain__path" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,96C384,75,480,53,576,69.3C672,85,768,139,864,165.3C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
 
-        <div class='services__contenu'>
+        <div class='services__contenu page-service'>
 
                 <div class="container-services">
                 <div class="row">
